@@ -13,7 +13,7 @@ _d = [];
 	if (round random 100 < 93 && _dealerCntr > 1) then {
 		_d pushback _x;
 	} else {
-		deletevehicle (_x select 0);
+		deleteVehicle (_x select 0);
 		deleteMarker (_x select 1);
 		_dealerCntr = _dealerCntr - 1;
 	};
@@ -22,7 +22,7 @@ _d = [];
 {
 	_position = _pos call BIS_fnc_selectRandom;
 	(_x select 1) setMarkerPos (getMarkerPos _position);
-	(_x select 0) setPos _pos;
+	(_x select 0) setPos (getMarkerPos _position);
 	(_x select 0) setDir (round (random 360));
 	
 	//_markerstr = createMarker [(str (random 145)) + "Drogendealer",_pos];
