@@ -373,10 +373,8 @@ class Life_Client_Core {
         class vInteractionMenu {};
     };
 	
-	/*
 	class Misc {
         file = "core\misc";
         class variableDealer {};
     };
-	*/
 };
