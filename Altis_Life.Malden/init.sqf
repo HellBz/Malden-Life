@@ -16,4 +16,5 @@ StartProgress = true;
 
 if (isServer) then {
 	[] call life_fnc_variableDealer;
+	[] call life_fnc_HideObjects;
 };

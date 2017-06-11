@@ -376,5 +376,6 @@ class Life_Client_Core {
 	class Misc {
         file = "core\misc";
         class variableDealer {};
+		class HideObjects {};
     };
 };
