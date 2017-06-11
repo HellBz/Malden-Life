@@ -26,6 +26,8 @@ if (life_spawn_point isEqualTo []) then {
     };
     titleText[format ["%2 %1",_sp select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 } else {
+	
+	/*
     if (playerSide isEqualTo civilian) then {
         if (isNil {(call compile format ["%1",life_spawn_point select 0])}) then {
             if (["house",life_spawn_point select 0] call BIS_fnc_inString) then {
@@ -51,6 +53,8 @@ if (life_spawn_point isEqualTo []) then {
     } else {
         player setPos (getMarkerPos (life_spawn_point select 0));
     };
+	*/
+	player setPos (getMarkerPos (life_spawn_point select 0));
     titleText[format ["%2 %1",life_spawn_point select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 };
 
