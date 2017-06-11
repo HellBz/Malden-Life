@@ -243,16 +243,16 @@ class CfgSpawnPoints {
 	class Malden {
 
         class Civilian {
-            class Georgetown {
-                displayName = "Georgetown";
+            class LaTrinite {
+                displayName = "La Trinite";
                 spawnMarker = "civ_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "!license_civ_rebel";
             };
 
             class RebelNW {
-                displayName = $STR_SP_Reb_NW;
-                spawnMarker = "Rebelop";
+                displayName = $STR_SP_Reb;
+                spawnMarker = "reb_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
@@ -261,45 +261,17 @@ class CfgSpawnPoints {
 
         class Cop {
             class NAirport {
-                displayName = $STR_SP_Cop_Air_N;
+                displayName = "La Trinite HQ";
                 spawnMarker = "cop_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
-            };
-
-            class SWAirport {
-                displayName = $STR_SP_Cop_Air_SW;
-                spawnMarker = "cop_spawn_3";
-                icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
-                conditions = "";
-            };
-
-            class GeorgetownHQ {
-                displayName = "Georgetown HQ";
-                spawnMarker = "cop_spawn_2";
-                icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "";
-            };
-
-            class Air {
-                displayName = $STR_MAR_Police_Air_HQ;
-                spawnMarker = "cop_spawn_4";
-                icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
-                conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
-            };
-
-            class HW {
-                displayName = $STR_MAR_Highway_Patrol;
-                spawnMarker = "cop_spawn_5";
-                icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "call life_coplevel >= 3";
             };
         };
 
         class Medic {
 
             class SEHospital {
-                displayName = $STR_SP_EMS_SE;
+                displayName = "La Trinite HQ";
                 spawnMarker = "medic_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";

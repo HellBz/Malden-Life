@@ -10760,6 +10760,17 @@
             <Portuguese>North Western Rebel Base</Portuguese>
             <Polish>North Western Rebel Base</Polish>
         </Key>
+		<Key ID="STR_SP_Reb">
+            <Original>Rebel Base</Original>
+            <Czech>Rebel Base</Czech>
+            <Spanish>Rebel Base</Spanish>
+            <Russian>North Western Rebel Base</Russian>
+            <German>Rebellen Basis</German>
+            <French>Rebel Base</French>
+            <Italian>Rebel Base</Italian>
+            <Portuguese>Rebel Base</Portuguese>
+            <Polish>Rebel Base</Polish>
+        </Key>
         <Key ID="STR_SP_Reb_NE">
             <Original>North Eastern Rebel Base</Original>
             <Czech>North Eastern Rebel Base</Czech>
