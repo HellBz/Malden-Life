@@ -6291,6 +6291,14 @@
             <Original>Peyote</Original>
             <German>Peyote</German>
         </Key>
+		<Key ID="STR_Item_KratomRefined">
+            <Original>Kratom Leaves</Original>
+            <German>Kratom Blätter</German>
+        </Key>
+		<Key ID="STR_Item_KratomUnrefined">
+            <Original>Kratom Powder</Original>
+            <German>Kratom Pulver</German>
+        </Key>
 		
         <Key ID="STR_Item_Heroin">
             <Original>Heroin</Original>

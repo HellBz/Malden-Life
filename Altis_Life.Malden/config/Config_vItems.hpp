@@ -62,7 +62,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "marijuana", "ololiqui", "peyote" };
     };
 
     class oil {
@@ -225,7 +225,7 @@ class VirtualItems {
     class goldbar {
         variable = "goldBar";
         displayName = "STR_Item_GoldBar";
-        weight = 12;
+        weight = 60;
         buyPrice = -1;
         sellPrice = 32000;
         illegal = true;
@@ -292,7 +292,7 @@ class VirtualItems {
     class oil_unprocessed {
         variable = "oilUnprocessed";
         displayName = "STR_Item_OilU";
-        weight = 7;
+        weight = 9;
         buyPrice = 10;
         sellPrice = -1;
         illegal = false;
@@ -380,7 +380,7 @@ class VirtualItems {
     class copper_unrefined {
         variable = "copperUnrefined";
         displayName = "STR_Item_CopperOre";
-        weight = 4;
+        weight = 10;
         buyPrice = -1;
         sellPrice = 3;
         illegal = false;
@@ -402,7 +402,7 @@ class VirtualItems {
     class iron_unrefined {
         variable = "ironUnrefined";
         displayName = "STR_Item_IronOre";
-        weight = 5;
+        weight = 10;
         buyPrice = -1;
         sellPrice = 3;
         illegal = false;
@@ -415,7 +415,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 10;
+        sellPrice = 12;
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
@@ -531,6 +531,28 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_peyote.paa";
+    };
+	
+	class kratomRefined {
+        variable = "kratom";
+        displayName = "STR_Item_KratomRefined";
+        weight = 13;
+        buyPrice = -1;
+        sellPrice = 3;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_KratomRefined.paa";
+    };
+	
+	class KratomUnrefined {
+        variable = "KratomUnrefined";
+        displayName = "STR_Item_KratomUnrefined";
+        weight = 3;
+        buyPrice = -1;
+        sellPrice = 150;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_KratomUnrefined.paa";
     };
 
     class marijuana {
