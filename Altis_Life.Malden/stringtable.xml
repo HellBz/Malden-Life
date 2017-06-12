@@ -6255,6 +6255,10 @@
             <Original>Ololiuqui Seeds</Original>
             <German>Ololiuqui Blüten</German>
         </Key>
+		<Key ID="STR_Item_Traube">
+            <Original>Grape</Original>
+            <German>Weintraube</German>
+        </Key>
 		<Key ID="STR_Item_GoldIngot">
             <Original>Gold Ingot</Original>
             <German>Goldbarren</German>
