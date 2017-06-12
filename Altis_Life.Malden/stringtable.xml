@@ -58,6 +58,14 @@
             <Italian>Emporio di Bruce</Italian>
             <German>Bruce's Outback Outfits</German>
         </Key>
+		<Key ID="STR_Shops_Industriegebiet">
+            <Original>Industrial Area</Original>
+            <German>Industriegebiet</German>
+        </Key>
+		<Key ID="STR_Shops_PearlDealer">
+            <Original>Jewelry Dealer</Original>
+            <German>Schmuckhändler</German>
+        </Key>
         <Key ID="STR_Shops_C_Police">
             <Original>Altis Police Department Shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>

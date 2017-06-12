@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "traube", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "beer", "agavenBeer" };
     };
 
     class med_market {
@@ -37,13 +37,6 @@ class VirtualShops {
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
     };
 
-    class wongs {
-        name = "STR_Shops_Wongs";
-        side = "civ";
-        conditions = "";
-        items[] = { "turtle_soup", "turtle_raw" };
-    };
-
     class coffee {
         name = "STR_Shops_Coffee";
         side = "civ";
@@ -62,7 +55,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "marijuana", "ololiqui", "peyote" };
+        items[] = { "marijuana", "ololiqui", "peyote" , "kratomRefined"};
     };
 
     class oil {
@@ -76,42 +69,21 @@ class VirtualShops {
         name = "STR_Shops_FishMarket";
         side = "civ";
         conditions = "";
-        items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark" };
+        items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark", "turtle_soup", "turtle_raw", "shell" };
     };
 
-    class glass {
-        name = "STR_Shops_Glass";
+    class industriegebiet  {
+        name = "STR_Shops_Industriegebiet";
         side = "civ";
         conditions = "";
-        items[] = { "glass" };
+        items[] = { "iron_refined", "copper_refined", "silver_refined", "cement" };
     };
-
-    class iron  {
-        name = "STR_Shops_Minerals";
+	
+	class peralDealer  {
+        name = "STR_Shops_PearlDealer";
         side = "civ";
         conditions = "";
-        items[] = { "iron_refined", "copper_refined" };
-    };
-
-    class diamond {
-        name = "STR_Shops_Diamond";
-        side = "civ";
-        conditions = "";
-        items[] = { "diamond_uncut", "diamond_cut" };
-    };
-
-    class salt {
-        name = "STR_Shops_Salt";
-        side = "civ";
-        conditions = "";
-        items[] = { "salt_refined" };
-    };
-
-    class cement {
-        name = "STR_Shops_Cement";
-        side = "civ";
-        conditions = "";
-        items[] = { "cement" };
+        items[] = { "pearl" };
     };
 
     class gold {
@@ -154,6 +126,17 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_pickaxe.paa";
+    };
+	
+	class pump {
+        variable = "pump";
+        displayName = "STR_Item_Pump";
+        weight = 10;
+        buyPrice = 900;
+        sellPrice = 450;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_pump.paa";
     };
 
     class defibrillator {
@@ -362,7 +345,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 1;
         illegal = false;
-        edible = -1;
+        edible = 10;
         icon = "icons\ico_traube.paa";
     };
 	
