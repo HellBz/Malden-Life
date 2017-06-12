@@ -6242,6 +6242,56 @@
             <Portuguese>Maçãs</Portuguese>
             <Polish>Jabłka</Polish>
         </Key>
+		
+		<Key ID="STR_Item_OloliquiSeed">
+            <Original>Ololiuqui Seeds</Original>
+            <German>Ololiuqui Blüten</German>
+        </Key>
+		<Key ID="STR_Item_GoldIngot">
+            <Original>Gold Ingot</Original>
+            <German>Goldbarren</German>
+        </Key>
+		<Key ID="STR_Item_GoldOre">
+            <Original>Golddust</Original>
+            <German>Goldhaltiger Sand</German>
+        </Key>
+		<Key ID="STR_Item_SilverIngot">
+            <Original>Silver Ingot</Original>
+            <German>Silberbarren</German>
+        </Key>
+		<Key ID="STR_Item_SilverOre">
+            <Original>Silver Ore</Original>
+            <German>Silbererz</German>
+        </Key>
+		<Key ID="STR_Item_Beer">
+            <Original>Beer</Original>
+            <German>Bier</German>
+        </Key>
+		<Key ID="STR_Item_AgavenBeer">
+            <Original>Agave Beer</Original>
+            <German>Agavenbier</German>
+        </Key>
+		<Key ID="STR_Item_Hopfen">
+            <Original>Hop</Original>
+            <German>Hopfen</German>
+        </Key>
+		<Key ID="STR_Item_Shell">
+            <Original>Shell</Original>
+            <German>Muschel</German>
+        </Key>
+		<Key ID="STR_Item_Pearl">
+            <Original>Pearl</Original>
+            <German>Perlen</German>
+        </Key>
+		<Key ID="STR_Item_PeyoteBlossom">
+            <Original>Peyote Blossom</Original>
+            <German>Peyote Blüte</German>
+        </Key>
+		<Key ID="STR_Item_Peyote">
+            <Original>Peyote</Original>
+            <German>Peyote</German>
+        </Key>
+		
         <Key ID="STR_Item_Heroin">
             <Original>Heroin</Original>
             <Czech>Heroin</Czech>
