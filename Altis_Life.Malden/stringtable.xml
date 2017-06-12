@@ -7014,6 +7014,42 @@
             <Portuguese>Refinamento de Petróleo</Portuguese>
             <Polish>Rafinacja ropy naftowej</Polish>
         </Key>
+		<Key ID="STR_License_Avangenbeer">
+            <Original>Avangenbeer Processing</Original>
+            <German>Avangenbier Verarbeitung</German>
+        </Key>
+		<Key ID="STR_License_Pearl">
+            <Original>Pearl Processing</Original>
+            <German>Schleiferei Lizenz</German>
+        </Key>
+		<Key ID="STR_License_Beer">
+            <Original>Beer Processing</Original>
+            <German>Brauerei Lizenz</German>
+        </Key>
+		<Key ID="STR_License_Gold">
+            <Original>Gold Processing</Original>
+            <German>Gold Verarbeitungs Lizenz</German>
+        </Key>
+		<Key ID="STR_License_Silver">
+            <Original>Silver Processing</Original>
+            <German>Silber Verarbeitungs Lizenz</German>
+        </Key>
+		<Key ID="STR_License_Freight">
+            <Original>Freight Transport</Original>
+            <German>Frachtgut Transport Lizenz</German>
+        </Key>
+		<Key ID="STR_License_Kratom">
+            <Original>Kratom Processing</Original>
+            <German>Kratom Herstellung</German>
+        </Key>
+		<Key ID="STR_License_Peyote">
+            <Original>Peyote Processing</Original>
+            <German>Peyote Herstellung</German>
+        </Key>
+		<Key ID="STR_License_Ololiqui">
+            <Original>Ololiqui Processing</Original>
+            <German>Ololiqui Herstellung</German>
+        </Key>
         <Key ID="STR_License_Diving">
             <Original>Diving License</Original>
             <Czech>potápěčské licence</Czech>
