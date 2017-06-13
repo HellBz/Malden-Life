@@ -92,6 +92,22 @@ Example 2:
             mined[] = { "iron_unrefined" };
             zoneSize = 30;
         };
+		
+		class gold_unrefined {
+            amount = 1;
+            zones[] = { "field_gold" };
+            item = "pickaxe";
+            mined[] = { "gold_unrefined" };
+            zoneSize = 30;
+        };
+		
+		class silver_unrefined {
+            amount = 1;
+            zones[] = { "field_silver" };
+            item = "pickaxe";
+            mined[] = { "silver_unrefined" };
+            zoneSize = 30;
+        };
 
         class rock {
             amount = 2;
