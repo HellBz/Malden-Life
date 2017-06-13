@@ -66,6 +66,10 @@
             <Original>Jewelry Dealer</Original>
             <German>Schmuckhändler</German>
         </Key>
+		<Key ID="STR_Shops_BeerTrader">
+            <Original>Beer Trader</Original>
+            <German>Bier Ankauf</German>
+        </Key>
         <Key ID="STR_Shops_C_Police">
             <Original>Altis Police Department Shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>
@@ -6255,6 +6259,10 @@
             <Original>Ololiuqui Seeds</Original>
             <German>Ololiuqui Blüten</German>
         </Key>
+		<Key ID="STR_Item_Ololiqui">
+            <Original>Ololiuqui</Original>
+            <German>Ololiuqui</German>
+        </Key>
 		<Key ID="STR_Item_Traube">
             <Original>Grape</Original>
             <German>Weintraube</German>
@@ -6303,11 +6311,11 @@
             <Original>Peyote</Original>
             <German>Peyote</German>
         </Key>
-		<Key ID="STR_Item_KratomRefined">
+		<Key ID="STR_Item_KratomUnrefined">
             <Original>Kratom Leaves</Original>
             <German>Kratom Blätter</German>
         </Key>
-		<Key ID="STR_Item_KratomUnrefined">
+		<Key ID="STR_Item_KratomRefined">
             <Original>Kratom Powder</Original>
             <German>Kratom Pulver</German>
         </Key>
@@ -7849,6 +7857,38 @@
             <Italian>Processando Ferro</Italian>
             <Portuguese>Processando Ferro</Portuguese>
             <Polish>Wytop żelaza</Polish>
+        </Key>
+		<Key ID="STR_Process_Silver">
+            <Original>Casting Silver Ingots</Original>
+            <German>Silber wird verarbeitet...</German>
+        </Key>
+		<Key ID="STR_Process_Beer">
+            <Original>Brewing beer</Original>
+            <German>Braue Bier...</German>
+        </Key>
+		<Key ID="STR_Process_AvangenBeer">
+            <Original>Brewing avangenbeer</Original>
+            <German>Braue Avangenier...</German>
+        </Key>
+		<Key ID="STR_Process_Pearl">
+            <Original>Processing Shells</Original>
+            <German>Poliere Perlen</German>
+        </Key>
+		<Key ID="STR_Process_Gold">
+            <Original>Casting small Gold Ingots</Original>
+            <German>Gold wird extrahiert...</German>
+        </Key>
+		<Key ID="STR_Process_Ololiqui">
+            <Original>Processing Ololiuqui</Original>
+            <German>Ololiuqui wird extrahiert...</German>
+        </Key>
+		<Key ID="STR_Process_Peyote">
+            <Original>Processing Peyote</Original>
+            <German>Peyote wird extrahiert...</German>
+        </Key>
+		<Key ID="STR_Process_Kratom">
+            <Original>Processing Kratom</Original>
+            <German>Kratom wird extrahiert...</German>
         </Key>
         <Key ID="STR_Process_Sand">
             <Original>Processing Sand</Original>
@@ -12248,4 +12288,10 @@
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
         </Key>
     </Package>
+	<Package>
+		<Key ID="STR_MISC_LicenseShop">
+            <Original>License Shop</Original>
+            <German>Lizenzamt</German>
+        </Key>
+	</Package>
 </Project>

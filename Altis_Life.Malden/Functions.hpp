@@ -104,6 +104,7 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+		class addLicenseActions {};
     };
 
     class Config {
@@ -218,6 +219,7 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+		class canProcess {};
     };
 
     class Gangs {

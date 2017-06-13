@@ -22,23 +22,7 @@ class ProcessAction {
         MaterialsGive[] = {{"oil_processed",1}};
         Text = "STR_Process_Oil";
         //ScrollText = "Process Oil";
-        NoLicenseCost = 1200;
-    };
-
-    class diamond {
-        MaterialsReq[] = {{"diamond_uncut",1}};
-        MaterialsGive[] = {{"diamond_cut",1}};
-        Text = "STR_Process_Diamond";
-        //ScrollText = "Cut Diamonds";
-        NoLicenseCost = 1350;
-    };
-
-    class heroin {
-        MaterialsReq[] = {{"heroin_unprocessed",1}};
-        MaterialsGive[] = {{"heroin_processed",1}};
-        Text = "STR_Process_Heroin";
-        //ScrollText = "Process Heroin";
-        NoLicenseCost = 1750;
+        NoLicenseCost = 350;
     };
 
     class copper {
@@ -46,7 +30,7 @@ class ProcessAction {
         MaterialsGive[] = {{"copper_refined",1}};
         Text = "STR_Process_Copper";
         //ScrollText = "Refine Copper";
-        NoLicenseCost = 750;
+        NoLicenseCost = 350;
     };
 
     class iron {
@@ -54,39 +38,47 @@ class ProcessAction {
         MaterialsGive[] = {{"iron_refined",1}};
         Text = "STR_Process_Iron";
         //ScrollText = "Refine Iron";
-        NoLicenseCost = 1120;
+        NoLicenseCost = 350;
     };
-
-    class sand {
-        MaterialsReq[] = {{"sand",1}};
-        MaterialsGive[] = {{"glass",1}};
-        Text = "STR_Process_Sand";
-        //ScrollText = "Melt Sand into Glass";
-        NoLicenseCost = 650;
+	
+	class silver {
+        MaterialsReq[] = {{"silver_unrefined",1}};
+        MaterialsGive[] = {{"silver_refined",1}};
+        Text = "STR_Process_Silver";
+        //ScrollText = "Refine Iron";
+        NoLicenseCost = 350;
     };
-
-    class salt {
-        MaterialsReq[] = {{"salt_unrefined",1}};
-        MaterialsGive[] = {{"salt_refined",1}};
-        Text = "STR_Process_Salt";
-        //ScrollText = "Refine Salt";
-        NoLicenseCost = 450;
+	
+	class beer {
+        MaterialsReq[] = {{"hopfen",2}};
+        MaterialsGive[] = {{"beer",1}};
+        Text = "STR_Process_Beer";
+        //ScrollText = "Refine Iron";
+        NoLicenseCost = 350;
     };
-
-    class cocaine {
-        MaterialsReq[] = {{"cocaine_unprocessed",1}};
-        MaterialsGive[] = {{"cocaine_processed",1}};
-        Text = "STR_Process_Cocaine";
-        //ScrollText = "Process Cocaine";
-        NoLicenseCost = 1500;
+	
+	class avangenBeer {
+        MaterialsReq[] = {{"hopfen",1}};
+        MaterialsGive[] = {{"agavenBeer",1}};
+        Text = "STR_Process_AvangenBeer";
+        //ScrollText = "Refine Iron";
+        NoLicenseCost = 350;
     };
-
-    class marijuana {
-        MaterialsReq[] = {{"cannabis",1}};
-        MaterialsGive[] = {{"marijuana",1}};
-        Text = "STR_Process_Marijuana";
-        //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 500;
+	
+	class pearl {
+        MaterialsReq[] = {{"shell",1}};
+        MaterialsGive[] = {{"pearl",1}};
+        Text = "STR_Process_Pearl";
+        //ScrollText = "Refine Iron";
+        NoLicenseCost = 350;
+    };
+	
+	class gold {
+        MaterialsReq[] = {{"gold_unrefined",2}};
+        MaterialsGive[] = {{"gold_refined",1}};
+        Text = "STR_Process_Gold";
+        //ScrollText = "Refine Iron";
+        NoLicenseCost = 750;
     };
 
     class cement {
@@ -96,4 +88,29 @@ class ProcessAction {
         //ScrollText = "Mix Cement";
         NoLicenseCost = 350;
     };
+	
+	class ololiqui {
+        MaterialsReq[] = {{"ololiquiSeed",1}, {"agavenBeer",1}};
+        MaterialsGive[] = {{"ololiqui",1}};
+        Text = "STR_Process_Ololiqui";
+        //ScrollText = "Mix Cement";
+        NoLicenseCost = 350;
+    };
+	
+	class peyote {
+        MaterialsReq[] = {{"peyoteBlossom",1}};
+        MaterialsGive[] = {{"peyote",1}};
+        Text = "STR_Process_Peyote";
+        //ScrollText = "Mix Cement";
+        NoLicenseCost = 350;
+    };
+	
+	class Kratom {
+        MaterialsReq[] = {{"KratomUnrefined",1}};
+        MaterialsGive[] = {{"kratomRefined",1}};
+        Text = "STR_Process_Kratom";
+        //ScrollText = "Mix Cement";
+        NoLicenseCost = 350;
+    };
 };
+

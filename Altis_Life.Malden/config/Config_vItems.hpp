@@ -57,6 +57,13 @@ class VirtualShops {
         conditions = "";
         items[] = { "marijuana", "ololiqui", "peyote" , "kratomRefined"};
     };
+	
+	class beerTrader {
+        name = "STR_Shops_BeerTrader";
+        side = "civ";
+        conditions = "";
+        items[] = { "beer", "agavenBeer" };
+    };
 
     class oil {
         name = "STR_Shops_Oil";
@@ -90,7 +97,7 @@ class VirtualShops {
         name = "STR_Shops_Gold";
         side = "civ";
         conditions = "";
-        items[] = { "goldbar" };
+        items[] = { "goldbar", "gold_refined" };
     };
 
     class cop {
@@ -375,7 +382,7 @@ class VirtualItems {
         displayName = "STR_Item_Beer";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 15;
+        sellPrice = 20;
         illegal = false;
         edible = -1;
 		drinkable = 15;
