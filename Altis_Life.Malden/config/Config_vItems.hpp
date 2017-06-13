@@ -294,7 +294,7 @@ class VirtualItems {
         icon = "icons\ico_oilProcessed.paa";
     };
 	
-	class hopfen {
+    class hopfen {
         variable = "hopfen";
         displayName = "STR_Item_Hopfen";
         weight = 3;
@@ -312,7 +312,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 15;
         illegal = false;
-        edible = -1;
+        edible = 10;
         icon = "icons\ico_beer.paa";
     };
 	
@@ -323,11 +323,11 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 7;
         illegal = false;
-        edible = -1;
+        edible = 15;
         icon = "icons\ico_shell.paa";
     };
 	
-	class pearl {
+    class pearl {
         variable = "pearl";
         displayName = "STR_Item_Pearl";
         weight = 1;
@@ -338,7 +338,7 @@ class VirtualItems {
         icon = "icons\ico_pearl.paa";
     };
 	
-	class traube {
+    class traube {
         variable = "traube";
         displayName = "STR_Item_Traube";
         weight = 1;
@@ -349,14 +349,14 @@ class VirtualItems {
         icon = "icons\ico_traube.paa";
     };
 	
-	class beer {
+    class beer {
         variable = "beer";
         displayName = "STR_Item_Beer";
         weight = 2;
         buyPrice = -1;
         sellPrice = 15;
         illegal = false;
-        edible = -1;
+        edible = 10;
         icon = "icons\ico_beer.paa";
     };
 
@@ -404,7 +404,7 @@ class VirtualItems {
         icon = "icons\ico_iron.paa";
     };
 	
-	class silver_unrefined {
+    class silver_unrefined {
         variable = "silverUnrefined";
         displayName = "STR_Item_SilverOre";
         weight = 5;
@@ -426,7 +426,7 @@ class VirtualItems {
         icon = "icons\ico_iron.paa";
     };
 	
-	class gold_unrefined {
+    class gold_unrefined {
         variable = "goldUnrefined";
         displayName = "STR_Item_GoldOre";
         weight = 20;
@@ -479,7 +479,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 2;
         illegal = true;
-        edible = -1;
+        edible = 1;
         icon = "icons\ico_ololiquiSeed.paa";
     };
 	
@@ -490,7 +490,7 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 450;
         illegal = true;
-        edible = -1;
+        edible = 5;
         icon = "icons\ico_ololiqui.paa";
     };
 	
@@ -501,33 +501,33 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 3;
         illegal = true;
-        edible = -1;
+        edible = 5;
         icon = "icons\ico_peyoteBlossom.paa";
     };
 	
-	class peyote {
+    class peyote {
         variable = "peyote";
         displayName = "STR_Item_Peyote";
         weight = 3;
         buyPrice = -1;
         sellPrice = 250;
         illegal = true;
-        edible = -1;
+        edible = 5;
         icon = "icons\ico_peyote.paa";
     };
 	
-	class kratomRefined {
+    class kratomRefined {
         variable = "kratom";
         displayName = "STR_Item_KratomRefined";
         weight = 13;
         buyPrice = -1;
         sellPrice = 3;
         illegal = true;
-        edible = -1;
+        edible = 5;
         icon = "icons\ico_KratomRefined.paa";
     };
 	
-	class KratomUnrefined {
+    class KratomUnrefined {
         variable = "KratomUnrefined";
         displayName = "STR_Item_KratomUnrefined";
         weight = 3;
