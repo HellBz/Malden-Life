@@ -6937,15 +6937,8 @@
             <Polish>Skała</Polish>
         </Key>
         <Key ID="STR_Item_CementBag">
-            <Original>Cement Bag</Original>
-            <Czech>cement Bag</Czech>
-            <Spanish>Bolsa de Cemento</Spanish>
-            <Russian></Russian>
-            <German>Zement Sack</German>
-            <French>Sac de ciment</French>
-            <Italian>Sacco di Cemento</Italian>
-            <Portuguese>Saco de Cimento</Portuguese>
-            <Polish>Worek cementu</Polish>
+            <Original>Cinder Blocks</Original>
+            <German>Schlacke Blöcke</German>
         </Key>
         <Key ID="STR_Item_GoldBar">
             <Original>Gold Bar</Original>
@@ -7272,15 +7265,8 @@
             <Polish>Suszenie konopi</Polish>
         </Key>
         <Key ID="STR_License_Cement">
-            <Original>Cement Mixing License</Original>
-            <Czech>Cement Mixing licence</Czech>
-            <Spanish>Licencia para Mezclar Cemento</Spanish>
-            <Russian></Russian>
-            <German>Zementmisch-Lizenz</German>
-            <French>Fabrication du Ciment</French>
-            <Italian>Processo Cemento</Italian>
-            <Portuguese>Licença de Cimento</Portuguese>
-            <Polish>Wytwórca cementu</Polish>
+            <Original>Cinder Block Creation License</Original>
+            <German>Schlacke Verarbeitung</German>
         </Key>
         <Key ID="STR_License_Medmarijuana">
             <Original>Medical Marijuana License</Original>
@@ -7935,15 +7921,8 @@
             <Polish>Suszenie marihuany</Polish>
         </Key>
         <Key ID="STR_Process_Cement">
-            <Original>Mixing Cement</Original>
-            <Czech>Míchání Cement</Czech>
-            <Spanish>Mezclando Cemento</Spanish>
-            <Russian></Russian>
-            <German>Zement wird gemischt...</German>
-            <French>Mélange de ciment</French>
-            <Italian>Processando Cemento</Italian>
-            <Portuguese>Misturando Cimento</Portuguese>
-            <Polish>Mielenie cementu</Polish>
+            <Original>Mixing Cinder blocks</Original>
+            <German>Schlacke Blöcke werden gegossen...</German>
         </Key>
         <Key ID="STR_Process_Stay">
             <Original>You need to stay within 10m to process.</Original>
