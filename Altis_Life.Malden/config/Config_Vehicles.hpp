@@ -23,10 +23,10 @@ class CarShops {
             { "B_Quadbike_01_F", "" },
             { "C_Hatchback_01_F", "" },
             { "C_Offroad_01_F", "" },
+			{ "C_Offroad_02_unarmed_F", "" }, //Apex DLC
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "" },
-            { "C_Van_01_transport_F", "" },
-            { "C_Offroad_02_unarmed_F", "" } //Apex DLC
+            { "C_Van_01_transport_F", "" }
         };
     };
 
@@ -120,6 +120,7 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "C_Offroad_01_F", "" },
+			{ "C_Offroad_02_unarmed_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
             { "B_MRAP_01_F", "call life_coplevel >= 2" },
@@ -132,6 +133,7 @@ class CarShops {
         conditions = "call life_coplevel >= 3";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
+			{ "I_Heli_light_03_unarmed_F", "call life_coplevel >= 4" },
             { "B_Heli_Transport_01_F", "call life_coplevel >= 4" }
         };
     };
@@ -220,7 +222,10 @@ class LifeCfgVehicles {
             }, "" },
             { "White", "civ", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
-            }, "" }
+            }, "" },
+			{ "Polizei", "cop", {
+	            "textures\cop\polizei_offroad2.paa"
+            } }
         };
     };
 
@@ -382,10 +387,8 @@ class LifeCfgVehicles {
         conditions = "";
         price = 750000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Polizei", "cop", {
+                "textures\cop\polizei_hunter.paa"
             }, "" }
         };
     };
@@ -520,11 +523,15 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Polizei", "cop", {
+                "textures\cop\polizei_offroad.paa"
+            }, "" },
+			{ "Medic", "med", {
+                "textures\medic\MED_offroader.paa"
             }, "" }
         };
     };
+	
 
     class C_Kart_01_Blu_F {
         vItemSpace = 20;
@@ -568,8 +575,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Polizei", "cop", {
+               "textures\cop\polizei_hatchback.paa"
+            }, "" },
+			{ "Medic", "med", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
             }, "" }
         };
     };
@@ -692,8 +702,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
-            { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+            { "Polizei", "cop", {
+                "textures\cop\polizei_suv.paa"
+            }, "" },
+			{ "Medic", "med", {
+                 "textures\medic\MED_Suv.paa"
             }, "" }
         };
     };
@@ -731,14 +744,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 30000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Polizei", "cop", {
+                "textures\cop\polizei_hunter.paa"
             }, "" }
         };
     };
 
-     class B_Heli_Light_01_stripped_F {
+    class B_Heli_Light_01_stripped_F {
         vItemSpace = 90;
         conditions = "";
         price = 275000;
@@ -754,8 +766,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 245000;
         textures[] = {
-            { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+            { "Polizei", "cop", {
+                "textures\cop\polizei_hummingbird.paa"
             }, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -796,8 +808,19 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "Medic", "med", {
+                "textures/med/medic_littlebird.jpg"
+            }, "" }
+        };
+    };
+	
+	class I_Heli_light_03_unarmed_F {
+        vItemSpace = 90;
+        conditions = "";
+        price = 275000;
+        textures[] = {
+            { "Polizei", "cop", {
+                "textures\cop\hellcat.jpg"
             }, "" }
         };
     };

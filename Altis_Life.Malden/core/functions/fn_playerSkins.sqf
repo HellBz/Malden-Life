@@ -40,7 +40,15 @@ switch (playerSide) do {
             _skinName = "textures\cop_uniform.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
                 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    _skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
+                    //_skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
+					
+					_skinName = switch(uniform player) do {
+						case "U_Rangemaster": {"textures\cop\uniformen\uni_poli_1.paa"};
+						case "U_B_GEN_Soldier_F": {"textures\cop\uniformen\uni_poli_2.paa"};
+						case "U_B_CombatUniform_mcam_vest": {"textures\cop\uniformen\uni_poli_2.paa"};
+						case "U_B_GEN_Commander_F": {"textures\cop\uniformen\uni_poli_2.paa"};
+						default {""};
+					};
                 };
             };
             player setObjectTextureGlobal [0, _skinName];
@@ -49,7 +57,14 @@ switch (playerSide) do {
 
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {
-            player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+			_skinName = switch(uniform player) do {
+				case "U_Rangemaster": {"textures\medic\uniformen\MED_Uniform_Rekrut.paa"};
+				case "U_B_GEN_Soldier_F": {"textures\medic\uniformen\MED_Uniform.paa"};
+				case "U_B_CombatUniform_mcam_vest": {"textures\medic\uniformen\MED_Uniform.paa"};
+				case "U_B_GEN_Commander_F": {"textures\medic\uniformen\MED_Uniform.paa"};
+				default {""};
+			};
+            player setObjectTextureGlobal [0, _skinName];
         };
     };
 };
