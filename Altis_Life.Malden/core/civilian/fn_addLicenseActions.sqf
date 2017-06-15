@@ -7,7 +7,7 @@
 */
 
 if (side player != civilian) exitWith {};
-_licenseDealers = [license_shop_1];
+_licenseDealers = [license_shop_1, license_shop_2];
 {
 	_x allowDamage false;
 	_x enableSimulation false;

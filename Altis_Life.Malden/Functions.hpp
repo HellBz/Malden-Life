@@ -380,5 +380,7 @@ class Life_Client_Core {
         file = "core\misc";
         class variableDealer {};
 		class HideObjects {};
+		class atmMarkers {};
+		class animals {};
     };
 };
