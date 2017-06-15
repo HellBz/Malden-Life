@@ -17,7 +17,7 @@ while {true} do {
 		
 		_animal = _animals call Bis_fnc_selectRandom;
 		while {_ammount >= 1} do {
-			_unit = _grp createUnit [_animal, _pos,[],0,"NONE"];
+			_unit = _grp createAgent [_animal, _pos,[],0,"NONE"];
 			_life_animal_count = _life_animal_count + 1;
 			_ammount = _ammount - 1;
 			

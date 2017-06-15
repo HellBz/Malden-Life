@@ -66,7 +66,7 @@ diag_log "----------------------------------------------------------------------
 [] spawn HC_fnc_cleanup;
 
 /* Initialize hunting zone(s) */
-["hunting_zone",30] spawn HC_fnc_huntingZone;
+//["hunting_zone",30] spawn HC_fnc_huntingZone;
 
 // A list of allowed funcs to be passed on the hc (by external sources)
 // Have to be written in only lower capitals
