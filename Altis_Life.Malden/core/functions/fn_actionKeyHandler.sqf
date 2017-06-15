@@ -49,7 +49,11 @@ if (isNull _curObject) exitWith {
         _animal = (nearestObjects[player,(LIFE_SETTINGS(getArray,"animaltypes_hunting")),3]) select 0;
         if (!isNil "_animal") then {
             if (!alive _animal) then {
-                [_animal] call life_fnc_gutAnimal;
+				if (life_inv_huntingKnife > 0) then {
+					[_animal] call life_fnc_gutAnimal;
+				} else {
+					hint "Du benötigst ein Jagdmesser.";
+				};
             };
         } else {
             private "_handle";

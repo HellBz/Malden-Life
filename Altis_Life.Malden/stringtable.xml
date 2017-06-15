@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="Altis Life RPG">
+<Project name="Malden Life RPG">
     <Package name="Init">
         <Key ID="STR_Init_ClientSetup">
             <Original>Setting up client, please wait...</Original>
@@ -71,15 +71,15 @@
             <German>Bier Ankauf</German>
         </Key>
         <Key ID="STR_Shops_C_Police">
-            <Original>Altis Police Department Shop</Original>
-            <Czech>Altis policejní oddělení Shop</Czech>
+            <Original>Malden Police Department Shop</Original>
+            <Czech>Malden policejní oddělení Shop</Czech>
             <French>Boutique de la police</French>
             <Spanish>Tienda del Departamento de Policía</Spanish>
             <Russian></Russian>
             <Portuguese>Loja de Roupas Policiais</Portuguese>
             <Polish>Sklep Policyjny</Polish>
-            <Italian>Dipartimento della Polizia di Altis</Italian>
-            <German>Altis Polizei Department Geschäft</German>
+            <Italian>Dipartimento della Polizia di Malden</Italian>
+            <German>Malden Polizei Department Geschäft</German>
         </Key>
         <Key ID="STR_Shops_C_Rebel">
             <Original>Mohammed's Jihadi Shop</Original>
@@ -125,6 +125,14 @@
             <Portuguese>Armas de fogo Billy Joe</Portuguese>
             <Polish>Broń palna Billy Joe</Polish>
         </Key>
+		<Key ID="STR_Shops_W_Hunting">
+            <Original>Hunting Weapons</Original>
+            <German>Jagdausrüstung</German>
+        </Key>
+		<Key ID="STR_Shops_C_Hunting">
+            <Original>Hunting Clothing</Original>
+            <German>Jagdausrüstung (Kleidung)</German>
+        </Key>
         <Key ID="STR_Shops_C_Kart">
             <Original>Bobby's Kart-Racing Outfits</Original>
             <Czech>Billy Joe Střelné zbraně</Czech>
@@ -137,15 +145,15 @@
             <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
-            <Original>Altis Market</Original>
-            <Czech>Altis Market</Czech>
-            <Spanish>Mercado de Altis</Spanish>
+            <Original>Malden Market</Original>
+            <Czech>Malden Market</Czech>
+            <Spanish>Mercado de Malden</Spanish>
             <Russian></Russian>
-            <German>Altis Markt</German>
+            <German>Malden Markt</German>
             <Italian>Mercato</Italian>
-            <French>Marché d'Altis</French>
+            <French>Marché d'Malden</French>
             <Portuguese>Mercado</Portuguese>
-            <Polish>Market Altis</Polish>
+            <Polish>Market Malden</Polish>
         </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
@@ -247,11 +255,11 @@
             <Polish>Skup Szkła</Polish>
         </Key>
         <Key ID="STR_Shops_Minerals">
-            <Original>Altis Industrial Trader</Original>
-            <Czech>Altis Industrial Trader</Czech>
+            <Original>Malden Industrial Trader</Original>
+            <Czech>Malden Industrial Trader</Czech>
             <Spanish>Comerciante Industrial</Spanish>
             <Russian></Russian>
-            <German>Altis Industriehandel</German>
+            <German>Malden Industriehandel</German>
             <Italian>Vendita materiali industriali</Italian>
             <French>Acheteur Industriel</French>
             <Portuguese>Comprador de Material Indústrial</Portuguese>
@@ -934,7 +942,7 @@
             <French>Gestion du Compte Bancaire</French>
             <Italian>Gestione Bancaria</Italian>
             <Portuguese>Conta Bancária</Portuguese>
-            <Polish>Bankomat Altis</Polish>
+            <Polish>Bankomat Malden</Polish>
         </Key>
         <Key ID="STR_ATM_Withdraw">
             <Original>Withdraw</Original>
@@ -1213,13 +1221,13 @@
     </Package>
     <Package name="Cell_Phone">
         <Key ID="STR_CELL_Title">
-            <Original>Altis Mobile</Original>
-            <Czech>Altis Mobile</Czech>
+            <Original>Malden Mobile</Original>
+            <Czech>Malden Mobile</Czech>
             <Spanish>Celular</Spanish>
             <Russian></Russian>
-            <German>Altis Mobilfunk</German>
-            <French>Altis Mobile</French>
-            <Italian>Cellulare Altis</Italian>
+            <German>Malden Mobilfunk</German>
+            <French>Malden Mobile</French>
+            <Italian>Cellulare Malden</Italian>
             <Portuguese>Celular</Portuguese>
             <Polish>Telefon</Polish>
         </Key>
@@ -6319,6 +6327,14 @@
             <Original>Kratom Powder</Original>
             <German>Kratom Pulver</German>
         </Key>
+		<Key ID="STR_Item_Pump">
+            <Original>Pump</Original>
+            <German>Pumpe</German>
+        </Key>
+		<Key ID="STR_Item_huntingKnife">
+            <Original>Hunting Knife</Original>
+            <German>Jagdmesser</German>
+        </Key>
 		
         <Key ID="STR_Item_Heroin">
             <Original>Heroin</Original>
@@ -7051,6 +7067,10 @@
             <Italian>Licenza di Guida</Italian>
             <Portuguese>Licença de Motorista</Portuguese>
             <Polish>Prawo jazdy</Polish>
+        </Key>
+		<Key ID="STR_License_Hunting">
+            <Original>Hunting License</Original>
+            <German>Jagdlizenz</German>
         </Key>
         <Key ID="STR_License_Pilot">
             <Original>Pilot License</Original>
@@ -9640,16 +9660,16 @@
             <Polish>Warzelnia soli</Polish>
             <Italian>Processo del sale</Italian>
         </Key>
-        <Key ID="STR_MAR_Altis_Corrections">
-            <Original>Altis Corrections</Original>
-            <Czech>Altis Opravy</Czech>
-            <French>Prison d'Altis</French>
-            <Spanish>Prisión de Altis</Spanish>
+        <Key ID="STR_MAR_Malden_Corrections">
+            <Original>Malden Corrections</Original>
+            <Czech>Malden Opravy</Czech>
+            <French>Prison d'Malden</French>
+            <Spanish>Prisión de Malden</Spanish>
             <Russian></Russian>
-            <German>Altis Bundesgefängnis</German>
-            <Portuguese>Prisão de Altis</Portuguese>
-            <Polish>Więzienie Altis</Polish>
-            <Italian>Penitenziario di Altis</Italian>
+            <German>Malden Bundesgefängnis</German>
+            <Portuguese>Prisão de Malden</Portuguese>
+            <Polish>Więzienie Malden</Polish>
+            <Italian>Penitenziario di Malden</Italian>
         </Key>
         <Key ID="STR_MAR_Tanoa_Corrections">
             <Original>Tanoa Corrections</Original>
@@ -9671,7 +9691,7 @@
             <Russian></Russian>
             <German>Polizei HQ</German>
             <Portuguese>QG Policial</Portuguese>
-            <Polish>KG Policji Altis</Polish>
+            <Polish>KG Policji Malden</Polish>
         </Key>
         <Key ID="STR_MAR_Coast_Guard">
             <Original>Coast Guard</Original>
@@ -9803,7 +9823,7 @@
             <Russian></Russian>
             <German>Zentralbank</German>
             <Portuguese>Banco Local</Portuguese>
-            <Polish>Bank Altis</Polish>
+            <Polish>Bank Malden</Polish>
         </Key>
         <Key ID="STR_MAR_Car_Shop">
             <Original>Car Shop</Original>
@@ -9825,7 +9845,7 @@
             <Russian></Russian>
             <German>Krankenhaus</German>
             <Portuguese>Hospital/Clínica</Portuguese>
-            <Polish>Klinika Altis</Polish>
+            <Polish>Klinika Malden</Polish>
         </Key>
         <Key ID="STR_MAR_Diamond_Mine">
             <Original>Diamond Mine</Original>
@@ -9931,7 +9951,7 @@
             <Czech>Channel 7 News</Czech>
             <French>Chaine d'infos numero 7</French>
             <Spanish>Canal de Noticias 7</Spanish>
-            <Italian>Notiziario di Altis</Italian>
+            <Italian>Notiziario di Malden</Italian>
             <Russian></Russian>
             <German>Kanal 7 Nachrichtensender</German>
             <Portuguese>Canal de Notícias 7</Portuguese>

@@ -234,6 +234,56 @@ switch (_code) do {
             };
         };
     };
+	
+	
+	//Earplugs
+	//Bild auf
+	case 201:
+    {
+		if(_shift) then {
+			switch (player getVariable["Earplugs",0]) do {
+				case 0: {hintSilent parseText "<t size='1.2' ><t color='#97FA21'>Ohrstöpsel:</t> 90%</t>"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
+				case 10: {hintSilent parseText "<t size='1.2' ><t color='#97FA21'>Ohrstöpsel:</t> 60%</t>"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
+				case 40: {hintSilent parseText "<t size='1.2' ><t color='#97FA21'>Ohrstöpsel:</t> 30%</t>"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
+				case 70: {hintSilent parseText "<t size='1.2' ><t color='#97FA21'>Ohrstöpsel:</t> entfernt</t>"; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
+		    };
+			_handled = true;
+	   };
+   };
+	
+	
+	/*
+		Gestures
+	*/
+	case 6:
+	{
+		if(!life_action_inUse) then {
+			player playActionNow "gestureHi";
+		};
+	};
+	
+	case 7:
+	{
+		if(!life_action_inUse) then {
+			player playActionNow "gestureHiC";
+		};
+	};
+	
+	case 8:
+	{
+		if(!life_action_inUse) then {
+			player playActionNow "gestureHiB";
+		};
+	};
+	
+	case 9:
+	{
+		if(!life_action_inUse) then {
+			player playActionNow "gesturenod";
+		};
+	};
+	
+	
 
     //U Key
     case 22: {

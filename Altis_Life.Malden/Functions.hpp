@@ -382,5 +382,6 @@ class Life_Client_Core {
 		class HideObjects {};
 		class atmMarkers {};
 		class animals {};
+		class smokeTrail {};
     };
 };

@@ -47,6 +47,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class hunting {
+        variable = "hunting";
+        displayName = "STR_License_Hunting";
+        price = 2500;
+        illegal = false;
+        side = "civ";
+    };
 
     class dive {
         variable = "dive";

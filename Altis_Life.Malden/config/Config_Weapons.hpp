@@ -45,6 +45,21 @@ class WeaponShops {
             { "optic_ACO_grn_smg", "", 100, 25, "" }
         };
     };
+	
+	class hunting {
+        name = "Jagdausrüstung";
+        side = "civ";
+        conditions = "license_civ_gun && license_civ_hunting";
+        items[] = {
+            { "arifle_SDAR_F", "", 3000, 500, "" },
+            { "hgun_Pistol_heavy_02_F", "", 985, 250, "" }
+        };
+        mags[] = {
+            { "20Rnd_556x45_UW_mag", "", 125, 10, "" },
+			{ "6Rnd_45ACP_Cylinder", "", 125, 10, "" }
+        };
+        accs[] = {};
+    };
 
     class rebel {
         name = "Mohammed's Jihadi Shop";

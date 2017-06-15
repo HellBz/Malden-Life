@@ -15,6 +15,13 @@ class VirtualShops {
         conditions = "";
         items[] = { "waterBottle", "rabbit", "apple", "traube", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "beer", "agavenBeer" };
     };
+	
+	class huntingMarket {
+        name = "STR_Shops_Market";
+        side = "civ";
+        conditions = "";
+        items[] = { "huntingKnife", "waterBottle", "rabbit", "toolkit", "fuelFull","rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw"};
+    };
 
     class med_market {
         name = "STR_Shops_Market";
@@ -146,6 +153,18 @@ class VirtualItems {
         edible = -1;
         drinkable = -1;
         icon = "icons\ico_pump.paa";
+    };
+	
+	class huntingKnife {
+        variable = "huntingKnife";
+        displayName = "STR_Item_huntingKnife";
+        weight = 10;
+        buyPrice = 900;
+        sellPrice = 450;
+        illegal = false;
+        edible = -1;
+        drinkable = -1;
+        icon = "icons\ico_huntingKnife.paa";
     };
 
     class defibrillator {

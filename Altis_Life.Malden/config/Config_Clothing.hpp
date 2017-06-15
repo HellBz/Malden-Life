@@ -129,6 +129,54 @@ class Clothing {
         };
     };
 
+	class hunting_clothing {
+        title = "STR_Shops_C_Hunting";
+        conditions = "license_civ_gun && license_civ_hunting";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+            { "U_IG_Guerilla3_2", "", 60, "" },
+            { "U_IG_Guerilla3_1", "", 60, "" },
+            { "U_BG_Guerilla3_1", "", 60, "" },
+            { "U_OG_Guerilla1_1", "", 60, "" },
+            { "U_C_HunterBody_grn", "", 60, "" },
+            { "U_I_G_Story_Protagonist_F", "", 60, "" }
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+            { "H_Booniehat_khk", "", 120, "" },
+            { "H_Booniehat_indp", "", 130, "" },
+            { "H_Booniehat_mcamo", "", 145, "" },
+            { "H_Booniehat_grn", "", 60, "" },
+            { "H_Booniehat_tan", "", 60, "" },
+            { "H_Booniehat_dirty", "", 60, "" },
+            { "H_Booniehat_dgtl", "", 60, "" },
+            { "H_Booniehat_khk_hs", "", 60, "" }
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" },
+            { "G_Shades_Black", "", 20, "" },
+            { "G_Shades_Blue", "", 20, "" },
+            { "G_Shades_Green", "", 20, "" },
+            { "G_Shades_Red", "", 20, "" },
+            { "G_Sport_Blackred", "", 25, "" },
+            { "G_Sport_BlackWhite", "", 25, "" },
+            { "G_Sport_Blackyellow", "", 25, "" },
+            { "G_Sport_Checkered", "", 25, "" },
+            { "G_Sport_Greenblack", "", 25, "" },
+            { "G_Sport_Red", "", 25, "" },
+            { "G_Lowprofile", "", 30, "" },
+            { "G_Squares", "", 50, "" },
+            { "G_Aviator", "", 55, "" },
+            { "G_Combat", "", 55, "" },
+            { "G_Lady_Mirror", "", 55, "" },
+            { "G_Lady_Dark", "", 55, "" },
+            { "G_Lady_Blue", "", 55, "" }
+        };
+        vests[] = {};
+        backpacks[] = {};
+    };
+	
     class cop {
         title = "STR_Shops_C_Police";
         conditions = "";
