@@ -266,7 +266,7 @@ class Clothing {
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_Rangemaster", $STR_C_EMS_uniforms, 140, "" },
-			{ "U_B_GEN_Soldier_F", $STR_C_EMS_uniforms, 140, "" }
+			{ "U_B_GEN_Commander_F", $STR_C_EMS_uniforms, 140, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
