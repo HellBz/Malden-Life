@@ -90,6 +90,8 @@ if (!_isVehicle) then {
         } else {
             [getPlayerUID player,profileName,"487"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
+		
+		[_curTarget,"carAlarm"] remoteExec ["life_fnc_say3D",RANY];
 
     } else {
 
