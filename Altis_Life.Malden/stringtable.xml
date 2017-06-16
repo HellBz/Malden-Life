@@ -2820,7 +2820,7 @@
             <Czech>Pay vstupenek</Czech>
             <Spanish>Pagar Tiquete</Spanish>
             <Russian></Russian>
-            <German>Ticket bezahlen</German>
+            <German>Bezahlen</German>
             <French>Payer l'amende</French>
             <Italian>Paga Multa</Italian>
             <Portuguese>Pagar Multa</Portuguese>
@@ -2831,7 +2831,7 @@
             <Czech>odmítnout Ticket</Czech>
             <Spanish>Denegar Tiquete</Spanish>
             <Russian></Russian>
-            <German>Ticket ablehnen</German>
+            <German>Ablehnen</German>
             <French>Contester l'amende</French>
             <Italian>Rifiuta Multa</Italian>
             <Portuguese>Recusar Multa</Portuguese>
@@ -8369,6 +8369,10 @@
             <Italian>cogliere Armi</Italian>
             <Portuguese>Apreender Armas</Portuguese>
             <Polish>Chwytaj broń</Polish>
+        </Key>
+		<Key ID="STR_pInAct_ARLicenses">
+            <Original>Add/ remove Licenses</Original>
+            <German>Lizenzen hinzufügen/entfernen</German>
         </Key>
         <Key ID="STR_pInAct_Arrest">
             <Original>Send to jail</Original>

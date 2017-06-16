@@ -5,6 +5,7 @@
     Description:
     Master addAction file handler for all client-based actions.
 */
+
 switch (playerSide) do {
     case civilian: {
         //Drop fishing net
@@ -16,14 +17,20 @@ switch (playerSide) do {
 		
 		
 		//smoke trails for the cessna
-		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Rauch aktivieren",
-			{
-				[0] call life_fnc_smokeTrail;
-			},"",0,false,false,"",'!life_smokeTrail && {!isNull objectParent player} && {objectParent player isKindOf "Plane"} && (position player select 2) > 15']);
-    
-		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Rauch deaktivieren",
-			{
-				[1] call life_fnc_smokeTrail;
-			},"",0,false,false,"",'life_smokeTrail']);
+		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Rauch aktivieren",{[0] call life_fnc_smokeTrail;},"",0,false,false,"",'!life_smokeTrail && {!isNull objectParent player} && {objectParent player isKindOf "Plane"} && (position player select 2) > 15']);
+		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Rauch deaktivieren",{[1] call life_fnc_smokeTrail;},"",0,false,false,"",'life_smokeTrail']);
+		
+		//Passport
+		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Ausweis zeigen",{[0, cursorTarget] call life_fnc_passport;},"",0,false,false,"","!isNull cursorTarget && cursorTarget isKindOf 'Man' && vehicle player == player"]);
     };
+	
+	case blufor: {
+		//Passport
+		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Dienstausweis zeigen",{[0, cursorTarget] call life_fnc_passport;},"",0,false,false,"","!isNull cursorTarget && cursorTarget isKindOf 'Man' && vehicle player == player"]);
+	};
+	
+	case independent: {
+		//Passport
+		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Dienstausweis zeigen",{[0, cursorTarget] call life_fnc_passport;},"",0,false,false,"","!isNull cursorTarget && cursorTarget isKindOf 'Man' && vehicle player == player"]);
+	};
 };
