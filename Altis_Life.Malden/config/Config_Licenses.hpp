@@ -14,6 +14,9 @@ class Licenses {
         price = 1250;
         illegal = false;
         side = "civ";
+		editable = true;
+		editableBy = "blufor";
+		editableCondition = "[] call life_coplevel > 0";
     };
 
     class boat {
@@ -22,6 +25,9 @@ class Licenses {
         price = 670;
         illegal = false;
         side = "civ";
+		editable = true;
+		editableBy = "blufor";
+		editableCondition = "[] call life_coplevel > 0";
     };
 
     class pilot {
@@ -30,6 +36,9 @@ class Licenses {
         price = 28100;
         illegal = false;
         side = "civ";
+		editable = true;
+		editableBy = "blufor";
+		editableCondition = "[] call life_coplevel > 0";
     };
 
     class trucking {
@@ -38,6 +47,9 @@ class Licenses {
         price = 2400;
         illegal = false;
         side = "civ";
+		editable = true;
+		editableBy = "blufor";
+		editableCondition = "[] call life_coplevel > 0";
     };
 
     class gun {
@@ -46,6 +58,9 @@ class Licenses {
         price = 2500;
         illegal = false;
         side = "civ";
+		editable = true;
+		editableBy = "blufor";
+		editableCondition = "[] call life_coplevel > 0";
     };
 	
 	class hunting {
@@ -54,6 +69,9 @@ class Licenses {
         price = 2500;
         illegal = false;
         side = "civ";
+		editable = true;
+		editableBy = "blufor";
+		editableCondition = "[] call life_coplevel > 0";
     };
 
     class dive {
@@ -62,6 +80,7 @@ class Licenses {
         price = 350;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 
     class home {
@@ -70,6 +89,7 @@ class Licenses {
         price = 1200;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 
     //Processing Licenses
@@ -79,6 +99,7 @@ class Licenses {
         price = 9000;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 	
 	class pearl {
@@ -87,6 +108,7 @@ class Licenses {
         price = 11000;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 	
 	class beer {
@@ -95,6 +117,7 @@ class Licenses {
         price = 2500;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 	
 	class oil {
@@ -103,6 +126,7 @@ class Licenses {
         price = 14500;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 
     class iron {
@@ -111,6 +135,7 @@ class Licenses {
         price = 1500;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 
     class copper {
@@ -119,6 +144,7 @@ class Licenses {
         price = 250;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 	
 	class gold {
@@ -127,6 +153,7 @@ class Licenses {
         price = 19800;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 	
 	class silver {
@@ -135,6 +162,7 @@ class Licenses {
         price = 15400;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 	
 	class freight {
@@ -143,6 +171,7 @@ class Licenses {
         price = 18300;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 
     class cement {
@@ -151,6 +180,7 @@ class Licenses {
         price = 150;
         illegal = false;
         side = "civ";
+		editable = false;
     };
 
     //Illegal Licenses
@@ -160,6 +190,7 @@ class Licenses {
         price = 23500;
         illegal = true;
         side = "civ";
+		editable = false;
     };
 	
 	class peyote {
@@ -168,6 +199,7 @@ class Licenses {
         price = 23500;
         illegal = true;
         side = "civ";
+		editable = false;
     };
 	
 	class ololiqui {
@@ -176,6 +208,7 @@ class Licenses {
         price = 23500;
         illegal = true;
         side = "civ";
+		editable = false;
     };
 
     class rebel {
@@ -184,6 +217,7 @@ class Licenses {
         price = 12500;
         illegal = true;
         side = "civ";
+		editable = false;
     };
 
     //Cop Licenses
@@ -193,6 +227,7 @@ class Licenses {
         price = 350;
         illegal = false;
         side = "cop";
+		editable = false;
     };
 
     class cg {
@@ -201,6 +236,7 @@ class Licenses {
         price = 350;
         illegal = false;
         side = "cop";
+		editable = false;
     };
 
     //Medic Licenses
@@ -210,5 +246,6 @@ class Licenses {
         price = 350;
         illegal = false;
         side = "med";
+		editable = false;
     };
 };

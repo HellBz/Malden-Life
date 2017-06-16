@@ -61,7 +61,7 @@ _Btn2 buttonSetAction "[player] remoteExecCall [""life_fnc_licenseCheck"",life_p
 
 //Remove/Add Licenses Button
 _Btn3 ctrlSetText localize "STR_pInAct_ARLicenses";
-_Btn3 buttonSetAction "[life_pInact_curTarget] spawn {closeDialog 0; sleep 0.1; [_this select 0] call life_fnc_copLicenseInteractionMenu;};";
+_Btn3 buttonSetAction "[life_pInact_curTarget] spawn {closeDialog 0; sleep 0.1; [2, player] remoteExecCall ['life_fnc_licenseEditor', _this select 0, false];};";
 
 //Set Search Button
 _Btn4 ctrlSetText localize "STR_pInAct_SearchPlayer";

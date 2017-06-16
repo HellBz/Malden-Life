@@ -143,7 +143,6 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
-		class copLicenseInteractionMenu {};
 		class setLicense {};
     };
 
@@ -171,6 +170,7 @@ class Life_Client_Core {
         class unimpound {};
         class vehicleGarage {};
         class wireTransfer {};
+		class licenseEditor {};
     };
 
     class Functions {
