@@ -28,13 +28,12 @@ class CfgFunctions {
 
 class CfgSounds {
     sounds[] = {};
-class SirenLand
+	class SirenLand
 	{
 		name = "SirenLand";
 		sound[] = {"\sounds\sirenLand.ogg", 0.9, 1};
 		titles[] = {};
 	};
-	
 	class SirenLand_med
 	{
 		name = "SirenLand_med";
@@ -47,7 +46,6 @@ class SirenLand
 		sound[] = {"\sounds\sirenCity.ogg", 0.35, 1};
 		titles[] = {};
 	};
-	
 	class SirenCity_med
 	{
 		name = "SirenCity_med";
@@ -111,6 +109,11 @@ class SirenLand
 	class carAlarm {
         name = "carAlarm";
         sound[] = {"\sounds\car_alarm.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	class slurp {
+        name = "slurp";
+        sound[] = {"\sounds\Slurp.ogg", 0.75, 1};
         titles[] = {};
     };
 };
