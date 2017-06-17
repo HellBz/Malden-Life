@@ -181,6 +181,7 @@ switch (_code) do {
                     if(_shift && !_ctrlKey) then {
                         if(playerSide == west) then {
                             [_veh,0] call life_fnc_sirenLights;
+                            diag_log "call life_fnc_sirenLights  [0]";
                         } else {
                             [_veh,0] call life_fnc_medicSirenLights;
                         };
@@ -189,6 +190,7 @@ switch (_code) do {
                     if(_ctrlKey && !_shift) then {
                         if(playerSide == west) then {
                             [_veh,1] call life_fnc_sirenLights;
+                            diag_log "call life_fnc_sirenLights  [1]";
                         } else {
                             [_veh,1] call life_fnc_medicSirenLights;
                         };
