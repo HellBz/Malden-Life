@@ -170,26 +170,38 @@ switch (_code) do {
         };
     };
 
-    //L Key?
+   //L Key?
     case 38: {
         //If cop run checks for turning lights on.
-        if (_shift && playerSide in [west,independent]) then {
-            if (!(isNull objectParent player) && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
-                if (!isNil {vehicle player getVariable "lights"}) then {
-                    if (playerSide isEqualTo west) then {
-                        [vehicle player] call life_fnc_sirenLights;
-                    } else {
-                        [vehicle player] call life_fnc_medicSirenLights;
+        if(playerSide in [west,independent]) then {
+        _veh = vehicle player;
+            if(isNil {_veh GVAR "lights"}) then {_veh SVAR ["lights",false,true];};
+            if(_veh != player && (typeOf _veh) in ["C_Offroad_01_repair_F","C_Offroad_02_unarmed_F","C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F","I_MRAP_03_hmg_F","I_MRAP_03_F","B_APC_Wheeled_01_cannon_F","C_Van_01_box_F"]) then {
+                if(!isNil {_veh GVAR "lights"}) then {
+                    if(_shift && !_ctrlKey) then {
+                        if(playerSide == west) then {
+                            [_veh,0] call life_fnc_sirenLights;
+                        } else {
+                            [_veh,0] call life_fnc_medicSirenLights;
+                        };
+                        _handled = true;
                     };
-                    _handled = true;
+                    if(_ctrlKey && !_shift) then {
+                        if(playerSide == west) then {
+                            [_veh,1] call life_fnc_sirenLights;
+                        } else {
+                            [_veh,1] call life_fnc_medicSirenLights;
+                        };
+                        _handled = true;
+                    };
                 };
             };
         };
-
-        if (!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
+        
+        if(!_alt && !_ctrlKey && vehicle player == player) then { [] call life_fnc_radar; };
     };
 
-    //Y Player Menu
+    //Z Player Menu
     case 21: {
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
             [] call life_fnc_p_openMenu;
@@ -198,25 +210,71 @@ switch (_code) do {
 
     //F Key
     case 33: {
-        if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
-            [] spawn {
+        if(playerSide in [west,independent] && {vehicle player != player} && /*{!life_siren_active} &&*/ {((driver vehicle player) == player)}) then {
+            /*[] spawn {
                 life_siren_active = true;
                 sleep 4.7;
                 life_siren_active = false;
-            };
-
+            };*/
             _veh = vehicle player;
-            if (isNil {_veh getVariable "siren"}) then {_veh setVariable ["siren",false,true];};
-            if ((_veh getVariable "siren")) then {
+            if(isNil {_veh GVAR "siren"}) then {_veh SVAR ["siren",false,true];};
+            if((_veh GVAR "siren")) then {
                 titleText [localize "STR_MISC_SirensOFF","PLAIN"];
-                _veh setVariable ["siren",false,true];
+                _veh SVAR ["siren",false,true];
             } else {
                 titleText [localize "STR_MISC_SirensON","PLAIN"];
-                _veh setVariable ["siren",true,true];
-                if (playerSide isEqualTo west) then {
-                    [_veh] remoteExec ["life_fnc_copSiren",RCLIENT];
-                } else {
-                    [_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
+                _veh SVAR ["siren",true,true];
+                if(_shift) then {
+                    if(playerSide == west) then {
+                        [[_veh,0],"life_fnc_copSiren",nil,true] call life_fnc_MP;
+                    } else {
+                        [[_veh,0],"life_fnc_MedicSiren",nil,true] call life_fnc_MP;
+                    };
+                }else{
+                    if(playerSide == west) then {
+                        [[_veh,1],"life_fnc_copSiren",nil,true] call life_fnc_MP;
+                    } else {
+                        [[_veh,1],"life_fnc_MedicSiren",nil,true] call life_fnc_MP;
+                    };
+                };
+            };
+        };
+    };
+    //Y    Police and Medic Yelb
+    case 44: {
+        if(playerSide in [west,independent] && {vehicle player != player} && {((driver vehicle player) == player)} && !(vehicle player getVariable ["Yelp",false])) then {
+            if(playerSide == west) then {
+                if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
+                    [0,player] remoteExecCall ["life_fnc_yelp", 0, false];
+                    vehicle player setVariable ["Yelp",true];
+                    [] spawn {
+                    sleep 1.4;
+                    vehicle player setVariable ["Yelp",false];
+                    };
+                };
+            } else {
+                if(!(typeOf vehicle player in ["B_Heli_Light_01_F"])) then {
+                    [1,player] remoteExecCall ["life_fnc_yelp", 0, false];
+                    vehicle player setVariable ["Yelp",true];
+                    [] spawn {
+                    sleep 2;
+                    vehicle player setVariable ["Yelp",false];
+                    };
+                };
+            };
+        };  
+    };
+    //X PoliceGetDown Sound
+    case 45:{
+        if(playerSide in [west] && {vehicle player != player} && {((driver vehicle player) == player)} && !(vehicle player getVariable ["getDown",false])) then {
+            if(playerSide == west) then {
+                if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
+                    [0,player] remoteExecCall ["life_fnc_polGetDown", 0, false];
+                    vehicle player setVariable ["getDown",true];
+                    [] spawn {
+                    sleep 1.4;
+                    vehicle player setVariable ["getDown",false];
+                    };
                 };
             };
         };
