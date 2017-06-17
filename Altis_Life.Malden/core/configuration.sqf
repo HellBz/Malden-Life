@@ -48,6 +48,8 @@ life_pos_attach = [];
 life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
+life_pCharge = 100;
+life_rec_messages = [];
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

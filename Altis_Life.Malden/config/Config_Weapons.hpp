@@ -136,6 +136,7 @@ class WeaponShops {
 			{ "ItemGPS", "", 125 },
 			{ "ToolKit", "", 250 },
 			{ "FirstAidKit", "", 50 },
+			{ "ItemRadio", "", 250, 100, "" },
 			{ "NVGoggles", "", 850 },
 			{ "NVGoggles_tna_F", "", 850}
         };
@@ -175,6 +176,7 @@ class WeaponShops {
             { "ItemWatch", "", 50, 5, "" },
             { "FirstAidKit", "", 15, 5, "" },
             { "NVGoggles", "", 250, 100, "" },
+			{ "ItemRadio", "", 250, 100, "" },
             { "Chemlight_red", "", 5, 15, "" },
             { "Chemlight_yellow", "", 5, 15, "" },
             { "Chemlight_green", "", 5, 15, "" },
@@ -196,6 +198,7 @@ class WeaponShops {
             { "ItemWatch", "", 50, 5, "" },
             { "FirstAidKit", "", 15, 5, "" },
             { "NVGoggles", "", 250, 100, "" },
+			{ "ItemRadio", "", 250, 100, "" },
             { "Chemlight_red", "", 5, 15, "" },
             { "Chemlight_yellow", "", 5, 15, "" },
             { "Chemlight_green", "", 5, 15, "" },
@@ -227,6 +230,7 @@ class WeaponShops {
 			{ "ItemGPS", "", 100, 35, ""  },
 			{ "ToolKit", "", 75, 35, ""  },
 			{ "FirstAidKit", "", 15, 35, ""  },
+			{ "ItemRadio", "", 250, 100, "" },
 			{ "NVGoggles", "", 200, 35, ""  }
         };
         mags[] = {
@@ -274,6 +278,7 @@ class WeaponShops {
             { "ItemWatch", "", 50, 5, "" },
             { "FirstAidKit", "", 15, 5, "" },
             { "NVGoggles", "", 250, 100, "" },
+			{ "ItemRadio", "", 250, 100, "" },
             { "Chemlight_red", "", 5, 15, "" },
             { "Chemlight_yellow", "", 5, 15, "" },
             { "Chemlight_green", "", 5, 15, "" },

@@ -6339,7 +6339,10 @@
             <Original>Hunting Knife</Original>
             <German>Jagdmesser</German>
         </Key>
-		
+		<Key ID="STR_Item_Battery">
+            <Original>Battery</Original>
+            <German>Batterie</German>
+        </Key>
         <Key ID="STR_Item_Heroin">
             <Original>Heroin</Original>
             <Czech>Heroin</Czech>
@@ -13423,6 +13426,10 @@
 		<Key ID="STR_MISC_LicenseShop">
             <Original>License Shop</Original>
             <German>Lizenzamt</German>
+        </Key>
+		<Key ID="STR_MISC_NoPhone">
+            <Original>You don't have a phone.</Original>
+            <German>Du besitzt kein Telefon.</German>
         </Key>
 	</Package>
 </Project>

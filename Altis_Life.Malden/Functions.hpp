@@ -390,5 +390,7 @@ class Life_Client_Core {
 		class smokeTrail {};
 		class passport {};
 		class hideMarker {};
+		class phone {};
+		class who {};
     };
 };

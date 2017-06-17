@@ -13,35 +13,35 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "traube", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "beer", "agavenBeer" };
+        items[] = { "waterBottle", "rabbit", "apple", "traube", "redgull", "tbacon", "pickaxe", "toolkit", "battery", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "beer", "agavenBeer" };
     };
 	
 	class huntingMarket {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "huntingKnife", "waterBottle", "rabbit", "toolkit", "fuelFull","rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw"};
+        items[] = { "huntingKnife", "waterBottle", "rabbit", "toolkit", "battery", "fuelFull","rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw"};
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "battery", "fuelFull", "peach", "defibrillator" };
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "battery", "fuelFull", "peach", "boltcutter", "blastingcharge" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "battery", "fuelFull", "peach", "boltcutter", "blastingcharge" };
     };
 
     class coffee {
@@ -111,7 +111,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "battery", "fuelFull", "defusekit", "defibrillator" };
     };
 };
 
@@ -237,6 +237,18 @@ class VirtualItems {
         edible = -1;
         drinkable = -1;
         icon = "icons\ico_lockpick.paa";
+    };
+	
+	class battery {
+        variable = "battery";
+        displayName = "STR_Item_Battery";
+        weight = 2;
+        buyPrice = 25;
+        sellPrice = 5;
+        illegal = false;
+        edible = -1;
+        drinkable = -1;
+        icon = "icons\ico_battery.paa";
     };
 
     class goldbar {

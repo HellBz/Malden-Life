@@ -76,6 +76,13 @@ switch (true) do {
         [] spawn life_fnc_lockpick;
         closeDialog 0;
     };
+	
+	case (_item isEqualTo "battery"): {
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            life_pCharge = 100;
+            closeDialog 0;
+        };
+    };
 
     case (!(M_CONFIG(getNumber,"VirtualItems",_item,"edible") isEqualTo -1) || !(M_CONFIG(getNumber,"VirtualItems",_item,"drinkable") isEqualTo -1)): {
         [] call life_fnc_eat;

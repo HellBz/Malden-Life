@@ -61,6 +61,7 @@ class CfgRemoteExec {
 		F(life_fnc_setLicense,CLIENT)
 		F(life_fnc_passport,CLIENT)
 		F(life_fnc_licenseeditor,CLIENT)
+		F(life_fnc_phone,CLIENT)
         F(SOCK_fnc_dataQuery,CLIENT)
         F(SOCK_fnc_insertPlayerInfo,CLIENT)
         F(SOCK_fnc_requestReceived,CLIENT)
