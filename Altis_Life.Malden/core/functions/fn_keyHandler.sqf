@@ -224,8 +224,11 @@ switch (_code) do {
                 sleep 4.7;
                 life_siren_active = false;
             };*/
+           diag_log "<< F pressed";
             _veh = vehicle player;
+            diag_log format [">> vehicle: %1", _veh];
             if(isNil {_veh GVAR "siren"}) then {_veh SVAR ["siren",false,true];};
+            	diag_log ">> siren var set";
             if((_veh GVAR "siren")) then {
                 titleText [localize "STR_MISC_SirensOFF","PLAIN"];
                 _veh SVAR ["siren",false,true];
@@ -235,12 +238,14 @@ switch (_code) do {
                 if(_shift) then {
                     if(playerSide == west) then {
                         [[_veh,0],"life_fnc_copSiren",nil,true] call life_fnc_MP;
+                        diag_log "call life_fnc_copSiren  [0]";
                     } else {
                         [[_veh,0],"life_fnc_MedicSiren",nil,true] call life_fnc_MP;
                     };
                 }else{
                     if(playerSide == west) then {
                         [[_veh,1],"life_fnc_copSiren",nil,true] call life_fnc_MP;
+                        diag_log "call life_fnc_copSiren  [1]";
                     } else {
                         [[_veh,1],"life_fnc_MedicSiren",nil,true] call life_fnc_MP;
                     };
