@@ -29,3 +29,4 @@
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
 #include "licenseEditor.hpp"
+#include "help.hpp"

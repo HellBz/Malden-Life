@@ -2444,6 +2444,10 @@
             <Portuguese>Menu Jogador</Portuguese>
             <Polish>Menu gracza</Polish>
         </Key>
+		<Key ID="STR_PM_HelpMenu">
+            <Original>Guide</Original>
+            <German>Guide</German>
+        </Key>
         <Key ID="STR_PM_cItems">
             <Original>Current Items</Original>
             <Czech>Aktuální položky</Czech>

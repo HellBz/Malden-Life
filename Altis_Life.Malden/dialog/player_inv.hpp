@@ -264,6 +264,17 @@ class playerSettings {
             w = (6.25 / 40);
             h = (1 / 25);
         };
+		
+		class ButtonHelpMenu : Life_RscButtonMenu {
+			idc = 2025;
+			text = "$STR_PM_HelpMenu";
+			onButtonClick = "createDialog ""Life_help_dialog"";";
+			colorBackground[] = {1,0.349,0.384,1};
+			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.805;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
 
         class ButtonSyncData: Life_RscButtonMenu {
             idc = -1;

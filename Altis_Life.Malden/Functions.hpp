@@ -173,6 +173,7 @@ class Life_Client_Core {
         class vehicleGarage {};
         class wireTransfer {};
 		class licenseEditor {};
+		class helpDialog {};
     };
 
     class Functions {
