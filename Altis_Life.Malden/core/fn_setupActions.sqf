@@ -26,11 +26,11 @@ switch (playerSide) do {
 	
 	case blufor: {
 		//Passport
-		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Dienstausweis zeigen",{[0, cursorTarget] call life_fnc_passport;},"",0,false,false,"","!isNull cursorTarget && cursorTarget isKindOf 'Man' && vehicle player == player"]);
+		life_actions = [player addAction["<t color='#98FA05'>" + "Dienstausweis zeigen",{[0, cursorTarget] call life_fnc_passport;},"",0,false,false,"","!isNull cursorTarget && cursorTarget isKindOf 'Man' && vehicle player == player"]];
 	};
 	
 	case independent: {
 		//Passport
-		life_actions pushBack (player addAction["<t color='#98FA05'>" + "Dienstausweis zeigen",{[0, cursorTarget] call life_fnc_passport;},"",0,false,false,"","!isNull cursorTarget && cursorTarget isKindOf 'Man' && vehicle player == player"]);
+		life_actions = [player addAction["<t color='#98FA05'>" + "Dienstausweis zeigen",{[0, cursorTarget] call life_fnc_passport;},"",0,false,false,"","!isNull cursorTarget && cursorTarget isKindOf 'Man' && vehicle player == player"]];
 	};
 };

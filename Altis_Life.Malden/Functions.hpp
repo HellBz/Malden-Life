@@ -104,6 +104,7 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+		class addLicenseActions {};
     };
 
     class Config {
@@ -135,8 +136,6 @@ class Life_Client_Core {
         class searchClient {};
         class seizeClient {};
         class sirenLights {};
-		class yelp {};
-		class getdown {};
         class spikeStripEffect {};
         class ticketGive {};
         class ticketPaid {};
@@ -144,6 +143,7 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
+		class setLicense {};
     };
 
     class Dialog_Controls {
@@ -170,6 +170,7 @@ class Life_Client_Core {
         class unimpound {};
         class vehicleGarage {};
         class wireTransfer {};
+		class licenseEditor {};
     };
 
     class Functions {
@@ -220,6 +221,7 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+		class canProcess {};
     };
 
     class Gangs {
@@ -272,6 +274,7 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+		class eat {};
     };
 
     class Medical_System {
@@ -373,5 +376,16 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
+    };
+	
+	class Misc {
+        file = "core\misc";
+        class variableDealer {};
+		class HideObjects {};
+		class atmMarkers {};
+		class animals {};
+		class smokeTrail {};
+		class passport {};
+		class hideMarker {};
     };
 };

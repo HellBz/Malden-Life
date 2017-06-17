@@ -28,50 +28,18 @@ class CfgFunctions {
 
 class CfgSounds {
     sounds[] = {};
-	class SirenLand
-	{
-		name = "SirenLand";
-		sound[] = {"\sounds\sirenLand.ogg", 0.9, 1};
-		titles[] = {};
-	};
-	
-	class SirenLand_med
-	{
-		name = "SirenLand_med";
-		sound[] = {"\sounds\sirenLandMed.ogg", 1, 1};
-		titles[] = {};
-	};
-	class SirenCity
-	{
-		name = "SirenCity";
-		sound[] = {"\sounds\sirenCity.ogg", 0.35, 1};
-		titles[] = {};
-	};
-	
-	class SirenCity_med
-	{
-		name = "SirenCity_med";
-		sound[] = {"\sounds\sirenCityMed.ogg", 0.35, 1};
-		titles[] = {};
-	};
-	class policeYelb
-	{
-		name = "policeYelb";
-		sound[] = {"\sounds\policeYelb.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	class medicYelb
-	{
-		name = "medicYelb";
-		sound[] = {"\sounds\medicYelb.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	class polGetDown
-	{
-		name = "polGetDown";
-		sound[] = {"\sounds\policegetontheground.ogg", 1, 1};
-		titles[] = {};
-	};
+    class sirenLong {
+        name = "sirenLong";
+        sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+    class medicSiren {
+        name = "medicSiren";
+        sound[] = {"\sounds\medicSiren.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
     class tazerSound {
         name = "tazerSound";
         sound[] = {"\sounds\tazer.ogg", 0.25, 1};
@@ -105,6 +73,12 @@ class CfgSounds {
     class unlockCarSound {
         name = "unlockCarSound";
         sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
+        titles[] = {};
+    };
+	
+	class carAlarm {
+        name = "carAlarm";
+        sound[] = {"\sounds\car_alarm.ogg", 1.0, 1};
         titles[] = {};
     };
 };
