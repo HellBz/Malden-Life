@@ -20,6 +20,13 @@
 #define CONTROL_DATA(ctrl) (lbData[ctrl,lbCurSel ctrl])
 #define CONTROL_DATAI(ctrl,index) ctrl lbData index
 
+//Namespace Macros
+#define SVAR_MNS missionNamespace setVariable 
+#define SVAR_UINS uiNamespace setVariable 
+#define SVAR_PNS parsingNamespace setVariable 
+#define GVAR_MNS missionNamespace getVariable 
+#define GVAR_UINS uiNamespace getVariable
+
 //System Macros
 #define LICENSE_VARNAME(varName,flag) format ["license_%1_%2",flag,M_CONFIG(getText,"Licenses",varName,"variable")]
 #define LICENSE_VALUE(varName,flag) missionNamespace getVariable [LICENSE_VARNAME(varName,flag),false]
