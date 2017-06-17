@@ -386,5 +386,6 @@ class Life_Client_Core {
 		class animals {};
 		class smokeTrail {};
 		class passport {};
+		class hideMarker {};
     };
 };

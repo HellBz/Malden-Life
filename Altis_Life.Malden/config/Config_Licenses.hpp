@@ -151,7 +151,7 @@ class Licenses {
         variable = "gold";
         displayName = "STR_License_Gold";
         price = 19800;
-        illegal = false;
+        illegal = true;
         side = "civ";
 		editable = false;
     };
