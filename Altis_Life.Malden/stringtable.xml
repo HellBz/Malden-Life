@@ -12370,15 +12370,15 @@
             <Italian>Processo del sale</Italian>
         </Key>
         <Key ID="STR_MAR_Altis_Corrections">
-            <Original>Altis Corrections</Original>
-            <Czech>Altis Opravy</Czech>
-            <French>Prison d'Altis</French>
-            <Spanish>Prisión de Altis</Spanish>
+            <Original>Malden Corrections</Original>
+            <Czech>Malden Opravy</Czech>
+            <French>Prison d'Malden</French>
+            <Spanish>Prisión de Malden</Spanish>
             <Russian></Russian>
-            <German>Altis Bundesgefängnis</German>
-            <Portuguese>Prisão de Altis</Portuguese>
-            <Polish>Więzienie Altis</Polish>
-            <Italian>Penitenziario di Altis</Italian>
+            <German>Malden Bundesgefängnis</German>
+            <Portuguese>Prisão de Malden</Portuguese>
+            <Polish>Więzienie Malden</Polish>
+            <Italian>Penitenziario di Malden</Italian>
         </Key>
         <Key ID="STR_MAR_Tanoa_Corrections">
             <Original>Tanoa Corrections</Original>
