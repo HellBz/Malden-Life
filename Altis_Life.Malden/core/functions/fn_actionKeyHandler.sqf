@@ -31,34 +31,17 @@ if (isNull _curObject) exitWith {
             if (!alive _fish) then {
                 [_fish] call life_fnc_catchFish;
             };
-        } else {
-			private "_handle";
-            if (playerSide isEqualTo civilian && !life_action_gathering) then {
-				_whatIsIt = [] call life_fnc_whereAmI;
-                if (life_action_gathering) exitWith {};                 //Action is in use, exit to prevent spamming.
-                switch (_whatIsIt) do {
-                    case "mine" : { _handle = [] spawn life_fnc_mine };
-                    default { _handle = [] spawn life_fnc_gather };
-                };
-                life_action_gathering = true;
-                waitUntil {scriptDone _handle};
-                life_action_gathering = false;
-            };
-		};
+        };
     } else {
         _animal = (nearestObjects[player,(LIFE_SETTINGS(getArray,"animaltypes_hunting")),3]) select 0;
         if (!isNil "_animal") then {
             if (!alive _animal) then {
-				if (life_inv_huntingKnife > 0) then {
-					[_animal] call life_fnc_gutAnimal;
-				} else {
-					hint "Du benötigst ein Jagdmesser.";
-				};
+                [_animal] call life_fnc_gutAnimal;
             };
         } else {
             private "_handle";
             if (playerSide isEqualTo civilian && !life_action_gathering) then {
-				_whatIsIt = [] call life_fnc_whereAmI;
+          _whatIsIt = [] call life_fnc_whereAmI;
                 if (life_action_gathering) exitWith {};                 //Action is in use, exit to prevent spamming.
                 switch (_whatIsIt) do {
                     case "mine" : { _handle = [] spawn life_fnc_mine };

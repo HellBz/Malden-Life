@@ -14,11 +14,9 @@
 #define Btn6 37455
 #define Btn7 37456
 #define Btn8 37457
-#define Btn9 37458
-#define Btn10 37459
 #define Title 37401
 
-private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10"];
+private ["_display","_curTarget","_seizeRank","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 
 disableSerialization;
 _curTarget = param [0,objNull,[objNull]];
@@ -43,12 +41,10 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
-_Btn9 = _display displayCtrl Btn9;
-_Btn10 = _display displayCtrl Btn10;
 life_pInact_curTarget = _curTarget;
 
 if (player getVariable ["isEscorting",false]) then {
-    { _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8,_Btn9,_Btn10];
+    { _x ctrlShow false; } forEach [_Btn1,_Btn2,_Btn3,_Btn5,_Btn6,_Btn7,_Btn8];
 };
 
 //Set Unrestrain Button
@@ -59,43 +55,36 @@ _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDi
 _Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
 _Btn2 buttonSetAction "[player] remoteExecCall [""life_fnc_licenseCheck"",life_pInact_curTarget]; closeDialog 0;";
 
-//Remove/Add Licenses Button
-_Btn3 ctrlSetText localize "STR_pInAct_ARLicenses";
-_Btn3 buttonSetAction "[life_pInact_curTarget] spawn {closeDialog 0; sleep 0.1; [2, player] remoteExecCall ['life_fnc_licenseEditor', _this select 0, false];};";
-
 //Set Search Button
-_Btn4 ctrlSetText localize "STR_pInAct_SearchPlayer";
-_Btn4 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
+_Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
+_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
 
 //Set Escort Button
 if (player getVariable ["isEscorting",false]) then {
-    _Btn5 ctrlSetText localize "STR_pInAct_StopEscort";
-    _Btn5 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
+    _Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
+    _Btn4 buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
 } else {
-    _Btn5 ctrlSetText localize "STR_pInAct_Escort";
-    _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
+    _Btn4 ctrlSetText localize "STR_pInAct_Escort";
+    _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
 
 //Set Ticket Button
-_Btn6 ctrlSetText localize "STR_pInAct_TicketBtn";
-_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
+_Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
+_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
-_Btn7 ctrlSetText localize "STR_pInAct_Arrest";
-_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction; closeDialog 0;";
-_Btn7 ctrlEnable false;
+_Btn6 ctrlSetText localize "STR_pInAct_Arrest";
+_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction; closeDialog 0;";
+_Btn6 ctrlEnable false;
 
-_Btn8 ctrlSetText localize "STR_pInAct_PutInCar";
-_Btn8 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
+_Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
+_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 
 //SeizeWeapons Button
-_Btn9 ctrlSetText localize "STR_pInAct_Seize";
-_Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
+_Btn8 ctrlSetText localize "STR_pInAct_Seize";
+_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction; closeDialog 0;";
 
-//not used yet...
-_Btn10 ctrlEnable false;
-
-if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn9 ctrlEnable false;};
+if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
 
 {
-    if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn7 ctrlEnable true;};
+    if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
 } forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");
