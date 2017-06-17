@@ -6,18 +6,31 @@
     Description:
     Starts the medic siren sound for other players.
 */
-private ["_vehicle"];
-_vehicle = param [0,objNull,[objNull]];
+private["_vehicle","_mode"];
+_vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_mode = _this select 1;
 
-if (isNull _vehicle) exitWith {};
-if (isNil {_vehicle getVariable "siren"}) exitWith {};
+if(isNull _vehicle) exitWith {};
+if(isNil {_vehicle GVAR "siren"}) exitWith {};
 
-for "_i" from 0 to 1 step 0 do {
-    if (!(_vehicle getVariable "siren")) exitWith {};
-    if (count crew _vehicle isEqualTo 0) then {_vehicle setVariable ["siren",false,true]};
-    if (!alive _vehicle) exitWith {};
-    if (isNull _vehicle) exitWith {};
-    _vehicle say3D "medicSiren";//Class name specified in description.ext
-    sleep 4.275;//Exactly matches the length of the audio file.
-    if (!(_vehicle getVariable "siren")) exitWith {};
+if (_mode == 0) then {
+while {true} do {
+    if(!(_vehicle GVAR "siren")) exitWith {};
+    if(EQUAL(count crew _vehicle,0)) then {_vehicle SVAR ["siren",false,true]};
+    if(!alive _vehicle) exitWith {};
+    if(isNull _vehicle) exitWith {};
+    _vehicle say3D "SirenLand_med";
+    sleep 4.3;
+    if(!(_vehicle GVAR "siren")) exitWith {};
+};
+}else{
+while {true} do {
+    if(!(_vehicle GVAR "siren")) exitWith {};
+    if(EQUAL(count crew _vehicle,0)) then {_vehicle SVAR ["siren",false,true]};
+    if(!alive _vehicle) exitWith {};
+    if(isNull _vehicle) exitWith {};
+    _vehicle say3D "SirenCity_med";
+    sleep 1.62;
+    if(!(_vehicle GVAR "siren")) exitWith {};
+};
 };
