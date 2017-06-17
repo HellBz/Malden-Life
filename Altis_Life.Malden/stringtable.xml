@@ -12291,6 +12291,1130 @@
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
         </Key>
     </Package>
+	 <Package name="Markers_names">
+        <Key ID="STR_MAR_Fish_Market">
+            <Original>Fish Market</Original>
+            <Czech>Rybí trh</Czech>
+            <French>Marché aux poissons</French>
+            <Spanish>Mercado de Pescado</Spanish>
+            <Russian></Russian>
+            <German>Fischmarkt</German>
+            <Portuguese>Peixaria</Portuguese>
+            <Polish>Sklep rybny</Polish>
+            <Italian>Pescivendolo</Italian>
+        </Key>
+        <Key ID="STR_MAR_Hospital">
+            <Original>Hospital</Original>
+            <Czech>Nemocnice</Czech>
+            <French>Hôpital</French>
+            <Spanish>Hospital</Spanish>
+            <Russian></Russian>
+            <German>Krankenhaus</German>
+            <Portuguese>Hospital</Portuguese>
+            <Polish>Szpital</Polish>
+            <Italian>Ospedale</Italian>
+        </Key>
+        <Key ID="STR_MAR_Police_Station">
+            <Original>Police Station</Original>
+            <Czech>Policejní stanice</Czech>
+            <French>Poste de police</French>
+            <Spanish>Estación de Policia</Spanish>
+            <Russian></Russian>
+            <German>Polizei Revier</German>
+            <Portuguese>Estação Policial</Portuguese>
+            <Polish>Posterunek policji</Polish>
+            <Italian>Questura</Italian>
+        </Key>
+        <Key ID="STR_MAR_Police_Air_HQ">
+            <Original>Police Air HQ</Original>
+            <Czech>Police Air HQ</Czech>
+            <French>HQ Air Police</French>
+            <Spanish>Cuartel Aéreo Policial</Spanish>
+            <Italian>QG Aereo Polizia</Italian>
+            <Russian></Russian>
+            <German>Polizei HQ Flughafen</German>
+            <Portuguese>QG Aéreo Policial</Portuguese>
+            <Polish>Baza lotnicza policji</Polish>
+        </Key>
+        <Key ID="STR_MAR_Iron_Mine">
+            <Original>Iron Mine</Original>
+            <Czech>Železný důl</Czech>
+            <French>Mine de fer</French>
+            <Spanish>Mina de Hierro</Spanish>
+            <Russian></Russian>
+            <German>Eisenmine</German>
+            <Portuguese>Mina de Ferro</Portuguese>
+            <Polish>Kopalnia miedzi</Polish>
+            <Italian>Miniera di ferro</Italian>
+        </Key>
+        <Key ID="STR_MAR_Salt_Mine">
+            <Original>Salt Mine</Original>
+            <Czech>Solný důl</Czech>
+            <French>Mine de sel</French>
+            <Spanish>Mina de Sal</Spanish>
+            <Russian></Russian>
+            <German>Salzmine</German>
+            <Portuguese>Mina de Sal</Portuguese>
+            <Polish>Kopalnia soli</Polish>
+            <Italian>Salina</Italian>
+        </Key>
+        <Key ID="STR_MAR_Salt_Processing">
+            <Original>Salt Processing</Original>
+            <Czech>sůl Processing</Czech>
+            <French>Traitement de sel</French>
+            <Spanish>Procesador de Sal</Spanish>
+            <Russian></Russian>
+            <German>Salzverarbeitung</German>
+            <Portuguese>Processador de Sal</Portuguese>
+            <Polish>Warzelnia soli</Polish>
+            <Italian>Processo del sale</Italian>
+        </Key>
+        <Key ID="STR_MAR_Altis_Corrections">
+            <Original>Altis Corrections</Original>
+            <Czech>Altis Opravy</Czech>
+            <French>Prison d'Altis</French>
+            <Spanish>Prisión de Altis</Spanish>
+            <Russian></Russian>
+            <German>Altis Bundesgefängnis</German>
+            <Portuguese>Prisão de Altis</Portuguese>
+            <Polish>Więzienie Altis</Polish>
+            <Italian>Penitenziario di Altis</Italian>
+        </Key>
+        <Key ID="STR_MAR_Tanoa_Corrections">
+            <Original>Tanoa Corrections</Original>
+            <Czech>Tanoa Opravy</Czech>
+            <French>Prison de Tanoa</French>
+            <Spanish>Prisión de Tanoa</Spanish>
+            <Russian></Russian>
+            <German>Tanoa Bundesgefängnis</German>
+            <Portuguese>Prisão de Tanoa</Portuguese>
+            <Polish>Więzienie Tanoa</Polish>
+            <Italian>Penitenziario di Tanoa</Italian>
+        </Key>
+        <Key ID="STR_MAR_Police_HQ">
+            <Original>Police HQ</Original>
+            <Czech>Police HQ</Czech>
+            <French>QG de la police</French>
+            <Spanish>Comisaria de Policía</Spanish>
+            <Italian>QG Polizia</Italian>
+            <Russian></Russian>
+            <German>Polizei HQ</German>
+            <Portuguese>QG Policial</Portuguese>
+            <Polish>KG Policji Altis</Polish>
+        </Key>
+        <Key ID="STR_MAR_Coast_Guard">
+            <Original>Coast Guard</Original>
+            <Czech>pobřežní hlídka</Czech>
+            <French>Garde-côte</French>
+            <Spanish>Guardia Costera</Spanish>
+            <Russian></Russian>
+            <German>Küstenwache</German>
+            <Portuguese>Guarda Costeira</Portuguese>
+            <Polish>Straż przybrzeżna</Polish>
+            <Italian>Guardia Costiera</Italian>
+        </Key>
+        <Key ID="STR_MAR_Rebel_Outpost">
+            <Original>Rebel Outpost</Original>
+            <Czech>Rebel Outpost</Czech>
+            <French>Avant-Poste Rebelle</French>
+            <Spanish>Base Rebelde</Spanish>
+            <Italian>Avamposto Ribelle</Italian>
+            <Russian></Russian>
+            <German>Rebellen Außenposten</German>
+            <Portuguese>Base Rebelde</Portuguese>
+            <Polish>Baza rebeliantów</Polish>
+        </Key>
+        <Key ID="STR_MAR_Air_Shop">
+            <Original>Air Shop</Original>
+            <Czech>Air Shop</Czech>
+            <French>Magasin Aerien</French>
+            <Spanish>Tienda Aérea</Spanish>
+            <Italian>Negozio Aereo</Italian>
+            <Russian></Russian>
+            <German>Luftfahrzeug Händler</German>
+            <Portuguese>Loja Aérea</Portuguese>
+            <Polish>Sklep lotniczy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Truck_Shop">
+            <Original>Truck Shop</Original>
+            <Czech>Truck Shop</Czech>
+            <French>Vendeur de camion</French>
+            <Spanish>Tienda de Camiones</Spanish>
+            <Russian></Russian>
+            <German>LKW Händler</German>
+            <Portuguese>Loja de Caminhões</Portuguese>
+            <Polish>Salon ciężarówek</Polish>
+            <Italian>Concessionaria Camion</Italian>
+        </Key>
+        <Key ID="STR_MAR_Oil_Processing">
+            <Original>Oil Processing</Original>
+            <Czech>Zpracování olej</Czech>
+            <French>Traitement du Pétrole</French>
+            <Spanish>Procesador de Petróleo</Spanish>
+            <Russian></Russian>
+            <German>Öl Verarbeiter</German>
+            <Portuguese>Processador de Petróleo</Portuguese>
+            <Polish>Rafineria ropy naftowej</Polish>
+            <Italian>Raffineria di Petrolio</Italian>
+        </Key>
+        <Key ID="STR_MAR_Iron_processing">
+            <Original>Iron Processing</Original>
+            <Czech>Zpracování Iron</Czech>
+            <French>Traitement de Fer</French>
+            <Spanish>Procesador de Hierro</Spanish>
+            <Italian>Processo del ferro</Italian>
+            <Russian></Russian>
+            <German>Eisenschmelze</German>
+            <Portuguese>Processador de Ferro</Portuguese>
+            <Polish>Huta żelaza</Polish>
+        </Key>
+        <Key ID="STR_MAR_Sand_Mine">
+            <Original>Sand Mine</Original>
+            <Czech>písek Mine</Czech>
+            <French>Mine de Sable</French>
+            <Spanish>Mina de Arena</Spanish>
+            <Italian>Miniera di sabbia</Italian>
+            <Russian></Russian>
+            <German>Sand Mine</German>
+            <Portuguese>Mina de Areia</Portuguese>
+            <Polish>Kopalnia piasku</Polish>
+        </Key>
+        <Key ID="STR_MAR_Chop_Shop">
+            <Original>Chop Shop</Original>
+            <Czech>Chop Shop</Czech>
+            <French>Vendeur de Voitures</French>
+            <Spanish>Desguace Clandestino</Spanish>
+            <Italian>Ricettatore</Italian>
+            <Russian></Russian>
+            <German>Schrotthändler</German>
+            <Portuguese>Desmanche</Portuguese>
+            <Polish>Dziupla</Polish>
+        </Key>
+        <Key ID="STR_MAR_Cocaine_Processing">
+            <Original>Cocaine Processing</Original>
+            <Czech>Zpracování kokain</Czech>
+            <French>Traitement de Cocaïne</French>
+            <Spanish>Procesador de Cocaína</Spanish>
+            <Italian>Trattamento cocaina</Italian>
+            <Russian></Russian>
+            <German>Kokain Verarbeiter</German>
+            <Portuguese>Processador de Cocaína</Portuguese>
+            <Polish>Oczyszczanie kokainy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Copper_Mine">
+            <Original>Copper Mine</Original>
+            <Czech>měděný důl</Czech>
+            <French>Mine de Cuivre</French>
+            <Spanish>Mina de Cobre</Spanish>
+            <Italian>Miniera di rame</Italian>
+            <Russian></Russian>
+            <German>Kupfermine</German>
+            <Portuguese>Mina de Cobre</Portuguese>
+            <Polish>Kopalnia miedzi</Polish>
+        </Key>
+        <Key ID="STR_MAR_ATM">
+            <Original>ATM</Original>
+            <Czech>bankomat</Czech>
+            <French>DAB</French>
+            <Spanish>ATM</Spanish>
+            <Italian>ATM</Italian>
+            <Russian></Russian>
+            <German>Geldautomat</German>
+            <Portuguese>Caixa Eletrônico</Portuguese>
+            <Polish>Bankomat</Polish>
+        </Key>
+        <Key ID="STR_MAR_Local_Bank">
+            <Original>Local Bank</Original>
+            <Czech>místní bankovní</Czech>
+            <French>Banque locale</French>
+            <Spanish>Banco Local</Spanish>
+            <Italian>Banca locale</Italian>
+            <Russian></Russian>
+            <German>Zentralbank</German>
+            <Portuguese>Banco Local</Portuguese>
+            <Polish>Bank Altis</Polish>
+        </Key>
+        <Key ID="STR_MAR_Car_Shop">
+            <Original>Car Shop</Original>
+            <Czech>Auto Shop</Czech>
+            <French>Magasin de voitures</French>
+            <Spanish>Tienda de Coches</Spanish>
+            <Italian>Concessionario d `auto</Italian>
+            <Russian></Russian>
+            <German>Autohändler</German>
+            <Portuguese>Loja de Carros</Portuguese>
+            <Polish>Salon samochodowy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Hospital_Clinic">
+            <Original>Hospital/Clinic</Original>
+            <Czech>Nemocnice / Klinika</Czech>
+            <French>Hôpital / Clinique</French>
+            <Spanish>Hospital/Clínica</Spanish>
+            <Italian>Ospedale / Clinica</Italian>
+            <Russian></Russian>
+            <German>Krankenhaus</German>
+            <Portuguese>Hospital/Clínica</Portuguese>
+            <Polish>Klinika Altis</Polish>
+        </Key>
+        <Key ID="STR_MAR_Diamond_Mine">
+            <Original>Diamond Mine</Original>
+            <Czech>Diamond Mine</Czech>
+            <French>Mine de diamant</French>
+            <Spanish>Mina de Diamantes</Spanish>
+            <Italian>Miniera di diamanti</Italian>
+            <Russian></Russian>
+            <German>Diamanten Mine</German>
+            <Portuguese>Mina de Diamante</Portuguese>
+            <Polish>Kopalnia diamentów</Polish>
+        </Key>
+        <Key ID="STR_MAR_General_Store">
+            <Original>General Store</Original>
+            <Czech>Obchod se smíšeným zbožím</Czech>
+            <French>Magasin général</French>
+            <Spanish>Tienda General</Spanish>
+            <Italian>Strumenti Generali</Italian>
+            <Russian></Russian>
+            <German>Supermarkt</German>
+            <Portuguese>Loja de Equipamentos</Portuguese>
+            <Polish>Sklep techniczny</Polish>
+        </Key>
+        <Key ID="STR_MAR_Civilian_Shops">
+            <Original>Civilian Shops</Original>
+            <Czech>civilní Obchody</Czech>
+            <French>Magasins civils</French>
+            <Spanish>Tiendas Civiles</Spanish>
+            <Italian>Negozi civili</Italian>
+            <Russian></Russian>
+            <German>Geschäft für Zivilisten</German>
+            <Portuguese>Lojas Civis</Portuguese>
+            <Polish>Sklepy dla cywilów</Polish>
+        </Key>
+        <Key ID="STR_MAR_Boat_Shop">
+            <Original>Boat Shop</Original>
+            <Czech>Lodní Shop</Czech>
+            <French>Magasin de bateaux</French>
+            <Spanish>Tienda de Barcos</Spanish>
+            <Italian>Concessionaria Nautica</Italian>
+            <Russian></Russian>
+            <German>Boots Händler</German>
+            <Portuguese>Loja de Barcos</Portuguese>
+            <Polish>Sklep z łodziami</Polish>
+        </Key>
+        <Key ID="STR_MAR_Bruce_Outfits">
+            <Original>Bruce's Outback Outfits</Original>
+            <Czech>Bruceovy Outback Oblečení</Czech>
+            <French>Magasin de vêtements de Bruce</French>
+            <Spanish>Tienda de Ropa</Spanish>
+            <Italian>Outfit di Bruce</Italian>
+            <Russian></Russian>
+            <Portuguese>Loja de Roupas</Portuguese>
+            <Polish>Sklep odzieżowy</Polish>
+            <German>Bruce's Outback Outfits</German>
+        </Key>
+        <Key ID="STR_MAR_Apple_Field">
+            <Original>Apple Field</Original>
+            <Czech>Apple Field</Czech>
+            <French>Champs de Pommes</French>
+            <Spanish>Campo de Manzanas</Spanish>
+            <Italian>Campo di Mele</Italian>
+            <Russian></Russian>
+            <German>Apfel Plantage</German>
+            <Portuguese>Campo de Maçãs</Portuguese>
+            <Polish>Sad jabłkowy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Peaches_Field">
+            <Original>Peaches Field</Original>
+            <Czech>broskve Field</Czech>
+            <French>Champs de Pêches</French>
+            <Spanish>Campo de Melocotones</Spanish>
+            <Italian>Campo di Pesche</Italian>
+            <Russian></Russian>
+            <German>Pfirsich Plantage</German>
+            <Portuguese>Campo de Pêras</Portuguese>
+            <Polish>Sad brzoskwiniowy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Market">
+            <Original>Market</Original>
+            <Czech>Trh</Czech>
+            <French>Marché</French>
+            <Spanish>Mercado</Spanish>
+            <Italian>Mercato</Italian>
+            <Russian></Russian>
+            <German>Markt</German>
+            <Portuguese>Mercado</Portuguese>
+            <Polish>Market spożywczy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Air_Service">
+            <Original>Air Service Station</Original>
+            <Czech>Stanice Air Service</Czech>
+            <French>Réparateur Aérien</French>
+            <Spanish>Estación de Servicio Aéreo</Spanish>
+            <Italian>Stazione Servizio Aereo</Italian>
+            <Russian></Russian>
+            <German>Werkstatt für Luftfahrzeuge</German>
+            <Portuguese>Estação de Serviços Aéreos</Portuguese>
+            <Polish>Serwis lotniczy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Channel_News">
+            <Original>Channel 7 News</Original>
+            <Czech>Channel 7 News</Czech>
+            <French>Chaine d'infos numero 7</French>
+            <Spanish>Canal de Noticias 7</Spanish>
+            <Italian>Notiziario di Altis</Italian>
+            <Russian></Russian>
+            <German>Kanal 7 Nachrichtensender</German>
+            <Portuguese>Canal de Notícias 7</Portuguese>
+            <Polish>Maszt nadawczy</Polish>
+        </Key>
+        <Key ID="STR_MAR_DMV">
+            <Original>DMV</Original>
+            <Czech>DMV</Czech>
+            <French>Magasin de licences</French>
+            <Spanish>Registro de Licencias</Spanish>
+            <Russian></Russian>
+            <German>Zulassungstelle</German>
+            <Portuguese>Loja de Licenças</Portuguese>
+            <Polish>Urząd licencyjny</Polish>
+            <Italian>Licenze</Italian>
+        </Key>
+        <Key ID="STR_MAR_Delivery_Missions">
+            <Original>Delivery Missions</Original>
+            <Czech>Dodací mise</Czech>
+            <French>Missions de livraison</French>
+            <Spanish>Misiones de Entrega</Spanish>
+            <Russian></Russian>
+            <German>Kurier Mission</German>
+            <Portuguese>Missões de Entrega</Portuguese>
+            <Polish>Misje kurierskie</Polish>
+            <Italian>Missioni Postali</Italian>
+        </Key>
+        <Key ID="STR_MAR_Deliver_Package">
+            <Original>Deliver Package</Original>
+            <Czech>doručit balíček</Czech>
+            <French>Livrer le paquet</French>
+            <Spanish>Entregar Paquete</Spanish>
+            <Russian></Russian>
+            <German>Paket ausliefern</German>
+            <Portuguese>Entregar Pacote</Portuguese>
+            <Polish>Dostarcz przesyłkę</Polish>
+            <Italian>Consegna il pacco</Italian>
+        </Key>
+        <Key ID="STR_MAR_Get_Delivery_Mission">
+            <Original>Get Delivery Mission</Original>
+            <Czech>Získat Delivery mise</Czech>
+            <French>Obtenez Mission de livraison</French>
+            <Spanish>Empezar Misión de Entrega</Spanish>
+            <Russian></Russian>
+            <German>Starte Kurier Mission</German>
+            <Portuguese>Pegar Missão de Entrega</Portuguese>
+            <Polish>Pobierz przesyłkę do dostarczenia</Polish>
+            <Italian>Ottieni una missione postale</Italian>
+        </Key>
+        <Key ID="STR_MAR_Diving_Shop">
+            <Original>Diving Shop</Original>
+            <Czech>Potápění Shop</Czech>
+            <French>Boutique de plongée</French>
+            <Spanish>Tienda de Buceo</Spanish>
+            <Russian></Russian>
+            <German>Steve's Taucherausrüstung</German>
+            <Portuguese>Loja de Mergulho</Portuguese>
+            <Polish>Akcesoria do nurkowania</Polish>
+            <Italian>Negozio da Sub</Italian>
+        </Key>
+        <Key ID="STR_MAR_Drug_Dealer">
+            <Original>Drug Dealer</Original>
+            <Czech>Drug prodejce</Czech>
+            <French>Dealer de drogue</French>
+            <Spanish>Narcotraficante</Spanish>
+            <Russian></Russian>
+            <German>Drogendealer</German>
+            <Portuguese>Traficante</Portuguese>
+            <Polish>Diler narkotyków</Polish>
+            <Italian>Spacciatore</Italian>
+        </Key>
+        <Key ID="STR_MAR_Diamond_Processing">
+            <Original>Diamond Processing</Original>
+            <Czech>Diamond Processing</Czech>
+            <French>Traitement de diamant</French>
+            <Spanish>Procesador de Diamante</Spanish>
+            <Russian></Russian>
+            <German>Diamantenschleifer</German>
+            <Portuguese>Processador de Diamante</Portuguese>
+            <Polish>Szlifierz diamentów</Polish>
+            <Italian>Processo diamanti</Italian>
+        </Key>
+        <Key ID="STR_MAR_Oil_Field">
+            <Original>Oil Field</Original>
+            <Czech>Ropné poles</Czech>
+            <French>Champ de Pétrole</French>
+            <Spanish>Campo de Petróleo</Spanish>
+            <Russian></Russian>
+            <German>Öl Felder</German>
+            <Portuguese>Campo de Petróleo</Portuguese>
+            <Polish>Szyb naftowy</Polish>
+            <Italian>Giacimento di Petrolio</Italian>
+        </Key>
+        <Key ID="STR_MAR_Weed_Field">
+            <Original>Marijuana Field</Original>
+            <Czech>Marihuana Field</Czech>
+            <French>Champ de pavots</French>
+            <Spanish>Campo de Marihuana</Spanish>
+            <Russian></Russian>
+            <German>Marihuana Plantage</German>
+            <Portuguese>Campo de Maconha</Portuguese>
+            <Polish>Pole marihuany</Polish>
+            <Italian>Campo di Marijuana</Italian>
+        </Key>
+        <Key ID="STR_MAR_Weed_Processing">
+            <Original>Marijuana Processing</Original>
+            <Czech>Zpracování marihuana</Czech>
+            <French>Traitement du pavot</French>
+            <Spanish>Procesador de Marihuana</Spanish>
+            <Russian></Russian>
+            <German>Marihuana Verarbeitung</German>
+            <Portuguese>Processador de Maconha</Portuguese>
+            <Polish>Suszarnia marihuany</Polish>
+            <Italian>Trattamento Marijuana</Italian>
+        </Key>
+        <Key ID="STR_MAR_Boat_Spawn">
+            <Original>Boat Spawn</Original>
+            <Czech>Lodní potěr</Czech>
+            <French>Spawn Bateau</French>
+            <Spanish>Spawn de Barcos</Spanish>
+            <Russian></Russian>
+            <German>Boot Spawn</German>
+            <Portuguese>Spawn de Barcos</Portuguese>
+            <Polish>Przystań</Polish>
+            <Italian>Consegna Barche</Italian>
+        </Key>
+        <Key ID="STR_MAR_Copper_Processing">
+            <Original>Copper Processing</Original>
+            <Czech>Zpracování měď</Czech>
+            <French>Traitement de cuivre</French>
+            <Spanish>Procesador de Cobre</Spanish>
+            <Russian></Russian>
+            <German>Kupferschmelze</German>
+            <Portuguese>Processador de Cobre</Portuguese>
+            <Polish>Huta miedzi</Polish>
+            <Italian>Processo Rame</Italian>
+        </Key>
+        <Key ID="STR_MAR_Cocaine_Field">
+            <Original>Coca Field</Original>
+            <Czech>Coca Field</Czech>
+            <French>Champ de Cocaine</French>
+            <Spanish>Campo de Cocaína</Spanish>
+            <Russian></Russian>
+            <German>Kokain Plantage</German>
+            <Portuguese>Campo de Cocaína</Portuguese>
+            <Polish>Pole kokainy</Polish>
+            <Italian>Campo di Cocaina</Italian>
+        </Key>
+        <Key ID="STR_MAR_Oil_Trader">
+            <Original>Oil Trader</Original>
+            <Czech>olej Trader</Czech>
+            <French>Vendeur de pétrole</French>
+            <Spanish>Comerciante de Petróleo</Spanish>
+            <Russian></Russian>
+            <German>Öl Händler</German>
+            <Portuguese>Comprador de Petróleo</Portuguese>
+            <Polish>Skup benzyny</Polish>
+            <Italian>Vendita Olio</Italian>
+        </Key>
+        <Key ID="STR_MAR_Salt_Trader">
+            <Original>Salt Trader</Original>
+            <Czech>sůl Trader</Czech>
+            <French>Vendeur de sel</French>
+            <Spanish>Comerciante de Sal</Spanish>
+            <Russian></Russian>
+            <German>Salz Händler</German>
+            <Portuguese>Comprador de Sal</Portuguese>
+            <Polish>Skup soli</Polish>
+            <Italian>Vendita Sale</Italian>
+        </Key>
+        <Key ID="STR_MAR_Diamond_Trader">
+            <Original>Diamond Trader</Original>
+            <Czech>Diamond Trader</Czech>
+            <French>Vendeur de diamant</French>
+            <Spanish>Comerciante de Diamantes</Spanish>
+            <Russian></Russian>
+            <German>Juwelier</German>
+            <Portuguese>Comprador de Diamante</Portuguese>
+            <Polish>Skup diamentów</Polish>
+            <Italian>Vendita Diamanti</Italian>
+        </Key>
+        <Key ID="STR_MAR_Glass_Trader">
+            <Original>Glass Trader</Original>
+            <Czech>sklo Trader</Czech>
+            <French>Vendeur de verre</French>
+            <Spanish>Comerciante de Vidrio</Spanish>
+            <Russian></Russian>
+            <German>Glasbläserei</German>
+            <Portuguese>Comprador de Vidro</Portuguese>
+            <Polish>Skup szkła</Polish>
+            <Italian>Vendita del Vetro</Italian>
+        </Key>
+        <Key ID="STR_MAR_Iron_Copper_Trader">
+            <Original>Iron / Copper Trader</Original>
+            <Czech>Žehlička / Měď Trader</Czech>
+            <French>Vendeur de Fer/Cuivre</French>
+            <Spanish>Comerciante de Hierro / Cobre</Spanish>
+            <Russian></Russian>
+            <German>Industriehandel</German>
+            <Portuguese>Comprador de Ferro e Cobre</Portuguese>
+            <Polish>Skup metali</Polish>
+            <Italian>Vendita del Ferro/Rame</Italian>
+        </Key>
+        <Key ID="STR_MAR_Sand_Processing">
+            <Original>Sand Processing</Original>
+            <Czech>Zpracování písek</Czech>
+            <French>Traitement de sable</French>
+            <Spanish>Procesador de Arena</Spanish>
+            <Russian></Russian>
+            <German>Sand Verarbeiter</German>
+            <Portuguese>Processador de Areia</Portuguese>
+            <Polish>Huta szkła</Polish>
+            <Italian>Processo Sabbia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Gun_Store">
+            <Original>Gun Store</Original>
+            <Czech>Gun Store</Czech>
+            <French>Armurerie</French>
+            <Spanish>Tienda de Armas</Spanish>
+            <Russian></Russian>
+            <German>Waffengeschäft</German>
+            <Portuguese>Loja de Armas</Portuguese>
+            <Polish>Sklep z bronią</Polish>
+            <Italian>Armeria</Italian>
+        </Key>
+        <Key ID="STR_MAR_Heroin_Field">
+            <Original>Opium Poppy Field</Original>
+            <Czech>Opium Poppy Field</Czech>
+            <French>Champ d'héroïne</French>
+            <Spanish>Campo de Opio</Spanish>
+            <Italian>Opium Poppy Field</Italian>
+            <Russian></Russian>
+            <German>Heroin Plantage</German>
+            <Portuguese>Campo de Heroína</Portuguese>
+            <Polish>Pole heroiny</Polish>
+        </Key>
+        <Key ID="STR_MAR_Heroin_Processing">
+            <Original>Heroin Processing</Original>
+            <Czech>Zpracování heroin</Czech>
+            <French>Traitement d'héroïne</French>
+            <Spanish>Procesador de Heroina</Spanish>
+            <Italian>Processing eroina</Italian>
+            <Russian></Russian>
+            <German>Heroin Verarbeitung</German>
+            <Portuguese>Processador de Heroína</Portuguese>
+            <Polish>Oczyszczanie heroiny</Polish>
+        </Key>
+        <Key ID="STR_MAR_Garage">
+            <Original>Garage</Original>
+            <Czech>Garáž</Czech>
+            <French>Garage</French>
+            <Spanish>Garaje</Spanish>
+            <Italian>Box auto</Italian>
+            <Russian></Russian>
+            <German>Garage</German>
+            <Portuguese>Garagem</Portuguese>
+            <Polish>Garaż</Polish>
+        </Key>
+        <Key ID="STR_MAR_Federal_Reserve">
+            <Original>Federal Reserve</Original>
+            <Czech>federální rezervní systém</Czech>
+            <French>Réserve fédérale</French>
+            <Spanish>Reserva Federal</Spanish>
+            <Russian></Russian>
+            <German>Zentralbank</German>
+            <Portuguese>Reserva Federal</Portuguese>
+            <Polish>Bank Rezerw Federalnych</Polish>
+            <Italian>Banca Federale</Italian>
+        </Key>
+        <Key ID="STR_MAR_Highway_Patrol">
+            <Original>Highway Patrol Outpost</Original>
+            <Czech>Dálniční hlídka Outpost</Czech>
+            <French>Poste de Police</French>
+            <Spanish>Puesto de Patrulla de Carretera</Spanish>
+            <Russian></Russian>
+            <German>Mautstation</German>
+            <Portuguese>Base da Polícia Rodoviária</Portuguese>
+            <Polish>Posterunek policji drogowej</Polish>
+            <Italian>Checkpoint di polizia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Rock_Quarry">
+            <Original>Rock Quarry</Original>
+            <Czech>kamenolomu</Czech>
+            <French>Mine de pierres</French>
+            <Spanish>Mina de Piedra</Spanish>
+            <Russian></Russian>
+            <German>Steinbruch</German>
+            <Portuguese>Pedreira</Portuguese>
+            <Polish>Kamieniołom</Polish>
+            <Italian>Cava di Roccia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Rock_Processing">
+            <Original>Rock Processing</Original>
+            <Czech>rock Processing</Czech>
+            <French>Traitement de pierres</French>
+            <Spanish>Procesador de Piedra</Spanish>
+            <Russian></Russian>
+            <German>Stein Verarbeitung</German>
+            <Portuguese>Processador de Pedra</Portuguese>
+            <Polish>Wytwórnia cementu z kamienia</Polish>
+            <Italian>Processo Roccia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Cement_Trader">
+            <Original>Cement Trader</Original>
+            <Czech>cement Trader</Czech>
+            <French>Vendeur de ciments</French>
+            <Spanish>Comerciante de Cemento</Spanish>
+            <Russian></Russian>
+            <German>Zement Händler</German>
+            <Portuguese>Comprador de Cimento</Portuguese>
+            <Polish>Skup cementu</Polish>
+            <Italian>Vendita del Cemento</Italian>
+        </Key>
+        <Key ID="STR_MAR_Turtle_Poaching">
+            <Original>Turtle Poaching</Original>
+            <Czech>Turtle pytláctví</Czech>
+            <French>Zones de tortues</French>
+            <Spanish>Caza de Tortugas</Spanish>
+            <Italian>Bracconaggio di Tartarughe</Italian>
+            <Russian></Russian>
+            <German>Wilderei für Schildkröten</German>
+            <Portuguese>Área de Tartarugas</Portuguese>
+            <Polish>Strefa występowania żółwi morskich</Polish>
+        </Key>
+        <Key ID="STR_MAR_Turtle_Dealer">
+            <Original>Turtle Dealer</Original>
+            <Czech>Turtle prodejce</Czech>
+            <French>Dealer de Tortues</French>
+            <Spanish>Traficante de Tortugas</Spanish>
+            <Russian></Russian>
+            <German>Schildkröten Händler</German>
+            <Portuguese>Comprador de Tartarugas</Portuguese>
+            <Polish>Skup żółwi</Polish>
+            <Italian>Vendita Tartarughe</Italian>
+        </Key>
+        <Key ID="STR_MAR_GoKart_Shop">
+            <Original>Go-Kart Shop</Original>
+            <Czech>Go-Kart Shop</Czech>
+            <French>Magasin de karts</French>
+            <Spanish>Tienda de Go-Kart</Spanish>
+            <Russian></Russian>
+            <German>Bobby's Gokarthandel</German>
+            <Portuguese>Loja de Karts</Portuguese>
+            <Polish>Sklep z GoKartami</Polish>
+            <Italian>Parco Go-Kart</Italian>
+        </Key>
+        <Key ID="STR_MAR_Gold_Bars_Buyer">
+            <Original>Gold Bars Buyer</Original>
+            <Czech>Gold Bary kupujícího</Czech>
+            <French>Acheteur d'Or</French>
+            <Spanish>Comprador de Oro</Spanish>
+            <Russian></Russian>
+            <German>Goldhändler</German>
+            <Portuguese>Comprador de Barras de Ouro</Portuguese>
+            <Polish>Skup złota</Polish>
+            <Italian>Gioielliere</Italian>
+        </Key>
+        <Key ID="STR_MAR_Gang_Hideout1">
+            <Original>Gang Hideout 1</Original>
+            <Czech>Gang Hideout 1</Czech>
+            <French>Planque 1</French>
+            <Spanish>Escondite de Pandillas 1</Spanish>
+            <Russian></Russian>
+            <German>Gang Versteck 1</German>
+            <Portuguese>Esconderijo de Gangs 1</Portuguese>
+            <Polish>Kryjówka gangu 1</Polish>
+            <Italian>Covo Gang 1</Italian>
+        </Key>
+        <Key ID="STR_MAR_Gang_Hideout2">
+            <Original>Gang Hideout 2</Original>
+            <Czech>Gang Hideout 2</Czech>
+            <French>Planque 2</French>
+            <Spanish>Escondite de Pandillas 2</Spanish>
+            <Russian></Russian>
+            <German>Gang Versteck 2</German>
+            <Portuguese>Esconderijo de Gangs 2</Portuguese>
+            <Polish>Kryjówka gangu 2</Polish>
+            <Italian>Covo Gang 2</Italian>
+        </Key>
+        <Key ID="STR_MAR_Gang_Hideout3">
+            <Original>Gang Hideout 3</Original>
+            <Czech>Gang Hideout 3</Czech>
+            <French>Planque 3</French>
+            <Spanish>Escondite de Pandillas 3</Spanish>
+            <Russian></Russian>
+            <German>Gang Versteck 3</German>
+            <Portuguese>Esconderijo de Gangs 3</Portuguese>
+            <Polish>Kryjówka gangu 3</Polish>
+            <Italian>Covo Gang 3</Italian>
+        </Key>
+        <Key ID="STR_MAR_Hunting_Grounds">
+            <Original>Hunting Grounds</Original>
+            <Czech>honební revír</Czech>
+            <French>Terrain de chasse</French>
+            <Spanish>Zona de Caza</Spanish>
+            <Russian></Russian>
+            <German>Jagdgebiet</German>
+            <Portuguese>Área de Caça</Portuguese>
+            <Polish>Strefa polowań</Polish>
+            <Italian>Riserva di Caccia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Rebel_Clothing_Shop">
+            <Original>Rebel Clothing Shop</Original>
+            <Czech>Rebel Oblečení Shop</Czech>
+            <French>Magasin de vêtements Rebel</French>
+            <Spanish>Tienda de Ropa Rebelde</Spanish>
+            <Italian>Rebel negozio di abbigliamento</Italian>
+            <Russian></Russian>
+            <German>Rebellen Kleidungsgeschäft</German>
+            <Portuguese>Loja de Roupas Rebeldes</Portuguese>
+            <Polish>Magazyn rebelianta</Polish>
+        </Key>
+        <Key ID="STR_MAR_Rebel_Weapon_Shop">
+            <Original>Rebel Weapon Shop</Original>
+            <Czech>Rebel obchodu se zbraněmi</Czech>
+            <French>Vendeur d'armes rebelle</French>
+            <Spanish>Tienda de Armas Rebeldes</Spanish>
+            <Russian></Russian>
+            <German>Rebellen Waffenhändler</German>
+            <Portuguese>Loja de Armas Rebeldes</Portuguese>
+            <Polish>Zbrojownia rebelianta</Polish>
+            <Italian>Armeria della Guerriglia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Helicopter_Shop">
+            <Original>Helicopter Shop</Original>
+            <Czech>vrtulník Shop</Czech>
+            <French>Magasin Aérien</French>
+            <Spanish>Tienda de Helicópteros</Spanish>
+            <Italian>Elicottero negozio</Italian>
+            <Russian></Russian>
+            <German>Helikopter Händler</German>
+            <Portuguese>Loja de Helicópteros</Portuguese>
+            <Polish>Sklep lotniczy</Polish>
+        </Key>
+        <Key ID="STR_MAR_Station_Shop">
+            <Original>Fuel Station Store</Original>
+            <Czech>Palivo Store Station</Czech>
+            <French>Magasin de la station essence</French>
+            <Spanish>Tienda de Gasolinera</Spanish>
+            <Italian>Stazione di rifornimento Conservare</Italian>
+            <Russian></Russian>
+            <German>Tankstelle</German>
+            <Portuguese>Loja de Conveniência</Portuguese>
+            <Polish>Sklep OLLEN</Polish>
+        </Key>
+        <Key ID="STR_MAR_Rebel_Market">
+            <Original>Rebel Market</Original>
+            <Czech>Rebel Market</Czech>
+            <French>Marché Rebelle</French>
+            <Spanish>Mercado Rebelde</Spanish>
+            <Italian>mercato Rebel</Italian>
+            <Russian></Russian>
+            <German>Rebellen Markt</German>
+            <Portuguese>Mercado Rebelde</Portuguese>
+            <Polish>Market rebelianta</Polish>
+        </Key>
+        <Key ID="STR_MAR_Question_Dealer">
+            <Original>Question Dealer</Original>
+            <Czech>Otázka prodejce</Czech>
+            <French>Questionner le dealer</French>
+            <Spanish>Informante</Spanish>
+            <Russian></Russian>
+            <German>Informant</German>
+            <Portuguese>Perguntar ao Traficante</Portuguese>
+            <Polish>Przesłuchaj dilera</Polish>
+            <Italian>Minaccia Spacciatore</Italian>
+        </Key>
+        <Key ID="STR_MAR_Service_helicopter">
+            <Original>Service Helicopter</Original>
+            <Czech>Service Vrtulník</Czech>
+            <French>Service d'hélicoptère</French>
+            <Spanish>Helicóptero de Servicio</Spanish>
+            <Russian></Russian>
+            <German>Helikopter Werkstatt</German>
+            <Portuguese>Serviço Aéreo</Portuguese>
+            <Polish>Serwisuj pojazd lotniczy</Polish>
+            <Italian>Servizio Aereo</Italian>
+        </Key>
+        <Key ID="STR_MAR_Clothing_Store">
+            <Original>Clothing Store</Original>
+            <Czech>Obchod s oblečením</Czech>
+            <French>Magasin de vêtements</French>
+            <Spanish>Tienda de Ropa</Spanish>
+            <Russian></Russian>
+            <German>Kleidungsgeschäft</German>
+            <Portuguese>Loja de Roupas</Portuguese>
+            <Polish>Sklep odzieżowy</Polish>
+            <Italian>Vestiario</Italian>
+        </Key>
+        <Key ID="STR_MAR_Medical_Assistance">
+            <Original>Medical Assistance</Original>
+            <Czech>lékařská pomoc</Czech>
+            <French>Assistance médicale</French>
+            <Spanish>Asistencia Médica</Spanish>
+            <Russian></Russian>
+            <German>Medizinischer Ersthelfer</German>
+            <Portuguese>Assistência Médica</Portuguese>
+            <Polish>Pomoc medyczna</Polish>
+            <Italian>Assistenza Medica</Italian>
+        </Key>
+        <Key ID="STR_MAR_Store_vehicle_in_Garage">
+            <Original>Store vehicle in Garage</Original>
+            <Czech>Skladovat vozidlo v garáži</Czech>
+            <French>Ranger le vehicule dans le garage</French>
+            <Spanish>Guardar vehículo en el Garaje</Spanish>
+            <Russian></Russian>
+            <German>Fahrzeug in Garage einparken</German>
+            <Portuguese>Guardar veículo na Garagem</Portuguese>
+            <Polish>Umieść pojazd w garażu</Polish>
+            <Italian>Deposita veicolo in garage</Italian>
+        </Key>
+        <Key ID="STR_MAR_Cop_Item_Shop">
+            <Original>Cop Item Shop</Original>
+            <Czech>Cop Item Shop</Czech>
+            <French>Magasin de la Police</French>
+            <Spanish>Tienda de Objetos de Policía</Spanish>
+            <Italian>Strumenti</Italian>
+            <Russian></Russian>
+            <German>Polizei Ausrüstung</German>
+            <Portuguese>Loja de Items da Polícia</Portuguese>
+            <Polish>Zaopatrzenie</Polish>
+        </Key>
+        <Key ID="STR_MAR_Cop_Clothing_Shop">
+            <Original>Cop Clothing Shop</Original>
+            <Czech>Cop Oblečení Shop</Czech>
+            <French>Magasin de vêtements de Policier</French>
+            <Spanish>Tienda de Ropa de Policía</Spanish>
+            <Italian>Uniformi</Italian>
+            <Russian></Russian>
+            <German>Polizei Uniformen</German>
+            <Portuguese>Loja de Roupas da Polícia</Portuguese>
+            <Polish>Umundurowanie</Polish>
+        </Key>
+        <Key ID="STR_MAR_Cop_Weapon_Shop">
+            <Original>Cop Weapon Shop</Original>
+            <Czech>Cop obchodu se zbraněmi</Czech>
+            <French>Vendeur d'armes policière</French>
+            <Spanish>Tienda de Armas de Policía</Spanish>
+            <Italian>Armeria da Agenti</Italian>
+            <Russian></Russian>
+            <German>Polizei Waffengeschäft</German>
+            <Portuguese>Loja de Armas da Polícia</Portuguese>
+            <Polish>Broń policji</Polish>
+        </Key>
+        <Key ID="STR_MAR_Patrol_Officer_Weapon_Shop">
+            <Original>Patrol Officer Weapon Shop</Original>
+            <Czech>Policistou obchodu se zbraněmi</Czech>
+            <French>Vendeur d'armes d'Officier de Police</French>
+            <Spanish>Tienda de Armas de Oficial de Patrulla</Spanish>
+            <Italian>Armeria da Pattuglia</Italian>
+            <Russian></Russian>
+            <Portuguese>Loja de Armas de Patrulha</Portuguese>
+            <Polish>Broń patrolowa</Polish>
+            <German>Streifenpolizist Waffengeschäft</German>
+        </Key>
+        <Key ID="STR_MAR_Sergeant_Weapon_Shop">
+            <Original>Sergeant Weapon Shop</Original>
+            <Czech>Seržant obchodu se zbraněmi</Czech>
+            <French>Vendeur d'armes de Sergent</French>
+            <Spanish>Tienda de Armas de Oficial de Sargento</Spanish>
+            <Italian>Armeria dei Sergenti</Italian>
+            <Russian></Russian>
+            <Portuguese>Lojas de Armas de Sargento</Portuguese>
+            <Polish>Broń sierżanta</Polish>
+            <German>Sergeant Waffengeschäft</German>
+        </Key>
+        <Key ID="STR_MAR_W_E_Vehicle Shop">
+            <Original>Vehicle Shop</Original>
+            <Czech>Shop Vehicle</Czech>
+            <French>Magasin de vehicules</French>
+            <Spanish>Tienda de Vehículos</Spanish>
+            <Italian>di veicoli</Italian>
+            <Russian></Russian>
+            <German>Autohändler</German>
+            <Portuguese>Loja de Carros</Portuguese>
+            <Polish>Pojazdy - sklep</Polish>
+        </Key>
+        <Key ID="STR_MAR_Process_Sand">
+            <Original>Process Sand</Original>
+            <Czech>proces Písek</Czech>
+            <French>Traiter le sable</French>
+            <Spanish>Procesar Arena</Spanish>
+            <Russian></Russian>
+            <German>Verarbeite Sand</German>
+            <Portuguese>Processar Areia</Portuguese>
+            <Polish>Przetop piasek na szkło</Polish>
+            <Italian>Lavorazione Sabbia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Process_Rock">
+            <Original>Process Rock</Original>
+            <Czech>proces rock</Czech>
+            <French>Traiter la pierre</French>
+            <Spanish>Procesar Piedra</Spanish>
+            <Russian></Russian>
+            <German>Verarbeite Stein</German>
+            <Portuguese>Processar Pedra</Portuguese>
+            <Polish>Zmiel skały na cement</Polish>
+            <Italian>Processo Roccia</Italian>
+        </Key>
+        <Key ID="STR_MAR_Wong_Food_Cart">
+            <Original>Wong's Food Cart</Original>
+            <Czech>Křídla Food košík</Czech>
+            <French>Magasin de Wong</French>
+            <Spanish>Kiosko de Wong</Spanish>
+            <Italian>Wong Food Cart</Italian>
+            <Russian></Russian>
+            <German>Wong's Spezialitäten</German>
+            <Portuguese>Boteco do Wongs</Portuguese>
+            <Polish>Bar u Wonga</Polish>
+        </Key>
+        <Key ID="STR_MAR_Open_Vault">
+            <Original>Open Vault</Original>
+            <Czech>otevřená Vault</Czech>
+            <French>Ouvrir Coffre</French>
+            <Spanish>Abrir Bóveda</Spanish>
+            <Italian>Apri Cassaforte</Italian>
+            <Russian></Russian>
+            <German>Geöffneter Tresor</German>
+            <Portuguese>Abrir Cofre</Portuguese>
+            <Polish>Otwórz skarbiec</Polish>
+        </Key>
+        <Key ID="STR_MAR_Fix_Vault">
+            <Original>Fix Vault</Original>
+            <Czech>Fix Vault</Czech>
+            <French>Réparer Coffre</French>
+            <Spanish>Reparar Bóveda</Spanish>
+            <Russian></Russian>
+            <German>Tresor reparieren</German>
+            <Portuguese>Consertar Cofre</Portuguese>
+            <Polish>Napraw skarbiec</Polish>
+            <Italian>Ripara Cassaforte</Italian>
+        </Key>
+        <Key ID="STR_MAR_FED_Front">
+            <Original>Federal Reserve - Front Entrance</Original>
+            <Czech>Federální rezervní systém - přední vchod</Czech>
+            <French>Réserve fédérale - Entrée avant</French>
+            <Spanish>Reserva Federal - Entrada Principal</Spanish>
+            <Italian>Riserva Federale - Entrata Frontale</Italian>
+            <Russian></Russian>
+            <German>Zentralbank - Haupteingang</German>
+            <Portuguese>Reserva Federal - Entrada Frontal</Portuguese>
+            <Polish>Rezerwa federalna - wejście główne</Polish>
+        </Key>
+        <Key ID="STR_MAR_FED_Side">
+            <Original>Federal Reserve - Side Entrance</Original>
+            <Czech>Federální rezervní systém - Boční vchod</Czech>
+            <French>Réserve fédérale - Entrée latérale</French>
+            <Spanish>Reserva Federal - Entrada Lateral</Spanish>
+            <Italian>Riserva Federale - Ingresso laterale</Italian>
+            <Russian></Russian>
+            <German>Zentralbank - Seiteneingang</German>
+            <Portuguese>Reserva Federal - Entrada Lateral</Portuguese>
+            <Polish>Rezerwa federalna - wejście boczne</Polish>
+        </Key>
+        <Key ID="STR_MAR_FED_Back">
+            <Original>Federal Reserve - Back Entrance</Original>
+            <Czech>Federální rezervní systém - zadní vchod</Czech>
+            <French>Réserve fédérale - Entrée Arrière</French>
+            <Spanish>Reserva Federal - Entrada Trasera</Spanish>
+            <Italian>Riserva Federale - Ingresso sul Retro</Italian>
+            <Russian></Russian>
+            <German>Zentralbank - Hintereingang</German>
+            <Portuguese>Reserva Federal - Entrada Traseira</Portuguese>
+            <Polish>Rezerwa federalna - wejście tylne</Polish>
+        </Key>
+        <Key ID="STR_MAR_FED_Vault">
+            <Original>Federal Reserve - Vault View</Original>
+            <Czech>Federální rezervní systém - Vault View</Czech>
+            <French>Réserve fédérale - Voir Coffre</French>
+            <Spanish>Reserva Federal - Vista a la Bóveda</Spanish>
+            <Italian>Riserva Federale - Vista della Cassaforte</Italian>
+            <Russian></Russian>
+            <German>Zentralbank - Tresor</German>
+            <Portuguese>Reserva Federal - Visão do Cofre</Portuguese>
+            <Polish>Rezerwa federalna - skarbiec</Polish>
+        </Key>
+        <Key ID="STR_MAR_FED_Off_display">
+            <Original>Turn Off Display</Original>
+            <Czech>Vypnout displej</Czech>
+            <French>Désactiver l'affichage</French>
+            <Spanish>Apagar el Display</Spanish>
+            <Italian>Disattivare la visualizzazione</Italian>
+            <Russian></Russian>
+            <German>Bildschirm ausschalten</German>
+            <Portuguese>Desligar Monitor</Portuguese>
+            <Polish>Wyłącz wyświetlacz</Polish>
+        </Key>
+        <Key ID="STR_MAR_Armament">
+            <Original>Armament</Original>
+            <Czech>Vyzbrojení</Czech>
+            <French>Armement</French>
+            <Spanish>Armamento</Spanish>
+            <Italian>Armamento</Italian>
+            <Russian></Russian>
+            <German>Rüstkammer</German>
+            <Portuguese>Armamento</Portuguese>
+            <Polish>Zbrojownia gangu</Polish>
+        </Key>
+        <Key ID="STR_MAR_EMS_Item_Shop">
+            <Original>EMS Item Shop</Original>
+            <Czech>EMS Item Shop</Czech>
+            <French>Magasin de médecin</French>
+            <Spanish>Tienda de Objetos de Médico</Spanish>
+            <Italian>Strumenti EMS</Italian>
+            <Russian></Russian>
+            <German>Sanitäter Ausrüstung</German>
+            <Portuguese>Loja de Items Médicos</Portuguese>
+            <Polish>Wyposażenie medyczne</Polish>
+        </Key>
+        <Key ID="STR_MAR_EMS_Clothing_Shop">
+            <Original>EMS Clothing Shop</Original>
+            <Czech>EMS Oblečení Shop</Czech>
+            <French>Boutique de vêtements de Médecin</French>
+            <Spanish>Tienda de Ropa de Médico</Spanish>
+            <Italian>Uniformi EMS</Italian>
+            <Russian></Russian>
+            <German>Sanitäter Kleidungsgeschäft</German>
+            <Portuguese>EMS Roupa Loja</Portuguese>
+            <Polish>Sklep odzieżowy EMS</Polish>
+        </Key>
+        <Key ID="STR_MAR_Helicopter_Garage">
+            <Original>Helicopter Garage</Original>
+            <Czech>vrtulník Garáž</Czech>
+            <French>Garage d'hélicoptère</French>
+            <Spanish>Garaje de Helicóptero</Spanish>
+            <Italian>Garage d'Elicotteri</Italian>
+            <Russian></Russian>
+            <German>Helikopter Hangar</German>
+            <Portuguese>Garagem Aérea</Portuguese>
+            <Polish>Hangar lotniczy</Polish>
+        </Key>
+        <Key ID="STR_MAR_W_Car_Garage">
+            <Original>Car Garage</Original>
+            <Czech>Car Garage</Czech>
+            <French>Garage de voiture</French>
+            <Spanish>Garaje de Coches</Spanish>
+            <Russian></Russian>
+            <German>Fahrzeug Garage</German>
+            <Portuguese>Garagem de Carros</Portuguese>
+            <Polish>Hangar lotniczy</Polish>
+            <Italian>Garage Automobili</Italian>
+        </Key>
+        <Key ID="STR_MAR_Pay_Bail">
+            <Original>Pay Bail</Original>
+            <Czech>Pay Bail</Czech>
+            <French>Payer la caution</French>
+            <Spanish>Pagar Fianza</Spanish>
+            <Russian></Russian>
+            <German>Zahle Kaution</German>
+            <Portuguese>Pagar Fiança</Portuguese>
+            <Polish>Zapłać kaucję</Polish>
+            <Italian>Paga cauzione</Italian>
+        </Key>
+    </Package>
 	<Package>
 		<Key ID="STR_MISC_LicenseShop">
             <Original>License Shop</Original>
