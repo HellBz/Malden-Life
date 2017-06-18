@@ -155,6 +155,10 @@
             <Portuguese>Mercado</Portuguese>
             <Polish>Market Malden</Polish>
         </Key>
+		<Key ID="STR_Shops_Firework">
+            <Original>Galaxy Fireworks</Original>
+            <German>Galaxy Feuerwerkswaren</German>
+        </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
             <Czech>Rebel Market</Czech>
@@ -6267,7 +6271,84 @@
             <Polish>Jabłka</Polish>
         </Key>
 		
-		STR_Item_wheel
+		<Key ID="STR_Item_rocket_n_r">
+			<Original>Rocket (Red|Normal)</Original>
+			<German>Rakete (Rot|Normal)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_n_g">
+			<Original>Rocket (Green|Normal)</Original>
+			<German>Rakete (Grün|Normal)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_n_b">
+			<Original>Rocket (Blue|Normal)</Original>
+			<German>Rakete (Blau|Normal)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_n_w">
+			<Original>Rocket (White|Normal)</Original>
+			<German>Rakete (Weis|Normal)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_n_ran">
+			<Original>Rocket (Random|Normal)</Original>
+			<German>Rakete (Zufällig|Normal)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_r_r">
+			<Original>Rocket (Red|Rain)</Original>
+			<German>Rakete (Rot|Regen)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_r_g">
+			<Original>Rocket (Green|Rain)</Original>
+			<German>Rakete (Grün|Regen)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_r_b">
+			<Original>Rocket (Blue|Rain)</Original>
+			<German>Rakete (Blau|Regen)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_r_w">
+			<Original>Rocket (White|Rain)</Original>
+			<German>Rakete (Weis|Regen)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_r_ran">
+			<Original>Rocket (Random|Rain)</Original>
+			<German>Rakete (Zufall|Regen)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_f_r">
+			<Original>Rocket (Red|Fizzer)</Original>
+			<German>Rakete (Rot|Fizzer)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_f_g">
+			<Original>Rocket (Green|Fizzer)</Original>
+			<German>Rakete (Grün|Fizzer)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_f_b">
+			<Original>Rocket (Blue|Fizzer)</Original>
+			<German>Rakete (Blau|Fizzer)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_f_w">
+			<Original>Rocket (White|Fizzer)</Original>
+			<German>Rakete (Weis|Fizzer)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_f_ran">
+			<Original>Rocket (Random|Fizzer)</Original>
+			<German>Rakete (Zufall|Fizzer)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_rr">
+			<Original>Rocket (Random|Random)</Original>
+			<German>Rakete (Zufall|Zufall)</German>
+		</Key>
+		
+		<Key ID="STR_Item_rocket_b_s">
+			<Original>Rocket (Small)</Original>
+			<German>Batterie (Klein)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_b_m">
+			<Original>Rocket (Medium)</Original>
+			<German>Batterie (Medium)</German>
+		</Key>
+		<Key ID="STR_Item_rocket_b_l">
+			<Original>Battery (Large)</Original>
+			<German>Batterie (Groß)</German>
+		</Key>
+		
 		<Key ID="STR_Item_wheel">
             <Original>Tire</Original>
             <German>Autoreifen</German>

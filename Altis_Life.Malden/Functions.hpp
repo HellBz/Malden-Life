@@ -278,6 +278,8 @@ class Life_Client_Core {
         class spikeStrip {};
         class storageBox {};
 		class eat {};
+		class fireworks {};
+		class fireworksBattery {};
     };
 
     class Medical_System {

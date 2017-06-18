@@ -87,7 +87,105 @@ switch (true) do {
     case (!(M_CONFIG(getNumber,"VirtualItems",_item,"edible") isEqualTo -1) || !(M_CONFIG(getNumber,"VirtualItems",_item,"drinkable") isEqualTo -1)): {
         [] call life_fnc_eat;
     };
+	
+	
+	//Rocketsience ^^
+	case (EQUAL(_item,"rocket_n_r")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "normal","red",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_n_g")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "normal","green",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_n_b")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "normal","blue",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_n_ran")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "normal","random",true] call life_fnc_fireworks;
+		};
+	};
 
+	case (EQUAL(_item,"rocket_f_r")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "fizzer","red",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_f_g")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "fizzer","green",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_f_b")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "fizzer","blue",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_f_ran")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "fizzer","random",true] call life_fnc_fireworks;
+		};
+	};
+	
+	case (EQUAL(_item,"rocket_r_r")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "rain","red",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_r_g")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "rain","green",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_r_b")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "rain","blue",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_r_ran")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "rain","random",true] call life_fnc_fireworks;
+		};
+	};
+	case (EQUAL(_item,"rocket_rr")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[0,position player, "random","random",true] call life_fnc_fireworks;
+		};
+	};
+	
+	case (EQUAL(_item,"battery_s")): {
+		if (life_firework_batteries == 0 && vehicle player == player) then {
+			if(([false,_item,1] call life_fnc_handleInv)) then {
+				[0] spawn life_fnc_fireworksBattery;
+			};
+		} else {
+			hint "So viel Geld sollte ich nicht aufeinmal wegwerfen...";
+		};
+	};
+	case (EQUAL(_item,"battery_m")): {
+		if (life_firework_batteries == 0 && vehicle player == player) then {
+			if(([false,_item,1] call life_fnc_handleInv)) then {
+				[1] spawn life_fnc_fireworksBattery;
+			};
+		} else {
+			hint "So viel Geld sollte ich nicht aufeinmal wegwerfen...";
+		};
+	};
+	case (EQUAL(_item,"battery_l")): {
+		if (life_firework_batteries == 0 && vehicle player == player) then {
+			if(([false,_item,1] call life_fnc_handleInv)) then {
+				[2] spawn life_fnc_fireworksBattery;
+			};
+		} else {
+			hint "So viel Geld sollte ich nicht aufeinmal wegwerfen...";
+		};
+	};
+	
     default {
         hint localize "STR_ISTR_NotUsable";
     };

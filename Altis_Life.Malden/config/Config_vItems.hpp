@@ -22,6 +22,13 @@ class VirtualShops {
         conditions = "";
         items[] = { "huntingKnife", "waterBottle", "rabbit", "toolkit", "battery", "fuelFull", "wheel", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw"};
     };
+	
+	class fireworkMarket {
+        name = "STR_Shops_Firework";
+        side = "civ";
+        conditions = "";
+       items[] = { "rocket_n_r", "rocket_n_g", "rocket_n_b", "rocket_n_ran", "rocket_r_r", "rocket_r_g", "rocket_r_b", "rocket_r_ran", "rocket_f_r", "rocket_f_g", "rocket_f_b", "rocket_f_ran", "battery_s", "battery_m", "battery_l"};
+    };
 
     class med_market {
         name = "STR_Shops_Market";
@@ -552,6 +559,220 @@ class VirtualItems {
         icon = "icons\ico_cement.paa";
     };
 
+	//Fireworks
+	class rocket_n_r {
+		displayName = "STR_Item_rocket_n_r"
+		variable =  "rocket_n_r";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_n_g {
+		displayName = "STR_Item_rocket_n_g"
+		variable =  "rocket_n_g";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_n_b {
+		displayName = "STR_Item_rocket_n_b"
+		variable =  "rocket_n_b";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_n_w {
+		displayName = "STR_Item_rocket_n_w"
+		variable =  "rocket_n_w";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_n_ran {
+		displayName = "STR_Item_rocket_n_ran"
+		variable =  "rocket_n_ran";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	
+	class rocket_f_r {
+		displayName = "STR_Item_rocket_f_r"
+		variable =  "rocket_f_r";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_f_g {
+		displayName = "STR_Item_rocket_f_g"
+		variable =  "rocket_f_g";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_f_b {
+		displayName = "STR_Item_rocket_f_b"
+		variable =  "rocket_f_b";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_f_w {
+		displayName = "STR_Item_rocket_f_w"
+		variable =  "rocket_f_w";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_f_ran {
+		displayName = "STR_Item_rocket_f_ran"
+		variable =  "rocket_f_ran";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon = "icons\ico_rakete.paa";
+	};
+	
+	class rocket_r_r {
+		displayName = "STR_Item_rocket_r_r"
+		variable =  "rocket_r_r";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_r_g {
+		displayName = "STR_Item_rocket_r_g"
+		variable =  "rocket_r_g";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_r_b {
+		displayName = "STR_Item_rocket_r_b"
+		variable =  "rocket_r_b";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_r_w {
+		displayName = "STR_Item_rocket_r_w"
+		variable =  "rocket_r_w";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class rocket_r_ran {
+		displayName = "STR_Item_rocket_r_ran"
+		variable = "rocket_r_ran";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+
+	class rocket_rr {
+		displayName = "STR_Item_rocket_rr"; 
+		variable = "rocket_rr";
+		weight = 5;
+		illegal = false;
+		buyPrice = 15;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_rakete.paa";
+	};
+	class battery_s {
+		displayName = "STR_Item_rocket_b_s";
+		variable = "battery_s";
+		weight = 5;
+		illegal = false;
+		buyPrice = 25;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_batterie_s.paa";
+	};
+	class battery_m {
+		displayName = "STR_Item_rocket_b_m";
+		variable = "battery_m";
+		weight = 5;
+		illegal = false;
+		buyPrice = 50;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_batterie_m.paa";
+	};
+	class battery_l {
+		displayName = "STR_Item_rocket_b_l";
+		variable = "battery_l";
+		weight = 5;
+		illegal = false;
+		buyPrice = 100;
+		sellPrice = 5;
+		edible = -1;
+		drinkable = -1;
+		icon ="icons\ico_batterie_l.paa";
+	};
+	
     //Drugs
 
     class ololiquiSeed {

@@ -50,6 +50,7 @@ life_markers = false;
 life_canpay_bail = true;
 life_pCharge = 100;
 life_rec_messages = [];
+life_firework_batteries = 0;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
