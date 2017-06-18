@@ -26,23 +26,20 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
-            { "hgun_Rook40_F", "", 7500, 5000, "" },
-            { "hgun_Pistol_01_F", "", 10000, 5000, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_02_F", "", 20000, 10000, "" },
-            { "hgun_ACPC2_F", "", 12000, 6000, "" },
-            { "SMG_05_F", "", 25000, 12500, "" }, //Apex DLC
-            { "hgun_PDW2000_F", "", 35000, 17500, "" }
+            { "hgun_Rook40_F", "", 10000, 4500,"" },
+            { "hgun_Pistol_heavy_02_F", "", 27500, 12500,"" },
+            { "hgun_ACPC2_F", "", 22500, 11000,"" },
+            { "hgun_PDW2000_F", "", 35000, 17000,"" }
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 500, 100, "" },
-            { "6Rnd_45ACP_Cylinder", "", 200, 75, "" },
-            { "9Rnd_45ACP_Mag", "", 500, 100, "" },
-            { "30Rnd_9x21_Mag", "", 750, 200, "" },
-            { "30Rnd_9x21_Mag_SMG_02", "", 1000, 250, "" }, //Apex DLC
-            { "10Rnd_9x21_Mag", "", 250, 100, "" } //Apex DLC
+            { "16Rnd_9x21_Mag", "", 3500, 1500,"" },
+            { "9Rnd_45ACP_Mag", "", 5500, 2500,"" },
+            { "6Rnd_45ACP_Cylinder", "", 4550, 1200,""}, 
+            { "30Rnd_9x21_Mag", "", 12500, 6000,"" }
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 1000, 5200, "" }
+            { "muzzle_snds_L", "", 15000, 6500,"" },
+            { "optic_ACO_grn_smg", "", 2500, 1200, "" }
         };
     };
 	
@@ -214,44 +211,22 @@ class WeaponShops {
         side = "cop";
         conditions = "";
         items[] = {
-			{ "hgun_P07_snds_F", $STR_W_items_StunPistol, 200, 100, "" },
-            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 200, 100, "" },
-			{ "SMG_05_F", "", 250, 100, "call life_coplevel >= 1"  },
-			{ "SMG_02_ACO_F", "", 300, 150, "call life_coplevel >= 1" },
-			{ "arifle_SPAR_01_blk_F", "Multi Use Rifle", 5000, "call life_coplevel >= 2"  },
-			{ "arifle_Mk20C_F", "", 350, 350, "call life_coplevel >= 3"  },
-			{ "arifle_MXC_F", "", 500, 350, "call life_coplevel >= 3"  },
-			{ "arifle_MX_Black_F", "", 500, 350, "call life_coplevel >= 4"  },
-			{ "arifle_MXM_Black_F", "", 550, 350, "call life_coplevel >= 4"  },
-			{ "srifle_DMR_07_blk_F", "", 3200, 1600, "call life_coplevel >= 4" }, //Apex DLC Sniper
-			{ "MineDetector", "", 100, 35, "" },
-			{ "HandGrenade_Stone", $STR_W_items_Flashbang, 170, 85, "" },
-			{ "Binocular", "", 50, 35, ""  },
-			{ "ItemGPS", "", 100, 35, ""  },
-			{ "ToolKit", "", 75, 35, ""  },
-			{ "FirstAidKit", "", 15, 35, ""  },
-			{ "ItemRadio", "", 250, 100, "" },
-			{ "NVGoggles", "", 200, 35, ""  }
+		    { "hgun_P07_F", "Multi Use Pistol", 3500, 1200, ""},
+            { "arifle_SPAR_01_blk_F", "Multi Use Rifle", 50000, 20000, "" },
+            { "SMG_05_F", "", 8500, 4000, "" },
+            { "muzzle_snds_L", "", 1000, 400, "" },
+            { "optic_Holosight", "", 2500, 1200, "" },
+            { "Binocular", "", 500, 200, "" },
+            { "ItemGPS", "", 1000, 400, "" },
+            { "ToolKit", "", 750, 350, "" },
+            { "FirstAidKit", "", 150, 70, ""},
+            { "NVGoggles", "", 2000, 1000, "" }
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
-            { "11Rnd_45ACP_Mag", "", 130, 65, "" },
-            { "30Rnd_65x39_caseless_mag", "", 130, 65, "" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "" },
-            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "" }, //Apex DLC
-			{ "16Rnd_9x21_green_Mag", "", 200, ""  },
-			{ "16Rnd_9x21_yellow_Mag", "", 250, ""  },
-			{ "16Rnd_9x21_red_Mag", "", 300, ""  },			
-			{ "30Rnd_9x21_Mag_SMG_02", "", 50, ""  },
-			{ "30Rnd_556x45_Stanag_Tracer_Green", "", 300, "" },
-			{ "30Rnd_556x45_Stanag_Tracer_Yellow", "", 350, ""  },
-			{ "30Rnd_556x45_Stanag_Tracer_Red", "", 400, ""  },
-			{ "20Rnd_556x45_UW_mag", "", 25, ""  },
-			{ "30Rnd_556x45_Stanag", "", 3500, ""  },
-			{ "30Rnd_556x45_Stanag_Tracer_Red", "", 850, ""  },
-			{ "30Rnd_65x39_caseless_mag", "", 300, ""  }
+            { "16Rnd_9x21_green_Mag", "Rubber Pistol Mag", 2000, 1000, "" },
+            { "16Rnd_9x21_yellow_Mag", "Tazer Pistol Mag", 2500, 1200, "" },
+            { "30Rnd_556x45_Stanag_Tracer_Green", "Rubber Magazine", 3000, 1400, ""},
+            { "30Rnd_9x21_Mag_SMG_02", "", 500, 200, "" }
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 325, "" },
