@@ -10,9 +10,6 @@ private["_vehicle","_mode"];
 _vehicle = param [0,objNull,[objNull]];
 _mode = param[1,0];
 
-systemChat ">> fn_copSiren.sqf";
-systemChat format [">> mode = %1",_mode];
-
 if(isNull _vehicle) exitWith {};
 if(isNil {_vehicle getVariable "siren"}) exitWith {};
 
@@ -25,8 +22,7 @@ while {true} do {
     if(!alive _vehicle) exitWith {};
     if(isNull _vehicle) exitWith {};
     _vehicle say3D "SirenLand";
-    systemChat ">> Say SirenLand";
-    sleep 1.4;
+    uiSleep 1.4;
     if(!(_vehicle getVariable "siren")) exitWith {};
 };
 }else{
@@ -38,8 +34,7 @@ while {true} do {
     if(!alive _vehicle) exitWith {};
     if(isNull _vehicle) exitWith {};
     _vehicle say3D "SirenCity";
-    systemChat ">> Say SirenCity";
-    sleep 1.48;
+    uiSleep 1.48;
     if(!(_vehicle getVariable "siren")) exitWith {};
 };
 };

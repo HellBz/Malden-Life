@@ -217,10 +217,8 @@ switch (_code) do {
                 life_siren_active = false;
             };*/
             if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
-	           systemChat "<< F pressed";
 	            _veh = vehicle player;
 	            if(isNil {_veh GVAR "siren"}) then {_veh SVAR ["siren",false,true];};
-	            	systemChat ">> siren var set";
 	            if((_veh GVAR "siren")) then {
 	                titleText [localize "STR_MISC_SirensOFF","PLAIN"];
 	                _veh SVAR ["siren",false,true];
@@ -229,14 +227,12 @@ switch (_code) do {
 	                _veh SVAR ["siren",true,true];
 	                if(_shift) then {
 	                    if(playerSide == west) then {
-	                    	systemChat "call life_fnc_copSiren  [0]";
 	                        [_veh,0]remoteExecCall["life_fnc_copSiren",RCLIENT];
 	                    } else {
 	                        [_veh,0]remoteExecCall["life_fnc_MedicSiren",RCLIENT];
 	                    };
 	                }else{
 	                    if(playerSide == west) then {
-	                    	systemChat "call life_fnc_copSiren  [1]";
 	                        [_veh,1]remoteExecCall["life_fnc_copSiren",RCLIENT];
 	                    } else {
 	                        [_veh,1]remoteExecCall["life_fnc_MedicSiren",RCLIENT];
