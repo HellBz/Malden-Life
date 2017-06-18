@@ -67,6 +67,7 @@ for "_i" from 0 to 1 step 0 do {
     _hideout setVariable ["inCapture",true,true];
     if (_cP >= 1 || !alive player) exitWith {_hideout setVariable ["inCapture",false,true];};
     if (life_istazed) exitWith {_hideout setVariable ["inCapture",false,true];}; //Tazed
+    if (life_isstuned) exitWith {_hideout setVariable ["inCapture",false,true];}; //Stuned
     if (life_isknocked) exitWith {_hideout setVariable ["inCapture",false,true];}; //Knocked
     if (life_interrupted) exitWith {_hideout setVariable ["inCapture",false,true];};
 };
@@ -74,7 +75,7 @@ for "_i" from 0 to 1 step 0 do {
 //Kill the UI display and check for various states
 "progressBar" cutText ["","PLAIN"];
 player playActionNow "stop";
-if (!alive player || life_istazed || life_isknocked) exitWith {life_action_inUse = false;_hideout setVariable ["inCapture",false,true];};
+if (!alive player || life_istazed || life_isstuned || life_isknocked) exitWith {life_action_inUse = false;_hideout setVariable ["inCapture",false,true];};
 if (player getVariable ["restrained",false]) exitWith {life_action_inUse = false;_hideout setVariable ["inCapture",false,true];};
 if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout setVariable ["inCapture",false,true];};
 life_action_inUse = false;
