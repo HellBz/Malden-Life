@@ -7,10 +7,8 @@
     Adds the light effect to cop vehicles, specifically the offroad.
 */
 Private ["_vehicle","_lightRed","_lightBlue","_lightWhite","_lightYellow","_lightleft","_lightright","_leftRed","_leftheadlight","_brightness","_lightFleft","_lightFright"];
-_vehicle = _this select 0;
+_vehicle = param [0,objNull,[objNull]];
     
-    systemChat ">> fn_copLights.sqf";
-
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
 _lightRed = [0.1, 0.1, 20];
 _lightBlue = [0.1, 0.1, 20];
@@ -209,39 +207,18 @@ _lightright setLightDayLight true;
 
 
 //Daytime Nighttime Lights///#Spikey
-if (typeOf _vehicle == "C_Offroad_01_repair_F") then {
-    _brightness = Switch(true) do {
-        case (daytime >=7 && daytime <=8) : {3};
-        case (daytime >=8 && daytime <=10) : {7};
-        case (daytime >=10 && daytime <=14) : {13};
-        case (daytime >=14 && daytime <=16) : {11};
-        case (daytime >=16 && daytime <=18) : {9};
-        case (daytime >=18 && daytime <=20) : {1};
-        case (daytime >=20 && daytime <=21) : {0.95};
-        case (daytime >=21 && daytime <=22) : {0.75};
-        case (daytime >=22 && daytime <=24) : {0.7};
-        case (daytime >=0 && daytime <=6) : {0.95};
-        case (daytime >=6 && daytime <=7) : {1};
-        Default {10};
-    };
-}else{
-    _brightness = Switch(true) do {
-        case (daytime >=7 && daytime <=8) : {10};
-        case (daytime >=8 && daytime <=10) : {18};
-        case (daytime >=10 && daytime <=16) : {52};
-        case (daytime >=16 && daytime <=17) : {25};
-        case (daytime >=17 && daytime <=18) : {20};
-        case (daytime >=18 && daytime <=20) : {3};
-        case (daytime >=20 && daytime <=21) : {2.85};
-        case (daytime >=21 && daytime <=24) : {2.75};
-        case (daytime >=0 && daytime <=6) : {3};
-        case (daytime >=6 && daytime <=7) : {4};
-        Default {10};
+fnc_brightness = {
+    If (daytime <= 12 && daytime >= 0) then {
+        _brightness = ((1+(daytime))*daytime) + 10
+    }else{
+        _negdaytime = 24 - daytime;
+        _brightness = ((1+(_negdaytime))*_negdaytime) + 10
     };
 };
 
 _leftRed = true;  
-while{ (alive _vehicle)} do  {  
+while{ (alive _vehicle)} do  {
+    [] call fnc_brightness;  
     if(!(_vehicle getVariable "lights")) exitWith {};
     if (round diag_fps < 10) exitWith {};
     if(_leftRed) then  
@@ -300,7 +277,7 @@ while{ (alive _vehicle)} do  {
                 Default {
                     _lightleft setLightBrightness 0;
                     _lightright setLightBrightness _brightness;
-                    uiSleep 0.4;
+                    uiSleep 0.5;
                     _lightright setLightBrightness 0;
                 };
             };

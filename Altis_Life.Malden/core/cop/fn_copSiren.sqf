@@ -8,7 +8,7 @@
 */
 private["_vehicle","_mode"];
 _vehicle = param [0,objNull,[objNull]];
-_mode = _this select 1;
+_mode = param[1,0];
 
 systemChat ">> fn_copSiren.sqf";
 systemChat format [">> mode = %1",_mode];
@@ -20,6 +20,7 @@ if (_mode == 0) then {
     systemChat ">> Mode 0";
 while {true} do {
     if(!(_vehicle getVariable "siren")) exitWith {};
+    If(!isEngineOn _vehicle)exitWith{};
     if(EQUAL(count crew _vehicle,0)) then {_vehicle setVariable ["siren",false,true]};
     if(!alive _vehicle) exitWith {};
     if(isNull _vehicle) exitWith {};
@@ -32,6 +33,7 @@ while {true} do {
 systemChat ">> Mode 1";
 while {true} do {
     if(!(_vehicle getVariable "siren")) exitWith {};
+    If(!isEngineOn _vehicle)exitWith{};
     if(EQUAL(count crew _vehicle,0)) then {_vehicle setVariable ["siren",false,true]};
     if(!alive _vehicle) exitWith {};
     if(isNull _vehicle) exitWith {};
