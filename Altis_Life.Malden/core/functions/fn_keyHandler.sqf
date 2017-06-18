@@ -229,16 +229,16 @@ switch (_code) do {
                 if(_shift) then {
                     if(playerSide == west) then {
                     	systemChat "call life_fnc_copSiren  [0]";
-                        [_veh,0]remoteExecCall["life_fnc_copSiren",1,true];
+                        [_veh,0]remoteExec["life_fnc_copSiren",1,true];
                     } else {
-                        [_veh,0]remoteExecCall["life_fnc_MedicSiren",1,true];
+                        [_veh,0]remoteExec["life_fnc_MedicSiren",1,true];
                     };
                 }else{
                     if(playerSide == west) then {
                     	systemChat "call life_fnc_copSiren  [1]";
-                        [_veh,1]remoteExecCall["life_fnc_copSiren",1,true];
+                        [_veh,1]remoteExec["life_fnc_copSiren",1,true];
                     } else {
-                        [_veh,1]remoteExecCall["life_fnc_MedicSiren",1,true];
+                        [_veh,1]remoteExec["life_fnc_MedicSiren",1,true];
                     };
                 };
             };
@@ -249,7 +249,7 @@ switch (_code) do {
         if(playerSide in [west,independent] && {vehicle player != player} && {((driver vehicle player) == player)} && !(vehicle player getVariable ["Yelp",false])) then {
             if(playerSide == west) then {
                 if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
-                    [0,player] remoteExecCall ["life_fnc_yelp",1, true];
+                    [0,player] remoteExec ["life_fnc_yelp",1, true];
                     vehicle player setVariable ["Yelp",true];
                     [] spawn {
                     sleep 1.4;
@@ -258,7 +258,7 @@ switch (_code) do {
                 };
             } else {
                 if(!(typeOf vehicle player in ["B_Heli_Light_01_F"])) then {
-                    [1,player] remoteExecCall ["life_fnc_yelp",1, true];
+                    [1,player] remoteExec ["life_fnc_yelp",1, true];
                     vehicle player setVariable ["Yelp",true];
                     [] spawn {
                     sleep 2;
@@ -273,7 +273,7 @@ switch (_code) do {
         if(playerSide in [west] && {vehicle player != player} && {((driver vehicle player) == player)} && !(vehicle player getVariable ["getDown",false])) then {
             if(playerSide == west) then {
                 if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
-                    [0,player] remoteExecCall ["life_fnc_polGetDown",1, true];
+                    [0,player] remoteExec ["life_fnc_polGetDown",1, true];
                     vehicle player setVariable ["getDown",true];
                     [] spawn {
                     sleep 1.4;
