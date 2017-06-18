@@ -8,7 +8,7 @@
 */
 private["_vehicle","_mode"];
 _vehicle = param [0,objNull,[objNull]];
-_mode = _this select 1;
+_mode = param[1,0];
 
 systemChat ">> fn_copSiren.sqf";
 systemChat format [">> mode = %1",_mode];
