@@ -237,17 +237,17 @@ switch (_code) do {
                 _veh SVAR ["siren",true,true];
                 if(_shift) then {
                     if(playerSide == west) then {
-                        [[_veh,0],"life_fnc_copSiren",nil,true] call life_fnc_MP;
+                        [_veh,0]remoteExecCall["life_fnc_copSiren",-2,true];
                         systemChat "call life_fnc_copSiren  [0]";
                     } else {
-                        [[_veh,0],"life_fnc_MedicSiren",nil,true] call life_fnc_MP;
+                        [_veh,0]remoteExecCall["life_fnc_MedicSiren",-2,true];
                     };
                 }else{
                     if(playerSide == west) then {
-                        [[_veh,1],"life_fnc_copSiren",nil,true] call life_fnc_MP;
+                        [_veh,1]remoteExecCall["life_fnc_copSiren",-2,true];
                         systemChat "call life_fnc_copSiren  [1]";
                     } else {
-                        [[_veh,1],"life_fnc_MedicSiren",nil,true] call life_fnc_MP;
+                        [_veh,1]remoteExecCall["life_fnc_MedicSiren",-2,true];
                     };
                 };
             };
