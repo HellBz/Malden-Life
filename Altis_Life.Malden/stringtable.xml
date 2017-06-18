@@ -6267,6 +6267,11 @@
             <Polish>Jabłka</Polish>
         </Key>
 		
+		STR_Item_wheel
+		<Key ID="STR_Item_wheel">
+            <Original>Tire</Original>
+            <German>Autoreifen</German>
+        </Key>
 		<Key ID="STR_Item_OloliquiSeed">
             <Original>Ololiuqui Seeds</Original>
             <German>Ololiuqui Blüten</German>
@@ -8613,6 +8618,14 @@
             <Italian>Raddrizza veicolo</Italian>
             <Portuguese>Desvirar Veículo</Portuguese>
             <Polish>Ustaw pojazd</Polish>
+        </Key>
+		<Key ID="STR_vInAct_addW">
+            <Original>Mount Tire</Original>
+            <German>Reifen montieren</German>
+        </Key>
+		<Key ID="STR_vInAct_remW">
+            <Original>Remove Tire</Original>
+            <German>Reifen abmontieren</German>
         </Key>
         <Key ID="STR_vInAct_GetInVehicle">
             <Original>Get In Vehicle</Original>

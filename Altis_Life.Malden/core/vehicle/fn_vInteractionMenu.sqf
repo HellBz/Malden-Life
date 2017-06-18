@@ -12,10 +12,11 @@
 #define Btn4 37453
 #define Btn5 37454
 #define Btn6 37455
+#define Btn7 37456
 #define Title 37401
 private ["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_id"];
 if (!dialog) then {
-    createDialog "vInteraction_Menu";
+    createDialog "pInteraction_Menu";
 };
 disableSerialization;
 
@@ -31,12 +32,31 @@ _Btn3 = _display displayCtrl Btn3;
 _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
+_Btn7 = _display displayCtrl Btn7;
+_title = _display displayCtrl Title;
 life_vInact_curTarget = _curTarget;
 _id = getObjectDLC _curTarget;
+
+
+_title ctrlSetText "Fahrzeuginteraktionen";
 
 //Set Repair Action
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck; closeDialog 0;";
+
+if !(_curTarget isKindOf "Ship" && _curTarget isKindOf "Air") then {
+	if (life_inv_wheel > 0) then {
+		_Btn7 ctrlSetText localize "STR_vInAct_addW";
+		_Btn7 buttonSetAction "[1,life_vInact_curTarget] call life_fnc_remWheel;";
+		_Btn7 ctrlEnable true;
+		_Btn7 ctrlShow true;
+	} else {
+		_Btn7 ctrlEnable true;
+		_Btn7 ctrlShow true;
+		_Btn7 ctrlSetText localize "STR_vInAct_remW";
+		_Btn7 buttonSetAction "[0,life_vInact_curTarget] call life_fnc_remWheel;";
+	};
+};
 
 if ((life_inv_toolkit >= 1) && {alive life_vInact_curTarget} && {([life_vInact_curTarget] call life_fnc_isDamaged)}) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 

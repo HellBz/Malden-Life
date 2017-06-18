@@ -13,14 +13,14 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "traube", "redgull", "tbacon", "pickaxe", "toolkit", "battery", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "beer", "agavenBeer" };
+        items[] = { "waterBottle", "rabbit", "apple", "traube", "redgull", "tbacon", "pickaxe", "toolkit", "battery", "fuelFull", "wheel", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "beer", "agavenBeer" };
     };
 	
 	class huntingMarket {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "huntingKnife", "waterBottle", "rabbit", "toolkit", "battery", "fuelFull","rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw"};
+        items[] = { "huntingKnife", "waterBottle", "rabbit", "toolkit", "battery", "fuelFull", "wheel", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw"};
     };
 
     class med_market {
@@ -165,6 +165,18 @@ class VirtualItems {
         edible = -1;
         drinkable = -1;
         icon = "icons\ico_huntingKnife.paa";
+    };
+	
+	class wheel {
+        variable = "wheel";
+        displayName = "STR_Item_wheel";
+        weight = 10;
+        buyPrice = 500;
+        sellPrice = 100;
+        illegal = false;
+        edible = -1;
+        drinkable = -1;
+        icon = "icons\ico_wheel.paa";
     };
 
     class defibrillator {
