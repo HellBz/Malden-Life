@@ -38,7 +38,7 @@ if(_shooter isKindOf "Man" && alive player) then {
 		_obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player); //Again why in the fuck was this being created globally? I could of sworn I made it local back in ARMA 3 Beta...
 		_obj setPosATL ASLTOATL(visiblePositionASL player);
 		titleText ["", "BLACK OUT", 0.5];
-		[[player,"ApanPercMstpSnonWnonDnon_ApanPpneMstpSnonWnonDnon"],"life_fnc_animSync",true,false] call life_fnc_MP;
+		[player,"ApanPercMstpSnonWnonDnon_ApanPpneMstpSnonWnonDnon"] remoteExec ["life_fnc_animSync",true];
 		//[[0,"STR_NOTF_Tazed",true,[profileName, _shooter GVAR ["realname",name _shooter]]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 		_unit attachTo [_obj,[0,0,0]];
 		disableUserInput true;
@@ -47,7 +47,7 @@ if(_shooter isKindOf "Man" && alive player) then {
 		titleText ["", "BLACK IN", 2];
 		uiSleep 11;
 		//player addWeapon _curWep;
-		[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] call life_fnc_MP;
+		[player,"amovppnemstpsraswrfldnon"] remoteExec ["life_fnc_animSync",true]
 		if(!(player GVAR ["Escorting",false])) then {
 			detach player;
 		};
