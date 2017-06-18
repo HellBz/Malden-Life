@@ -11,6 +11,7 @@ _vehicle = param [0,objNull,[objNull]];
 _mode = _this select 1;
 
 systemChat ">> fn_copSiren.sqf";
+systemChat format [">> mode = %1",_mode];
 
 if(isNull _vehicle) exitWith {};
 if(isNil {_vehicle getVariable "siren"}) exitWith {};
