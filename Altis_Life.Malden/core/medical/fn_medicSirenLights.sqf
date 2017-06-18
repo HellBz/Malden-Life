@@ -20,8 +20,8 @@ if (_trueorfalse) then {
 } else {
     _vehicle setVariable ["lights",true,true];
     if(_mode == 0) then {
-		[_vehicle,0.04] remoteExec ["life_fnc_medicLights",RCLIENT];
+		[_vehicle,0.04] remoteExec ["life_fnc_copLights",RCLIENT];
     }else{
-		[_vehicle,0.15] remoteExec ["life_fnc_medicLights",RCLIENT];
+		[_vehicle,0.15] remoteExec ["life_fnc_copLights",RCLIENT];
     };
 };
