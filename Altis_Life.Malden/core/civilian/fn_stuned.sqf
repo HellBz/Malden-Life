@@ -1,4 +1,4 @@
-#include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
 	File: fn_stuned.sqf
 	Author: Bryan "Tonic" Boardwine edited by [ETG]Spikey
