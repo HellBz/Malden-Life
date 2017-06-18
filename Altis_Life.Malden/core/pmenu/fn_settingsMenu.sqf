@@ -33,5 +33,5 @@ if (isNil "life_settings_revealObjects") then {
 
 CONTROL(2900,2971) cbSetChecked life_settings_enableSidechannel;
 CONTROL(2900,2973) cbSetChecked life_settings_enableNewsBroadcast;
-CONTROL(2900,2970) cbSetChecked life_settings_tagson;
+ctrlEnable [2970, false];
 CONTROL(2900,2972) cbSetChecked life_settings_revealObjects;
