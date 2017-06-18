@@ -26,23 +26,23 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
-            { "hgun_Rook40_F", "", 650, 325, "" },
-            { "hgun_Pistol_01_F", "", 700, 350, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_02_F", "", 985, 492, "" },
-            { "hgun_ACPC2_F", "", 1150, 575, "" },
-            { "SMG_05_F", "", 1800, 900, "" }, //Apex DLC
-            { "hgun_PDW2000_F", "", 2000, 1000, "" }
+            { "hgun_Rook40_F", "", 7500, 5000, "" },
+            { "hgun_Pistol_01_F", "", 10000, 5000, "" }, //Apex DLC
+            { "hgun_Pistol_heavy_02_F", "", 20000, 10000, "" },
+            { "hgun_ACPC2_F", "", 12000, 6000, "" },
+            { "SMG_05_F", "", 25000, 12500, "" }, //Apex DLC
+            { "hgun_PDW2000_F", "", 35000, 17500, "" }
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 10, "" },
-            { "6Rnd_45ACP_Cylinder", "", 150, 10, "" },
-            { "9Rnd_45ACP_Mag", "", 20, 10, "" },
-            { "30Rnd_9x21_Mag", "", 25, 10, "" },
-            { "30Rnd_9x21_Mag_SMG_02", "", 25, 10, "" }, //Apex DLC
-            { "10Rnd_9x21_Mag", "", 25, 10, "" } //Apex DLC
+            { "16Rnd_9x21_Mag", "", 500, 100, "" },
+            { "6Rnd_45ACP_Cylinder", "", 200, 75, "" },
+            { "9Rnd_45ACP_Mag", "", 500, 100, "" },
+            { "30Rnd_9x21_Mag", "", 750, 200, "" },
+            { "30Rnd_9x21_Mag_SMG_02", "", 1000, 250, "" }, //Apex DLC
+            { "10Rnd_9x21_Mag", "", 250, 100, "" } //Apex DLC
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 100, 25, "" }
+            { "optic_ACO_grn_smg", "", 1000, 5200, "" }
         };
     };
 	
