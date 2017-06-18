@@ -11629,6 +11629,10 @@
             <Italian>Omicidio di un agente</Italian>
             <Polish>Zabijając żołnierza</Polish>
         </Key>
+		<Key ID="STR_Crime_26">
+            <Original>Using Firework Batterys in cities</Original>
+            <German>Zünden von Batterien innerhalb von Städten</German>
+        </Key>
     </Package>
     <Package name="FuelTank_Mission">
         <Key ID="STR_MAR_FuelTank_Storage">
