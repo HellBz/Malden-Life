@@ -21,7 +21,7 @@ _mapKey = (actionKeys "ShowMap" select 0);
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Vault handling...
-if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "SitDown") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed)) exitWith {
+if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "SitDown") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed || life_isstuned)) exitWith {
     true;
 };
 
@@ -135,7 +135,7 @@ switch (_code) do {
     case 34: {
         if (_shift) then {_handled = true;};
         if (_shift && playerSide isEqualTo civilian && !isNull cursorObject && cursorObject isKindOf "Man" && isPlayer cursorObject && alive cursorObject && cursorObject distance player < 4 && speed cursorObject < 1) then {
-            if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player == primaryWeapon player || currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isknocked) then {
+            if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player == primaryWeapon player || currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isstuned && !life_isknocked) then {
                 [cursorObject] spawn life_fnc_knockoutAction;
             };
         };
@@ -217,10 +217,8 @@ switch (_code) do {
                 life_siren_active = false;
             };*/
             if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
-	           systemChat "<< F pressed";
 	            _veh = vehicle player;
 	            if(isNil {_veh GVAR "siren"}) then {_veh SVAR ["siren",false,true];};
-	            	systemChat ">> siren var set";
 	            if((_veh GVAR "siren")) then {
 	                titleText [localize "STR_MISC_SirensOFF","PLAIN"];
 	                _veh SVAR ["siren",false,true];
@@ -229,17 +227,15 @@ switch (_code) do {
 	                _veh SVAR ["siren",true,true];
 	                if(_shift) then {
 	                    if(playerSide == west) then {
-	                    	systemChat "call life_fnc_copSiren  [0]";
-	                        [_veh,0]remoteExecCall["life_fnc_copSiren",-2,true];
+	                        [_veh,0]remoteExecCall["life_fnc_copSiren",RCLIENT];
 	                    } else {
-	                        [_veh,0]remoteExecCall["life_fnc_MedicSiren",-2,true];
+	                        [_veh,0]remoteExecCall["life_fnc_MedicSiren",RCLIENT];
 	                    };
 	                }else{
 	                    if(playerSide == west) then {
-	                    	systemChat "call life_fnc_copSiren  [1]";
-	                        [_veh,1]remoteExecCall["life_fnc_copSiren",-2,true];
+	                        [_veh,1]remoteExecCall["life_fnc_copSiren",RCLIENT];
 	                    } else {
-	                        [_veh,1]remoteExecCall["life_fnc_MedicSiren",-2,true];
+	                        [_veh,1]remoteExecCall["life_fnc_MedicSiren",RCLIENT];
 	                    };
 	                };
 	            };
@@ -251,7 +247,7 @@ switch (_code) do {
         if(playerSide in [west,independent] && {vehicle player != player} && {((driver vehicle player) == player)} && !(vehicle player getVariable ["Yelp",false])) then {
             if(playerSide == west) then {
                 if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
-                    [0,player] remoteExecCall ["life_fnc_yelp",-2, true];
+                    [0,player] remoteExecCall ["life_fnc_yelp",RCLIENT];
                     vehicle player setVariable ["Yelp",true];
                     [] spawn {
                     sleep 1.4;
@@ -260,7 +256,7 @@ switch (_code) do {
                 };
             } else {
                 if(!(typeOf vehicle player in ["B_Heli_Light_01_F"])) then {
-                    [1,player] remoteExecCall ["life_fnc_yelp",-2, true];
+                    [1,player] remoteExecCall ["life_fnc_yelp",RCLIENT];
                     vehicle player setVariable ["Yelp",true];
                     [] spawn {
                     sleep 2;
@@ -275,7 +271,7 @@ switch (_code) do {
         if(playerSide in [west] && {vehicle player != player} && {((driver vehicle player) == player)} && !(vehicle player getVariable ["getDown",false])) then {
             if(playerSide == west) then {
                 if(!(typeOf vehicle player in ["B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"])) then {
-                    [0,player] remoteExecCall ["life_fnc_polGetDown",-2, true];
+                    [0,player] remoteExecCall ["life_fnc_polGetDown",RCLIENT];
                     vehicle player setVariable ["getDown",true];
                     [] spawn {
                     sleep 1.4;
