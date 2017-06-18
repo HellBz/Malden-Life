@@ -174,20 +174,13 @@ switch (_code) do {
     case 38: {
         //If cop run checks for turning lights on.
         if(playerSide in [west,independent]) then {
-        systemChat "<< L pressed";
         _veh = vehicle player;
-        systemChat format [">> vehicle: %1", _veh];
             if(isNil {_veh GVAR "lights"}) then {_veh SVAR ["lights",false,true];};
-            	systemChat ">> Light var set";
             if(_veh != player && (typeOf _veh) in ["C_Offroad_01_repair_F","C_Offroad_02_unarmed_F","C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F","I_MRAP_03_hmg_F","I_MRAP_03_F","B_APC_Wheeled_01_cannon_F","C_Van_01_box_F"]) then {
-               	systemChat ">> vehicle in List !";
                 if(!isNil {_veh GVAR "lights"}) then {
-                	systemChat ">> Lights are off";
                     if(_shift && !_ctrlKey) then {
-                    	systemChat ">> Pressed with Shift turning Lights on";
                         if(playerSide == west) then {
                             [_veh,0] call life_fnc_sirenLights;
-                            systemChat "call life_fnc_sirenLights  [0]";
                         } else {
                             [_veh,0] call life_fnc_medicSirenLights;
                         };
@@ -196,7 +189,6 @@ switch (_code) do {
                     if(_ctrlKey && !_shift) then {
                         if(playerSide == west) then {
                             [_veh,1] call life_fnc_sirenLights;
-                            systemChat "call life_fnc_sirenLights  [1]";
                         } else {
                             [_veh,1] call life_fnc_medicSirenLights;
                         };
@@ -226,7 +218,6 @@ switch (_code) do {
             };*/
            systemChat "<< F pressed";
             _veh = vehicle player;
-            systemChat format [">> vehicle: %1", _veh];
             if(isNil {_veh GVAR "siren"}) then {_veh SVAR ["siren",false,true];};
             	systemChat ">> siren var set";
             if((_veh GVAR "siren")) then {

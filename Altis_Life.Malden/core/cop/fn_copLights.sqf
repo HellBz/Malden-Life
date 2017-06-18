@@ -9,8 +9,6 @@
 Private ["_vehicle","_lightRed","_lightBlue","_lightWhite","_lightYellow","_lightleft","_lightright","_leftRed","_leftheadlight","_brightness","_lightFleft","_lightFright"];
 _vehicle = _this select 0;
     
-    systemChat ">> fn_copLights.sqf";
-
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
 _lightRed = [0.1, 0.1, 20];
 _lightBlue = [0.1, 0.1, 20];
