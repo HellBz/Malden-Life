@@ -396,4 +396,9 @@ class Life_Client_Core {
 		class phone {};
 		class who {};
     };
+	
+	class Business {
+        file = "core\business";
+        class businessApplicationAdd {};
+    };
 };

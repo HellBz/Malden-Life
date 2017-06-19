@@ -89,7 +89,6 @@ class CfgRemoteExec {
         F(life_fnc_wantedFetch,SERVER)
         F(life_fnc_wantedProfUpdate,SERVER)
         F(life_fnc_wantedRemove,SERVER)
-		F(life_fnc_busineddApplicationAdd,SERVER)
         F(SPY_fnc_cookieJar,SERVER)
         F(SPY_fnc_observe,SERVER)
         F(TON_fnc_addContainer,SERVER)
@@ -118,6 +117,7 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+		F(life_fnc_busineddApplicationAdd,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)

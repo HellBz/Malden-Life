@@ -561,7 +561,7 @@ class VirtualItems {
 
 	//Fireworks
 	class rocket_n_r {
-		displayName = "STR_Item_rocket_n_r"
+		displayName = "STR_Item_rocket_n_r";
 		variable =  "rocket_n_r";
 		weight = 5;
 		illegal = false;
@@ -572,7 +572,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_n_g {
-		displayName = "STR_Item_rocket_n_g"
+		displayName = "STR_Item_rocket_n_g";
 		variable =  "rocket_n_g";
 		weight = 5;
 		illegal = false;
@@ -583,7 +583,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_n_b {
-		displayName = "STR_Item_rocket_n_b"
+		displayName = "STR_Item_rocket_n_b";
 		variable =  "rocket_n_b";
 		weight = 5;
 		illegal = false;
@@ -594,7 +594,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_n_w {
-		displayName = "STR_Item_rocket_n_w"
+		displayName = "STR_Item_rocket_n_w";
 		variable =  "rocket_n_w";
 		weight = 5;
 		illegal = false;
@@ -605,7 +605,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_n_ran {
-		displayName = "STR_Item_rocket_n_ran"
+		displayName = "STR_Item_rocket_n_ran";
 		variable =  "rocket_n_ran";
 		weight = 5;
 		illegal = false;
@@ -617,7 +617,7 @@ class VirtualItems {
 	};
 	
 	class rocket_f_r {
-		displayName = "STR_Item_rocket_f_r"
+		displayName = "STR_Item_rocket_f_r";
 		variable =  "rocket_f_r";
 		weight = 5;
 		illegal = false;
@@ -628,7 +628,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_f_g {
-		displayName = "STR_Item_rocket_f_g"
+		displayName = "STR_Item_rocket_f_g";
 		variable =  "rocket_f_g";
 		weight = 5;
 		illegal = false;
@@ -639,7 +639,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_f_b {
-		displayName = "STR_Item_rocket_f_b"
+		displayName = "STR_Item_rocket_f_b";
 		variable =  "rocket_f_b";
 		weight = 5;
 		illegal = false;
@@ -650,7 +650,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_f_w {
-		displayName = "STR_Item_rocket_f_w"
+		displayName = "STR_Item_rocket_f_w";
 		variable =  "rocket_f_w";
 		weight = 5;
 		illegal = false;
@@ -661,7 +661,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_f_ran {
-		displayName = "STR_Item_rocket_f_ran"
+		displayName = "STR_Item_rocket_f_ran";
 		variable =  "rocket_f_ran";
 		weight = 5;
 		illegal = false;
@@ -673,7 +673,7 @@ class VirtualItems {
 	};
 	
 	class rocket_r_r {
-		displayName = "STR_Item_rocket_r_r"
+		displayName = "STR_Item_rocket_r_r";
 		variable =  "rocket_r_r";
 		weight = 5;
 		illegal = false;
@@ -684,7 +684,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_r_g {
-		displayName = "STR_Item_rocket_r_g"
+		displayName = "STR_Item_rocket_r_g";
 		variable =  "rocket_r_g";
 		weight = 5;
 		illegal = false;
@@ -695,7 +695,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_r_b {
-		displayName = "STR_Item_rocket_r_b"
+		displayName = "STR_Item_rocket_r_b";
 		variable =  "rocket_r_b";
 		weight = 5;
 		illegal = false;
@@ -706,7 +706,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_r_w {
-		displayName = "STR_Item_rocket_r_w"
+		displayName = "STR_Item_rocket_r_w";
 		variable =  "rocket_r_w";
 		weight = 5;
 		illegal = false;
@@ -717,7 +717,7 @@ class VirtualItems {
 		icon ="icons\ico_rakete.paa";
 	};
 	class rocket_r_ran {
-		displayName = "STR_Item_rocket_r_ran"
+		displayName = "STR_Item_rocket_r_ran";
 		variable = "rocket_r_ran";
 		weight = 5;
 		illegal = false;
