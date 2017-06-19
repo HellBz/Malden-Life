@@ -47,7 +47,7 @@ if(_shooter isKindOf "Man" && alive player) then {
 		titleText ["", "BLACK IN", 2];
 		uiSleep 11;
 		//player addWeapon _curWep;
-		[player,"amovppnemstpsraswrfldnon"] remoteExec ["life_fnc_animSync",true]
+		[player,"amovppnemstpsraswrfldnon"] remoteExec ["life_fnc_animSync",true];
 		if(!(player GVAR ["Escorting",false])) then {
 			detach player;
 		};

@@ -195,6 +195,26 @@ CREATE TABLE IF NOT EXISTS `containers` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `businessapplications`
+-- Used to manage businesses
+--
+
+CREATE TABLE `businessapplications` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `owner` varchar(255) NOT NULL,
+  `applicationTitle` varchar(500) NOT NULL,
+  `application` varchar(2000) NOT NULL,
+  `size` int(2) NOT NULL DEFAULT '0',
+  `desiredPaycheck` int(10) NOT NULL DEFAULT '0',
+  `status` varchar(25) NOT NULL DEFAULT 'in Bearbeitung',
+  `answer` varchar(2000) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `wanted`
 -- Needed for extDB latest update on git
 --
