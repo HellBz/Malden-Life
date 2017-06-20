@@ -400,5 +400,6 @@ class Life_Client_Core {
 	class Business {
         file = "core\business";
         class businessApplicationAdd {};
+		class businessApplication {};
     };
 };

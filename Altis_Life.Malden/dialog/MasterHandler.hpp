@@ -30,3 +30,4 @@
 #include "newsStation.hpp"
 #include "licenseEditor.hpp"
 #include "help.hpp"
+#include "business.hpp"

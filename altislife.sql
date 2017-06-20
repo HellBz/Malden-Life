@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `containers` (
 CREATE TABLE `businessapplications` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `owner` varchar(255) NOT NULL,
-  `applicationTitle` varchar(500) NOT NULL,
+  `name` varchar(500) NOT NULL,
   `application` varchar(2000) NOT NULL,
   `size` int(2) NOT NULL DEFAULT '0',
   `desiredPaycheck` int(10) NOT NULL DEFAULT '0',

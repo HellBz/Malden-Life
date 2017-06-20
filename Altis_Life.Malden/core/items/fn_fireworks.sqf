@@ -91,22 +91,22 @@ if (_mode == 0) then {
 
 	//fizzes
 	_singleFizz = [
-	"fizz_single_type1_1",
-	"fizz_single_type1_2",
-	"fizz_single_type1_3",
-	"fizz_single_type1_4",
-	"fizz_single_type2_1",
-	"fizz_single_type2_2",
-	"fizz_single_type2_3",
-	"fizz_single_type2_4"
+		"fizz_single_type1_1",
+		"fizz_single_type1_2",
+		"fizz_single_type1_3",
+		"fizz_single_type1_4",
+		"fizz_single_type2_1",
+		"fizz_single_type2_2",
+		"fizz_single_type2_3",
+		"fizz_single_type2_4"
 	];
 
 	//group fizzes
 	_groupFizz = [
-	"fizz_group1",
-	"fizz_group2",
-	"fizz_group3",
-	"fizz_group4"
+		"fizz_group1",
+		"fizz_group2",
+		"fizz_group3",
+		"fizz_group4"
 	];
 
 	switch (_type) do {
@@ -377,7 +377,7 @@ if (_mode == 1) then {
 						_light3 setLightFlareSize 1;
 
 						sleep (random 1);
-						_nul3 say3D (_singleFizz2 call BIS_fnc_selectRandom);
+						_nul3 say3D _singleFizz2;
 
 						sleep (2 - (random 1.5));
 						
@@ -441,7 +441,7 @@ if (_mode == 1) then {
 						_light3 setLightFlareSize 1;
 
 						sleep (random 1);
-						_nul3 say3D (_singleFizz2 call BIS_fnc_selectRandom);
+						_nul3 say3D _singleFizz2;
 
 						sleep (2 - (random 1.5));
 						
@@ -464,7 +464,7 @@ if (_mode == 1) then {
 	};
 
 	sleep 1;
-	_nul2 say3D (_groupFizz call BIS_fnc_selectRandom);
+	_nul2 say3D _groupFizz;
 	sleep 2;
 	deleteVehicle _nul2;
 };
