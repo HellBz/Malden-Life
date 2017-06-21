@@ -62,16 +62,6 @@ class Licenses {
 		editableBy = "blufor";
 		editableCondition = "[] call life_coplevel > 0";
     };
-	class gun {
-        variable = "wbk";
-        displayName = "STR_License_Firearm2";
-        price = 3500;
-        illegal = false;
-        side = "civ";
-		editable = true;
-		editableBy = "blufor";
-		editableCondition = "[] call life_coplevel > 4";
-    };
 	class hunting {
         variable = "hunting";
         displayName = "STR_License_Hunting";
