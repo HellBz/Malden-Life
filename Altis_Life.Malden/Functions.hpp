@@ -226,6 +226,7 @@ class Life_Client_Core {
         class teleport {};
         class whereAmI {};
 		class canProcess {};
+		class getPaycheck {};
     };
 
     class Gangs {

@@ -114,11 +114,11 @@ class Life_Settings {
     bank_civ = 3000; //Amount of cash in bank for new civillians
     bank_med = 4000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 500; //Payment for cops
+    paycheck_cop = 1500; //Payment for cops
     paycheck_civ = 350; //Payment for civillians
-    paycheck_med = 500; //Payment for medics
+    paycheck_med = 1200; //Payment for medics
 
-    paycheck_period = 30; //Scaled in minutes
+    paycheck_period = 5; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
 
     /* Player Job System Configurations */
@@ -225,3 +225,4 @@ class Life_Settings {
 #include "Config_Process.hpp"
 #include "Config_Housing.hpp"
 #include "Config_Garages.hpp"
+#include "Config_Business.hpp"

@@ -40,7 +40,7 @@ class Life_help_dialog
 		{
 			idc = -1;
 			text = "$STR_PM_ModMenu_head";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_ETG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_ETG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_ETG_RGB_B',0.8862])", 0.8};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			x = 0.298906 * safezoneW + safezoneX;
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.402187 * safezoneW;
@@ -90,7 +90,7 @@ class Life_help_dialog
 		{
 			idc = 10103;
 			text = "";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_ETG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_ETG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_ETG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			x = 0.427812 * safezoneW + safezoneX;
 			y = 0.269 * safezoneH + safezoneY;
 			w = 0.268125 * safezoneW;
@@ -99,7 +99,7 @@ class Life_help_dialog
 		class btn_close: Life_RscButtonMenu
 		{
 			idc = -1;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_ETG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_ETG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_ETG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			x = 0.427813 * safezoneW + safezoneX;

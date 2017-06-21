@@ -61,17 +61,7 @@ waitUntil {life_session_completed};
 [] spawn life_fnc_escInterupt;
 
 //Set bank amount for new players
-switch (playerSide) do {
-    case west: {
-        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_cop");
-    };
-    case civilian: {
-        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
-    };
-    case independent: {
-        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
-    };
-};
+life_paycheck = [] call life_fnc_getPaycheck;
 
 switch (playerSide) do {
     case west: {

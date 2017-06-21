@@ -7,13 +7,13 @@
 */
 disableSerialization;
 [
-        "",
-        0,
-        0.2,
-        10,
-        0,
-        0,
-        8
+	"",
+	0,
+	0.2,
+	10,
+	0,
+	0,
+	8
 ] spawn BIS_fnc_dynamicText;
 
 createDialog "RscDisplayWelcome";
@@ -26,10 +26,18 @@ _text2 = _display displayCtrl 1102;
 
 _message = "";
 _message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
-_message = _message + "Useful links (click on the links to open your browser)<br /><br />";
-_message = _message + " <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'>AsYetUntitled</a> -- The official repository for the project.<br /><br />";
-_message = _message + "TeamSpeak 3 address: ADDRESS HERE  <br /><br />";
-_message = _message + "Discord invite: <a href='https://discord.gg/sEcQdPn' color='#56BDD6'>ArmA RPG Life</a>  <br /><br />";
+_message = _message + "<t align='center' color='#F5CF27' size='2.5'>Wilkommen auf dem ETG Malden Life Server</t><br/>";
+_message = _message + "<t align='center' color='#F5CF27' size='2.0'>Wir bieten euch ein intensives Rollenspielerlebnis.</t><br/><br/><br/><br/>";
+_message = _message + "<t align='center'>TeamSpeak 3: 62.104.20.78:10060<br/>";
+_message = _message + "<t align='center'>Restarts: 0:00 Uhr, 6:00 Uhr, 12:00 Uhr, 18:00 Uhr<br/><br/><br/>";
+
+_message = _message + "<t align='center' color='#F5CF27' size='2.5'>Unternehmen</t><br/>";
+_message = _message + "<t align='center'>Unser Server bietet euch die Möglichkeit Unternehmen zu gründen.<br/>";
+_message = _message + "Unternehmen können auf ihre eigene Art und Weise Geld verdienen und Produkte verkaufen.";
+_message = _message + "Ein Unternehmen kann eine eigenes Grundstück, mit Shops, Spawns, Garagen und Lagerraum erhalten.";
+_message = _message + "Des weitern ist es den Spielern erlaubt und ermöglicht Mitspieler als Mitarbeiter einzustellen und ihnen Zugriff auf diese Ressourcen zu geben.<br/>";
+_message = _message + "Bei Interesse sucht die Unternehmensanmeldung auf und schreibt dort eine Bewerbung.</t><br/><br/>";
+
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);

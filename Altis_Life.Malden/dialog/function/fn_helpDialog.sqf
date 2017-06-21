@@ -46,13 +46,13 @@ if (_mode == 1) exitWith {
 	
 	//Get new text
 	_text = switch (_cond) do {
-		case "0": {["Server Informationen","<t color='#00F030'>Servername:</t> ETG Malden Life<br/><t color='#00F030'>Serveradresse:</t> xx.xx.xx.xx<br/><t color='#00F030'>Forum:</t> <a href=''>Forum besuchen</a><br/><t color='#00F030'>Teamspeak:</t> xx.xx.xx.xx<br/><br/><t color='#00F030'>Regeln:</t> <a href=''>Serverregeln ansehen</a><br/><br/><t color='#00F030'>Restarts: </t> 6:00/12:00/18:00/0:00"]};
+		case "0": {["Server Informationen","<t color='#00F030'>Servername:</t> ETG Malden Life<br/><t color='#00F030'>Serveradresse:</t> xx.xx.xx.xx<br/><t color='#00F030'>Forum:</t> <a href=''>Forum besuchen</a><br/><t color='#00F030'>Teamspeak 3:</t> 62.104.20.78:10060<br/><br/><t color='#00F030'>Regeln:</t> <a href=''>Serverregeln ansehen</a><br/><br/><t color='#00F030'>Restarts: </t> 6:00/12:00/18:00/0:00"]};
 		case "1": {["Team","<t color='#00F030'>Administratoren:</t><br/>- Spikey<br/>- Kellojo"]};
 		case "2": {["Tastenbelegung",'<t color="#00F030">Zivilisten:</t><br/>- Sammeln: "Aktionstaste 10 / Windows"<br/>- Spitzhacke: "Aktionstaste 10 / Windows"<br/>- Ohrstöpsel: "Shift + Bild Up"<br/>- Springen: "Shift + Leer"<br/>- Holster: "Shift + H"<br/>- Holster: "Strg + H"<br/>- Ausrauben: "Shift + G"<br/>- Ergeben: "Shift + B"<br/>- Fahrzeuginventar: "T"<br/>- Spielerinventar: "Z"<br/>- Fahrzeug auf-/abschließen: "U"<br/>- Gesten: "5-9"<br/><br/><t color="#00F030">Polizei:</t><br/>- Blaulicht: "Shift + L"<br/>- Sirene: "F"<br/>- Festnehmen: "Shift + R"<br/><br/><t color="#00F030">Sanitäter:</t><br/>- Blaulicht: "Shift + L"<br/>- Sirene: "F"<br/>- Wiederbeleben: "Aktionstaste 10 / Windows"<br/>']};
 		case "3": {["Lizenspreise",[2] call life_fnc_helpDialog]};
 		case "4": {["Fahrzeugpreise",[3] call life_fnc_helpDialog]};
 		case "5": {["Fahrzeug Reperatur", "Dein Auto besteht aus vielen verschiedenen Einzelteilen, welche du ab- und montieren kannst. Diese können weiterverkauft oder in andere Fahrzeuge eingebaut werden."]};
-		case "6": {["Unternehmen","Unternehmen können von Bürgern bei der Unternehmensanmeldung beantragt werden.<br/>Hierbei kann ein Unternehmen ein eigenes Gelände, Fahrzeuge, Verkaufsstände etc. erhalten und verwalten.<br/> Des weiteren können Mitarbeiter andere Bürger einlernen und im Unternehmen anstellen."]};
+		case "6": {["Unternehmen","Bürger haben die Möglichkeit Unternehmen zu gründen.<br/>Unternehmen können auf ihre eigene Art und Weise Geld verdienen und Produkte verkaufen.<br/>Ein Unternehmen kann eine eigenes Grundstück, mit Shops, Spawns, Garagen und Lagerraum erhalten.Des weitern ist es den Spielern erlaubt und ermöglicht Mitspieler als Mitarbeiter einzustellen und ihnen Zugriff auf diese Ressourcen zu geben.<br/>Bei Interesse sucht die Unternehmensanmeldung auf und schreibt dort eine Bewerbung."]};
 		case "7": {["Feuerwerk","Bei den Galaxy Feuerwerks Waren kannst du verschiedenste Arten von Feuerwerk erwerben, welche du dann überall zünden kannst. Jedoch solltest du aufpassen, Batterien sind in Städten ohne Genehmigung illegal."]};
 		
 		//jobs
