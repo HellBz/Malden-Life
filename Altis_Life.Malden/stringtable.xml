@@ -7262,14 +7262,11 @@
         </Key>
         <Key ID="STR_License_Firearm">
             <Original>Firearm License</Original>
-            <Czech>zbrojní průkaz</Czech>
-            <Spanish>Licencia de Armas</Spanish>
-            <Russian></Russian>
+            <German>Waffenbesitzkarte</German>
+        </Key>
+		<Key ID="STR_License_Firearm2">
+            <Original>Conceal Carry Permit</Original>
             <German>Waffenschein</German>
-            <French>Permis de Port d'Arme</French>
-            <Italian>Porto d'Armi</Italian>
-            <Portuguese>Licença de Porte de Armas</Portuguese>
-            <Polish>Pozwolenie na broń</Polish>
         </Key>
         <Key ID="STR_License_CG">
             <Original>Coast Guard License</Original>
