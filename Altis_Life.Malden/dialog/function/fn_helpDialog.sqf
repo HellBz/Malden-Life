@@ -14,6 +14,7 @@ _entrys = [
 	["Lizenspreise","3"],
 	["Fahrzeugpreise","4"],
 	["Unternehmen","6"],
+	["Jagen","8"],
 	["Fahrzeug Reperatur","5"],
 	["Feuerwerk","7"],
 	["",""],//Spacer
@@ -54,6 +55,7 @@ if (_mode == 1) exitWith {
 		case "5": {["Fahrzeug Reperatur", "Dein Auto besteht aus vielen verschiedenen Einzelteilen, welche du ab- und montieren kannst. Diese können weiterverkauft oder in andere Fahrzeuge eingebaut werden."]};
 		case "6": {["Unternehmen","Bürger haben die Möglichkeit Unternehmen zu gründen.<br/>Unternehmen können auf ihre eigene Art und Weise Geld verdienen und Produkte verkaufen.<br/>Ein Unternehmen kann eine eigenes Grundstück, mit Shops, Spawns, Garagen und Lagerraum erhalten.Des weitern ist es den Spielern erlaubt und ermöglicht Mitspieler als Mitarbeiter einzustellen und ihnen Zugriff auf diese Ressourcen zu geben.<br/>Bei Interesse sucht die Unternehmensanmeldung auf und schreibt dort eine Bewerbung."]};
 		case "7": {["Feuerwerk","Bei den Galaxy Feuerwerks Waren kannst du verschiedenste Arten von Feuerwerk erwerben, welche du dann überall zünden kannst. Jedoch solltest du aufpassen, Batterien sind in Städten ohne Genehmigung illegal."]};
+		case "8": {["Jagen","Auf der Insel gibt es viele verschiedene Tierarten, welche mit einer Jagdlizenz und einem Waffenschein legal gejagt werden können.<br/>Die Tiere können dann mithilfe eines Jagdmessers ausgenommen und beim Jagdhändler verkauft werden.<br/>Bei dem Jagdhändler kann nur eingekauft werden, wenn eine gültige Waffenlizenz und ein Jagdschein vorhanden ist."]};
 		
 		//jobs
 		case "100": {["Vorhandene Unternehmen", "Im folgenden werden alle aktive Unternehmen aufgelistet und genauer vorgestellt."]};

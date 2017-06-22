@@ -205,7 +205,6 @@ class WeaponShops {
         accs[] = {};
     };
 
-    //Cop Shops
     class cop_basic {
         name = "Polizei Waffenkammer";
         side = "cop";
