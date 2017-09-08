@@ -89,7 +89,7 @@ if (_mode == 1) then {
 	
 	switch (_tarStr) do {
 		case "Alle Spieler (Admin Nachricht)": {
-			[4,_msg,name player,0,player,_isPos] remoteExecCall ["life_fnc_phone", 0,false];
+			[3,_msg,name player,4,player,_isPos] remoteExecCall ["life_fnc_phone", 0,false];
 			hint format["Admin Nachricht an alle gesendet: %1",_msg];
 		};
 		case "Admins": {
